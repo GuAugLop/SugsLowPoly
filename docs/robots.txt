@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://guauglop.github.io/SugsLowPoly/sitemap.xml
+Sitemap: https://suglowpoly.com/sitemap.xml
