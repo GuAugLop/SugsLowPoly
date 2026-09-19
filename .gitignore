@@ -1,0 +1,28 @@
+# Old build output. The published copy now lives in /docs (the folder GitHub Pages serves).
+/site/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local scratch and logs
+/work/
+/tmp/
+*.log
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS / Linux
+.DS_Store
+*~
+
+# Editors
+.vscode/
+.idea/
+*.swp

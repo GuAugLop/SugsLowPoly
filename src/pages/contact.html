@@ -1,0 +1,63 @@
+{{> head}}
+{{> header}}
+<main id="main">
+
+  <section class="page-head facets" aria-labelledby="page-title">
+    <div class="wrap">
+      <p class="crumbs"><a href="./">Home</a> &nbsp;/&nbsp; Contact</p>
+      <h1 class="display" id="page-title">Contact &amp; <span class="accent">support</span></h1>
+      <p class="lead">Customer support, bug reports, feature requests and business enquiries. One inbox, read by the publisher.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="mail-title">
+    <div class="wrap grid-2">
+      <div class="contact-card">
+        <p class="label" id="mail-title">Email</p>
+        {{#if support_email}}<a class="mail" href="mailto:{{support_email}}">{{support_email}}</a>{{else}}<span class="pending">Our support address is being set up. Please check back shortly.</span>{{/if}}
+        <p class="muted">We read every message and usually reply within a few business days. Please write in English or Portuguese.</p>
+        {{#if support_email}}<div class="actions"><a class="btn btn-primary" href="mailto:{{support_email}}?subject=Support%20request">Write to support</a></div>{{/if}}
+      </div>
+
+      <div class="prose">
+        <h2 class="display">For a faster answer</h2>
+        <p>Most problems can be solved in one reply when the first message includes:</p>
+        <ul class="checks">
+          <li><strong>The pack name and version</strong>, as shown in the Package Manager</li>
+          <li><strong>Your Unity version</strong> and render pipeline (URP, Built-in or HDRP)</li>
+          <li><strong>What you expected</strong> and what happened instead</li>
+          <li><strong>A screenshot</strong>, and the Console message if there is one</li>
+          <li><strong>Your invoice number</strong> if the question is about a purchase</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="topics-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Topics</p>
+        <h2 class="display" id="topics-title">What you can write about</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <span class="num">Support</span>
+          <h3>Help with a pack</h3>
+          <p>Import problems, materials in another render pipeline, attaching weapons to a rig. The <a href="low-poly-enemy-melee-weapons.html#faq">pack FAQ</a> covers the common ones.</p>
+        </div>
+        <div class="card">
+          <span class="num">Feedback</span>
+          <h3>Bugs and requests</h3>
+          <p>A pivot that feels off, a missing weapon type, an idea for the next pack. Reports with a screenshot get fixed first.</p>
+        </div>
+        <div class="card">
+          <span class="num">Business</span>
+          <h3>Licensing and press</h3>
+          <p>Questions about using the packs in your project, custom work, bundles or coverage. Purchases and payments are processed by the Unity Asset Store, and refund requests follow its refund policy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+{{> footer}}

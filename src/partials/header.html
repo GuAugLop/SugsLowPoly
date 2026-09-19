@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="{{publisher}} home">
+      {{{logo_svg}}}
+      <span class="brand-name">Sug's <span class="accent">LowPoly</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="./#packs"{{#if nav_home}} aria-current="page"{{/if}}>Packs</a></li>
+        <li><a href="low-poly-enemy-melee-weapons.html"{{#if nav_pack}} aria-current="page"{{/if}}>Enemy Melee Weapons</a></li>
+        <li><a href="./#about">About</a></li>
+        <li><a class="btn btn-primary" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

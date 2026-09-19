@@ -1,0 +1,8 @@
+# Keep text files with LF endings on every machine, so the built site does not change just because it was cloned on Windows.
+* text=auto eol=lf
+
+*.png   binary
+*.jpg   binary
+*.webp  binary
+*.ico   binary
+*.woff2 binary

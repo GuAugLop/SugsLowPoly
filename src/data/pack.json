@@ -1,0 +1,103 @@
+{
+ "categories": [
+  {
+   "name": "Swords",
+   "count": 8,
+   "blurb": "From chipped raider blades to a two-handed executioner's sword.",
+   "items": [
+    "Rusty Sword",
+    "Broken Sword",
+    "Jagged Sword",
+    "Short Sword",
+    "Cleaver",
+    "Machete",
+    "Executioner Blade",
+    "Scimitar"
+   ]
+  },
+  {
+   "name": "Axes",
+   "count": 8,
+   "blurb": "Hatchets, battle axes and heavy two-handers.",
+   "items": [
+    "Hand Axe",
+    "Rusty Axe",
+    "Battle Axe",
+    "Double Axe",
+    "Heavy Axe",
+    "Executioner Axe",
+    "Jagged Axe",
+    "Butcher Axe"
+   ]
+  },
+  {
+   "name": "Blunt",
+   "count": 8,
+   "blurb": "Clubs, maces, a morning star and hammers.",
+   "items": [
+    "Wooden Club",
+    "Spiked Club",
+    "Stone Club",
+    "Iron Mace",
+    "Spiked Mace",
+    "Morning Star",
+    "Heavy Hammer",
+    "War Hammer"
+   ]
+  },
+  {
+   "name": "Polearms",
+   "count": 8,
+   "blurb": "Reach weapons for guards, pikemen and farm mobs.",
+   "items": [
+    "Spear",
+    "Rusty Spear",
+    "Halberd",
+    "Glaive",
+    "Pike",
+    "Pitchfork",
+    "Trident",
+    "Scythe"
+   ]
+  },
+  {
+   "name": "Improvised",
+   "count": 8,
+   "blurb": "Tools and scrap turned into weapons.",
+   "items": [
+    "Wooden Plank",
+    "Metal Pipe",
+    "Shovel",
+    "Pickaxe",
+    "Crowbar",
+    "Spiked Bat",
+    "Butcher Knife",
+    "Bone Club"
+   ]
+  },
+  {
+   "name": "Monster",
+   "count": 8,
+   "blurb": "Bone, horn and skull weapons for creatures and cultists.",
+   "items": [
+    "Bone Sword",
+    "Bone Axe",
+    "Skull Mace",
+    "Bone Club",
+    "Demon Cleaver",
+    "Horn Axe",
+    "Jaw Blade",
+    "Giant Bone"
+   ]
+  },
+  {
+   "name": "Shields",
+   "count": 2,
+   "blurb": "A wooden plank shield and a rusted metal one.",
+   "items": [
+    "Wooden Shield",
+    "Rusty Shield"
+   ]
+  }
+ ]
+}
