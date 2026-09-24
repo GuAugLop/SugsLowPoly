@@ -1,0 +1,343 @@
+{
+ "_about": "Content of the pack page. Fields ending in _html, and every list of paragraphs, answers and spec values, are HTML written by hand; plain fields are escaped by build.py.",
+ "order": 2,
+ "slug": "low-poly-enemy-encampment-props",
+ "name": "Low Poly Enemy Encampment Props",
+ "short_name": "Enemy Encampment Props",
+ "nav_label": "Encampment",
+ "faq_label": "Encampment FAQ",
+ "title": "Low Poly Enemy Encampment Props | Sug's LowPoly",
+ "description": "50 low-poly props for enemy camps: barricades, palisade walls, tents, campfires, crates, cages, torches and bone totems. URP-ready Unity prefabs at real-world scale with colliders and animated flames.",
+ "store_url": "",
+ "uses_pack_store_url": false,
+ "images": {
+  "gallery_dir": "assets/img/encampment/gallery",
+  "card": "assets/img/encampment/pack-card-1200.webp",
+  "og": "assets/img/encampment/og-image.jpg",
+  "banner_class": "art-encampment"
+ },
+ "hero": {
+  "name_html": "Low Poly <span class=\"accent\">Enemy</span> Encampment Props",
+  "lead_html": "50 low-poly props for the camps your enemies come from: barricades, palisade walls, tents, campfires, crates, cages, torches and bone totems. URP-ready prefabs at real-world scale, with colliders, animated flames and one shared library of tileable PBR materials.",
+  "note_html": "The companion to <a href=\"low-poly-enemy-melee-weapons.html\">Low Poly Enemy Melee Weapons</a>: the same look, with matched material colors."
+ },
+ "facts": [
+  [
+   "50",
+   "Prefabs"
+  ],
+  [
+   "7",
+   "Categories"
+  ],
+  [
+   "229&ndash;2,318",
+   "Triangles per prop"
+  ],
+  [
+   "6",
+   "Animated fire props"
+  ]
+ ],
+ "overview_html": [
+  "The pack builds the camp your enemies come from: <strong>barricades and palisade walls, tents and campfires, crates, barrels and a supply cart, weapon racks and cages, torches and banners, bone piles and skull totems</strong>, and the clutter that fills the space between them. Every prop is a ready-to-use prefab at real-world scale, closed underneath, with a collider, a practical pivot and materials from one small shared library.",
+  "It is the visual companion to <a href=\"low-poly-enemy-melee-weapons.html\">Low Poly Enemy Melee Weapons</a>: the same flat-shaded, faceted look, and the material families both packs share (wood, iron, rust, leather, bone, horn and stone) are matched to the weapons' measured colors. The weapons themselves are not included; the two packs are sold separately.",
+  "Characters, character animations, gameplay scripts and particle effects are not part of it. The only motion is the fire."
+ ],
+ "checks_html": [
+  "<strong>Pivots where you place them:</strong> on the ground, on the wall line for the modular walls, on the back face for wall props and at the top for the hanging lantern",
+  "<strong>1 unit = 1 meter</strong>, front +Z, prefab roots at identity",
+  "<strong>3 modular wall pieces</strong>, exactly 2.000 m wide, that snap every 2.000 m",
+  "<strong>6 fire props</strong> with an animated flame and a flickering light, no C# scripts",
+  "<strong>A collider on every prefab</strong>, shaped where a single box would get in the way",
+  "<strong>Closed underneath:</strong> every prop has a modeled base",
+  "<strong>A demo scene</strong> with all 50 props and a small enemy camp, and a README"
+ ],
+ "gallery": {
+  "title_html": "The whole camp, on the record",
+  "lead_html": "All images are real-time renders of the actual prefabs in Unity with URP. The category sheets print the name, triangle count and size of each prop, at a compressed display scale so that small and large pieces fit side by side; images 03, 04, 12 and 13 show the props at real scale.",
+  "note_html": "The mannequin in images 03 and 12 (Human Character Dummy by Kevin Iglesias, a free third-party asset) and the demonstration environment around the props (terrain, rocks, fog and ember effects) are there for demonstration only and are not included in the pack.",
+  "images": [
+   [
+    "01-key-art",
+    "Key art: the enemy camp"
+   ],
+   [
+    "02-overview-all-props",
+    "All 50 props by category"
+   ],
+   [
+    "03-in-use-enemy-camp",
+    "In use: an enemy camp at real-world scale"
+   ],
+   [
+    "04-night-camp-fire",
+    "Light up the night: 6 animated fire props"
+   ],
+   [
+    "05-sheet-fortifications",
+    "Fortifications: 8 props"
+   ],
+   [
+    "06-sheet-camp-structures",
+    "Camp Structures: 8 props"
+   ],
+   [
+    "07-sheet-storage-supplies",
+    "Storage & Supplies: 8 props"
+   ],
+   [
+    "08-sheet-enemy-utility",
+    "Enemy Utility: 8 props"
+   ],
+   [
+    "09-sheet-lighting-identity",
+    "Lighting & Identity: 6 props"
+   ],
+   [
+    "10-sheet-bone-ritual",
+    "Bone & Ritual: 6 props"
+   ],
+   [
+    "11-sheet-clutter-debris",
+    "Clutter & Debris: 6 props"
+   ],
+   [
+    "12-true-to-scale",
+    "True to scale against a 1.8 m humanoid"
+   ],
+   [
+    "13-modular-walls",
+    "Snap-together walls: 3 modular sections, 2 m each"
+   ],
+   [
+    "14-clean-topology",
+    "Clean low-poly topology"
+   ],
+   [
+    "15-stylized-pbr-materials",
+    "Stylized PBR materials: 23 shared, tileable"
+   ],
+   [
+    "16-whats-inside",
+    "What is inside the pack"
+   ]
+  ]
+ },
+ "contents_title_html": "50 prefabs in 7 categories",
+ "categories": [
+  {
+   "name": "Fortifications",
+   "count": 8,
+   "blurb": "Barricades, stakes and a road block, plus three modular wall sections that snap every 2 m.",
+   "items": [
+    "Wooden Barricade",
+    "Spiked Barricade",
+    "Scrap Barricade",
+    "Stake Fence",
+    "Defensive Stakes",
+    "Small Palisade Section",
+    "Reinforced Palisade Section",
+    "Spiked Road Block"
+   ]
+  },
+  {
+   "name": "Camp Structures",
+   "count": 8,
+   "blurb": "Tents, a bedroll and the camp kitchen: a campfire, a cooking tripod and pot, a stool and a table.",
+   "items": [
+    "Small Enemy Tent",
+    "Large Enemy Tent",
+    "Bedroll",
+    "Campfire",
+    "Cooking Tripod",
+    "Cooking Pot",
+    "Rough Stool",
+    "Rough Camp Table"
+   ]
+  },
+  {
+   "name": "Storage & Supplies",
+   "count": 8,
+   "blurb": "Crates, barrels, a sack and a basket, some of them smashed, and a supply cart.",
+   "items": [
+    "Wooden Crate",
+    "Reinforced Crate",
+    "Broken Crate",
+    "Wooden Barrel",
+    "Broken Barrel",
+    "Supply Sack",
+    "Woven Basket",
+    "Supply Cart"
+   ]
+  },
+  {
+   "name": "Enemy Utility",
+   "count": 8,
+   "blurb": "Weapon racks, tools for sharpening and chopping, a training dummy, cages and a butcher table.",
+   "items": [
+    "Weapon Rack",
+    "Wall Weapon Rack",
+    "Grinding Stone",
+    "Chopping Block",
+    "Training Dummy",
+    "Small Cage",
+    "Prisoner Cage",
+    "Butcher Table"
+   ]
+  },
+  {
+   "name": "Lighting & Identity",
+   "count": 6,
+   "blurb": "Torches, a brazier and a hanging lantern with animated fire, plus a banner and a warning sign.",
+   "items": [
+    "Torch Stand",
+    "Wall Torch",
+    "Brazier",
+    "Hanging Lantern",
+    "Enemy Banner",
+    "Warning Sign"
+   ]
+  },
+  {
+   "name": "Bone & Ritual",
+   "count": 6,
+   "blurb": "Bone and skull piles, totems, a ritual altar with fire and a monster nest.",
+   "items": [
+    "Bone Pile",
+    "Skull Pile",
+    "Bone Totem",
+    "Skull Totem",
+    "Ritual Altar",
+    "Monster Nest"
+   ]
+  },
+  {
+   "name": "Clutter & Debris",
+   "count": 6,
+   "blurb": "Firewood, scrap, rope and broken pieces for the space between the bigger props.",
+   "items": [
+    "Firewood Pile",
+    "Scrap Metal Pile",
+    "Rope Coil",
+    "Broken Cart Wheel",
+    "Supply Pile",
+    "Broken Wood Debris"
+   ]
+  }
+ ],
+ "specs": [
+  [
+   "Prefabs",
+   "50, one per prop, sorted by category, no variants"
+  ],
+  [
+   "Meshes",
+   "50 FBX files"
+  ],
+  [
+   "Triangles",
+   "229 to 2,318 per prop, 848 on average, 42,421 in total (flames included)"
+  ],
+  [
+   "Materials",
+   "23, shared by every prop: 21 URP Lit (metallic workflow) and 2 on the included flame shader"
+  ],
+  [
+   "Textures",
+   "49 tileable PNG files, 1024 &times; 1024"
+  ],
+  [
+   "Texture maps",
+   "Base Color and a packed mask (Metallic R, Ambient Occlusion G, Smoothness A) on every material, Emission on 3. No normal maps"
+  ],
+  [
+   "UVs",
+   "One channel in world scale, so every prop shares the tileable textures"
+  ],
+  [
+   "Colliders",
+   "Box colliders on every prefab, shaped on 6 props where a single box would get in the way"
+  ],
+  [
+   "Fire",
+   "6 props with a vertex-animated flame and a flickering point light (18 AnimationClips, 18 Animator Controllers). No C# scripts"
+  ],
+  [
+   "LODs, rig, character animation",
+   "None"
+  ],
+  [
+   "Made with",
+   "Unity 6000.4.5f1 and URP 17.4.0"
+  ]
+ ],
+ "compat": {
+  "eyebrow_html": "Compatibility",
+  "title_html": "Render pipelines",
+  "paragraphs_html": [
+   "<strong>Universal Render Pipeline:</strong> supported out of the box. 21 materials use URP Lit; the two flame materials use the included URP shader <code>EEP/FlameWave</code>, which animates the flames.",
+   "<strong>Built-in and HDRP:</strong> not set up out of the box. The packed mask already uses the channel layout those pipelines read, so converting a material means switching its shader and assigning two maps. The flame shader is URP only: in another pipeline the flames render pink until you switch them to a Lit or Standard shader, which gives a still flame. The README walks through it.",
+   "<strong>Lighting:</strong> the iron parts are metallic and need environment reflections, from a skybox or a reflection probe, to read as metal. Without them they render almost black.",
+   "<strong>Not included:</strong> characters, character rigs and animations, gameplay scripts, particle effects and the weapons themselves."
+  ]
+ },
+ "faq": [
+  [
+   "How do the modular walls fit together?",
+   "<p>Stake Fence, Small Palisade Section and Reinforced Palisade Section are each exactly 2.000 m wide, with the pivot on the wall line. Place sections 2.000 m apart along their local X axis, with the same rotation, and they meet edge to edge.</p>"
+  ],
+  [
+   "How do I put a fire out?",
+   "<p>Each of the 6 fire props has a flame object, <code>SM_&lt;Name&gt;_Flame</code>, and a <code>FireLight</code>. Disable both, in the editor or from code, and enable them again to relight the fire. The flame moves in its shader and the light flickers through an Animator, so no C# script is involved. Embers on the body keep glowing; for a completely cold prop, assign a non-emissive material such as <code>MAT_EEP_Ash</code> to that slot.</p>"
+  ],
+  [
+   "Why do the iron parts look black?",
+   "<p>Metals get almost all of their look from reflected light. Use a skybox with Environment Reflections, or a Reflection Probe covering the area where the props stand; the demo scene uses both.</p>"
+  ],
+  [
+   "Does it work with the Built-in pipeline or HDRP?",
+   "<p>The materials ship as URP Lit, and in other pipelines they appear pink until you switch the shader. Assign the Base Color map and the packed mask to the matching slots of the Standard or HDRP Lit shader. The flame shader is URP only; switching the flame materials to a Lit or Standard shader gives a still flame.</p>"
+  ],
+  [
+   "Are the weapons, characters or effects in the images included?",
+   "<p>No. The weapons are in Low Poly Enemy Melee Weapons, sold separately. The mannequin in images 03 and 12 is a free third-party asset (Human Character Dummy by Kevin Iglesias), and the terrain, rocks, fog and ember effects around the props are a demonstration environment. None of them are part of the pack, which contains the 50 props, their materials, the flame shader, the fire light animations and a demo scene.</p>"
+  ],
+  [
+   "Can I use the pack in a commercial game?",
+   "<p>Yes. The pack is sold under the standard Unity Asset Store EULA, which allows use in commercial games. It does not allow reselling or redistributing the assets themselves.</p>"
+  ],
+  [
+   "Was AI used to make this pack?",
+   "<p>Yes, and the store listing says so too. Every mesh was built by an AI model (Anthropic Claude) that wrote parametric modelling scripts for Blender; nothing was sculpted or modelled by hand, and no text-to-3D or image-to-3D generator was used. The 23 tileable materials are procedural shader graphs written in code by the same process and baked to PNG, without any generative image model. The Unity integration, the flame shader and the documentation were also done by AI, and every asset was reviewed by AI reviewer agents and passed automated checks in Blender and in Unity. The publisher defined the product and its catalogue of 50 assets, made the production decisions and decides what is published. The store images are real-time Unity renders of the pack's own prefabs; none was made with an AI image generator.</p>"
+  ]
+ ],
+ "card": {
+  "eyebrow_html": "3D &middot; Props &middot; Exterior",
+  "blurb_html": "50 props for the camps your enemies come from: palisade walls, tents, campfires, crates, cages, torches and bone totems. Six fires burn with animated flames, and the wall sections snap together every 2 m.",
+  "facts": [
+   [
+    "50",
+    "Prefabs"
+   ],
+   [
+    "7",
+    "Categories"
+   ],
+   [
+    "848",
+    "Avg. triangles"
+   ],
+   [
+    "1024&sup2;",
+    "PBR textures"
+   ]
+  ],
+  "image_alt": "Key art of the Low Poly Enemy Encampment Props pack: a palisade wall, a large tent with a cooking pot over a campfire, smaller tents, a red banner, torches, a brazier and bone totems at dusk."
+ },
+ "pairs_with": {
+  "slug": "low-poly-enemy-melee-weapons",
+  "title_html": "The weapons for this camp",
+  "lead_html": "Low Poly Enemy Melee Weapons arms the enemies who live here: 50 weapons and shields with the same faceted, flat-shaded look. The material families both packs share were matched to the weapons by measurement, so the props and the weapons can share a scene. The two packs are sold separately."
+ }
+}

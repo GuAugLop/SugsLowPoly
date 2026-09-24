@@ -259,3 +259,14 @@ section > .wrap > h2.display { margin-bottom: 8px; }
 .stack { display: grid; gap: 18px; }
 .gallery + p { margin-top: 22px; }
 .hero-bg { background-position: 58% 62%; }
+
+/* ---------- several packs ---------- */
+/* home page: the pack cards side by side, image on top */
+.packs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(28px, 4vw, 48px); align-items: start; }
+.packs .pack { grid-template-columns: 1fr; gap: clamp(20px, 2.4vw, 28px); align-items: start; }
+@media (max-width: 900px) { .packs { grid-template-columns: 1fr; gap: 56px; } }
+/* pack pages: "Pairs well with" follows the FAQ, so it needs no second top padding */
+.pair { padding-top: 0; }
+/* pack pages: each pack's banner behind the page title (the weapons pack uses the default above) */
+.page-head.with-art.art-encampment::after { background-image: url("../img/encampment/pack-banner-1100.webp"); }
+@media (min-width: 900px) { .page-head.with-art.art-encampment::after { background-image: url("../img/encampment/pack-banner-2000.webp"); } }

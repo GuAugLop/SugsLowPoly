@@ -3,5 +3,9 @@
   "support_email": "gulopes.augusto@gmail.com",
   "site_url": "https://suglowpoly.com/",
   "pack_store_url": "",
+  "store_urls": {
+    "low-poly-enemy-melee-weapons": "",
+    "low-poly-enemy-encampment-props": ""
+  },
   "publisher_store_url": ""
 }

@@ -1,0 +1,18 @@
+      <article class="pack reveal">
+        <a class="pack-media" href="{{slug}}.html" aria-label="{{name}}, pack page">
+          <img src="{{card_image}}" width="1200" height="800" loading="lazy" alt="{{card_alt}}">
+          {{#if store_url}}<span class="pill"><span class="dot"></span>Available now</span>{{else}}<span class="pill soon"><span class="dot"></span>Coming soon</span>{{/if}}
+        </a>
+        <div>
+          <p class="eyebrow">{{{card_eyebrow}}}</p>
+          <h3 class="display">{{name}}</h3>
+          <p class="muted">{{{card_blurb}}}</p>
+          <ul class="facts" aria-label="Pack facts">
+{{{card_facts}}}
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary" href="{{slug}}.html">View pack</a>
+            {{#if store_url}}<a class="btn btn-ghost" href="{{store_url}}" rel="noopener">Get it on the Asset Store</a>{{/if}}
+          </div>
+        </div>
+      </article>

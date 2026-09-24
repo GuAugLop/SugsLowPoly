@@ -1,0 +1,105 @@
+{{> head}}
+{{> header}}
+<main id="main">
+
+  <section class="{{page_head_class}}" aria-labelledby="page-title">
+    <div class="wrap">
+      <p class="crumbs"><a href="./">Home</a> &nbsp;/&nbsp; <a href="./#packs">Packs</a> &nbsp;/&nbsp; {{short_name}}</p>
+      <p>{{#if store_url}}<span class="pill"><span class="dot"></span>Available on the Unity Asset Store</span>{{else}}<span class="pill soon"><span class="dot"></span>Coming soon to the Unity Asset Store</span>{{/if}}</p>
+      <h1 class="display" id="page-title">{{{name_html}}}</h1>
+      <p class="lead">{{{lead_html}}}</p>
+{{{hero_note}}}      <div class="actions">
+        {{#if store_url}}<a class="btn btn-primary" href="{{store_url}}" rel="noopener">Get it on the Asset Store
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="square" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg></a>{{else}}<span class="btn" aria-disabled="true">Store link coming soon</span>{{/if}}
+        <a class="btn btn-ghost" href="#gallery">See the gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="facts-title">
+    <div class="wrap">
+      <h2 class="display" id="facts-title">At a glance</h2>
+      <ul class="facts" aria-label="Pack facts">
+{{{facts}}}
+      </ul>
+      <div class="grid-2">
+        <div class="prose">
+{{{overview}}}
+        </div>
+        <ul class="checks">
+{{{checks}}}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="gallery" aria-labelledby="gallery-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Gallery</p>
+        <h2 class="display" id="gallery-title">{{{gallery_title}}}</h2>
+        <p class="lead">{{{gallery_lead}}}</p>
+      </div>
+      <ul class="gallery">
+{{{gallery}}}
+      </ul>
+      <p class="small muted">{{{gallery_note}}}</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="contents-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Contents</p>
+        <h2 class="display" id="contents-title">{{{contents_title}}}</h2>
+      </div>
+      <div class="cats">
+{{{categories}}}
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="specs-title">
+    <div class="wrap grid-2">
+      <div>
+        <p class="eyebrow">Technical details</p>
+        <h2 class="display" id="specs-title">Specs</h2>
+        <table class="spec">
+          <tbody>
+{{{specs}}}
+          </tbody>
+        </table>
+      </div>
+      <div class="prose">
+        <p class="eyebrow">{{{compat_eyebrow}}}</p>
+        <h2 class="display">{{{compat_title}}}</h2>
+{{{compat}}}
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="display" id="faq-title">Before you ask</h2>
+      </div>
+      <div class="faq">
+{{{faq}}}
+      </div>
+    </div>
+  </section>
+
+{{{pair_section}}}  <section class="band cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <p class="eyebrow">Support</p>
+      <h2 class="display" id="cta-title">Something not working?</h2>
+      <p class="lead">Tell us your Unity version, your render pipeline and what you see. We will help you sort it out.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="contact.html">Contact support</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+{{> footer}}

@@ -1,0 +1,323 @@
+{
+ "_about": "Content of the pack page. Fields ending in _html, and every list of paragraphs, answers and spec values, are HTML written by hand; plain fields are escaped by build.py.",
+ "order": 1,
+ "slug": "low-poly-enemy-melee-weapons",
+ "name": "Low Poly Enemy Melee Weapons",
+ "short_name": "Enemy Melee Weapons",
+ "nav_label": "Weapons",
+ "faq_label": "Weapons FAQ",
+ "title": "Low Poly Enemy Melee Weapons | Sug's LowPoly",
+ "description": "50 low-poly melee weapons and shields for enemies, monsters and raiders. URP-ready Unity prefabs with grip-centered pivots, real-world scale and PBR textures.",
+ "store_url": "",
+ "uses_pack_store_url": true,
+ "images": {
+  "gallery_dir": "assets/img/gallery",
+  "card": "assets/img/pack-card-1200.webp",
+  "og": "assets/img/og-image.jpg",
+  "banner_class": ""
+ },
+ "hero": {
+  "name_html": "Low Poly <span class=\"accent\">Enemy</span> Melee Weapons",
+  "lead_html": "50 low-poly weapons and shields for everything your players fight. URP-ready prefabs with grip-centered pivots, real-world scale, PBR textures and simple colliders.",
+  "note_html": ""
+ },
+ "facts": [
+  [
+   "50",
+   "Prefabs"
+  ],
+  [
+   "7",
+   "Categories"
+  ],
+  [
+   "148&ndash;1,088",
+   "Triangles per weapon"
+  ],
+  [
+   "1024&sup2;",
+   "PNG textures"
+  ]
+ ],
+ "overview_html": [
+  "The pack covers the whole enemy roster of a low-poly action game: <strong>chipped raider swords, butcher axes, clubs and maces, polearms for guards, tools turned into weapons, and bone-and-horn gear for monsters</strong>, plus two shields. All 50 pieces share the same scale, axes and pivot rule, so one attachment setup works for every weapon.",
+  "It contains static props only. Characters, animations and gameplay code are not part of it."
+ ],
+ "checks_html": [
+  "<strong>Pivot at the center of the grip</strong> (rear grip for the shields)",
+  "<strong>Long axis +Y, front +Z</strong>, prefab root at identity rotation and scale 1",
+  "<strong>1 unit = 1 meter</strong>, sized for a 1.8 m humanoid, from 0.52 m to 2.52 m",
+  "<strong>A box collider</strong> on every prefab",
+  "<strong>A demo scene</strong> with a browsable gallery, and a one-page README"
+ ],
+ "gallery": {
+  "title_html": "Every weapon, on the record",
+  "lead_html": "All images are real-time renders of the actual prefabs in Unity with URP. The category sheets print the name, triangle count and length of each weapon.",
+  "note_html": "The mannequin and the environments in these images are there for demonstration and are not included in the pack.",
+  "images": [
+   [
+    "01-key-art",
+    "Key art: the enemy arsenal"
+   ],
+   [
+    "02-overview-all-weapons",
+    "All 50 weapons and shields by category"
+   ],
+   [
+    "03-in-use-enemy-squad",
+    "In use: grip-centered pivots on a humanoid rig"
+   ],
+   [
+    "04-enemy-armory",
+    "Set dressing: an enemy armory"
+   ],
+   [
+    "05-sheet-swords",
+    "Swords: 8 models"
+   ],
+   [
+    "06-sheet-axes",
+    "Axes: 8 models"
+   ],
+   [
+    "07-sheet-blunt",
+    "Blunt: 8 models"
+   ],
+   [
+    "08-sheet-polearms",
+    "Polearms: 8 models"
+   ],
+   [
+    "09-sheet-improvised",
+    "Improvised: 8 models"
+   ],
+   [
+    "10-sheet-monster",
+    "Monster: 8 models"
+   ],
+   [
+    "11-sheet-shields",
+    "Shields: 2 models, three views each"
+   ],
+   [
+    "12-true-to-scale",
+    "True to scale against a 1.8 m humanoid"
+   ],
+   [
+    "13-clean-topology",
+    "Clean low-poly topology"
+   ],
+   [
+    "14-stylized-pbr-materials",
+    "Stylized PBR materials"
+   ],
+   [
+    "15-whats-inside",
+    "What is inside the pack"
+   ]
+  ]
+ },
+ "contents_title_html": "50 prefabs in 7 categories",
+ "categories": [
+  {
+   "name": "Swords",
+   "count": 8,
+   "blurb": "From chipped raider blades to a two-handed executioner's sword.",
+   "items": [
+    "Rusty Sword",
+    "Broken Sword",
+    "Jagged Sword",
+    "Short Sword",
+    "Cleaver",
+    "Machete",
+    "Executioner Blade",
+    "Scimitar"
+   ]
+  },
+  {
+   "name": "Axes",
+   "count": 8,
+   "blurb": "Hatchets, battle axes and heavy two-handers.",
+   "items": [
+    "Hand Axe",
+    "Rusty Axe",
+    "Battle Axe",
+    "Double Axe",
+    "Heavy Axe",
+    "Executioner Axe",
+    "Jagged Axe",
+    "Butcher Axe"
+   ]
+  },
+  {
+   "name": "Blunt",
+   "count": 8,
+   "blurb": "Clubs, maces, a morning star and hammers.",
+   "items": [
+    "Wooden Club",
+    "Spiked Club",
+    "Stone Club",
+    "Iron Mace",
+    "Spiked Mace",
+    "Morning Star",
+    "Heavy Hammer",
+    "War Hammer"
+   ]
+  },
+  {
+   "name": "Polearms",
+   "count": 8,
+   "blurb": "Reach weapons for guards, pikemen and farm mobs.",
+   "items": [
+    "Spear",
+    "Rusty Spear",
+    "Halberd",
+    "Glaive",
+    "Pike",
+    "Pitchfork",
+    "Trident",
+    "Scythe"
+   ]
+  },
+  {
+   "name": "Improvised",
+   "count": 8,
+   "blurb": "Tools and scrap turned into weapons.",
+   "items": [
+    "Wooden Plank",
+    "Metal Pipe",
+    "Shovel",
+    "Pickaxe",
+    "Crowbar",
+    "Spiked Bat",
+    "Butcher Knife",
+    "Bone Club"
+   ]
+  },
+  {
+   "name": "Monster",
+   "count": 8,
+   "blurb": "Bone, horn and skull weapons for creatures and cultists.",
+   "items": [
+    "Bone Sword",
+    "Bone Axe",
+    "Skull Mace",
+    "Bone Club",
+    "Demon Cleaver",
+    "Horn Axe",
+    "Jaw Blade",
+    "Giant Bone"
+   ]
+  },
+  {
+   "name": "Shields",
+   "count": 2,
+   "blurb": "A wooden plank shield and a rusted metal one.",
+   "items": [
+    "Wooden Shield",
+    "Rusty Shield"
+   ]
+  }
+ ],
+ "specs": [
+  [
+   "Prefabs",
+   "50, one per weapon, sorted by category"
+  ],
+  [
+   "Meshes",
+   "50 FBX files"
+  ],
+  [
+   "Triangles",
+   "148 to 1,088 per weapon, 331 on average, 16,570 in total"
+  ],
+  [
+   "Materials",
+   "134, URP Lit, metallic workflow"
+  ],
+  [
+   "Textures",
+   "670 PNG files, 1024 &times; 1024"
+  ],
+  [
+   "Texture maps",
+   "Base Color and a packed mask (Metallic R, Ambient Occlusion G, Smoothness A), plus separate Roughness, Metallic and AO source maps"
+  ],
+  [
+   "Colliders",
+   "One box collider per prefab"
+  ],
+  [
+   "LODs, rig, animation",
+   "None"
+  ],
+  [
+   "Made with",
+   "Unity 6 (6000.4) and URP 17"
+  ]
+ ],
+ "compat": {
+  "eyebrow_html": "Compatibility",
+  "title_html": "Render pipelines",
+  "paragraphs_html": [
+   "<strong>Universal Render Pipeline:</strong> supported out of the box. All materials use URP Lit.",
+   "<strong>Built-in and HDRP:</strong> not set up out of the box. The packed mask already uses the channel layout those pipelines read (metallic in red, occlusion in green, smoothness in alpha), so converting a material means switching its shader and reassigning two maps. The README walks through it.",
+   "<strong>Not included:</strong> characters, animations, attack or damage logic, and effects."
+  ]
+ },
+ "faq": [
+  [
+   "How do I put a weapon in a character's hand?",
+   "<p>Parent the <code>PF_</code> prefab to the hand bone or to an attachment transform and reset its local position and rotation. The pivot is at the center of the grip, the weapon points along local +Y and its front faces local +Z, so one attachment transform per character is usually enough for all 50 weapons. Rotate that attachment transform to match your animation set.</p>"
+  ],
+  [
+   "Why does the prefab have a rotated child object?",
+   "<p>The prefab root is at identity rotation and scale 1, which is what you attach and animate. The <code>SM_</code> child carries a fixed axis conversion from the source files. Leave that child as it is and work with the root.</p>"
+  ],
+  [
+   "Does it work with the Built-in pipeline or HDRP?",
+   "<p>The materials ship as URP Lit. In other pipelines they will appear pink until you switch the shader. The textures themselves are pipeline-neutral: assign the Base Color map and the packed mask to the matching slots of the Standard or HDRP Lit shader. The separate roughness, metallic and AO maps are included if you prefer to repack them.</p>"
+  ],
+  [
+   "Are characters or animations included?",
+   "<p>No. The mannequin in the screenshots is a third-party asset used to show scale and grip placement. The pack contains the weapons and shields only.</p>"
+  ],
+  [
+   "Can I use the pack in a commercial game?",
+   "<p>Yes. The pack is sold under the standard Unity Asset Store EULA, which allows use in commercial games. It does not allow reselling or redistributing the assets themselves.</p>"
+  ],
+  [
+   "Was AI used to make this pack?",
+   "<p>Yes, and the store listing says so too. The models were built through scripted Blender workflows driven by AI agents, and the base color textures started from AI-generated images that were then baked and packed for Unity. Every asset was checked in the engine for triangle count, scale, orientation and texture size before release.</p>"
+  ]
+ ],
+ "card": {
+  "eyebrow_html": "3D &middot; Props &middot; Weapons",
+  "blurb_html": "50 weapons and shields for everything your players fight: raiders, cultists, orcs, skeletons and monsters. Every piece is a prefab with the pivot at the grip, so it snaps into a hand without per-weapon offsets.",
+  "facts": [
+   [
+    "50",
+    "Prefabs"
+   ],
+   [
+    "7",
+    "Categories"
+   ],
+   [
+    "331",
+    "Avg. triangles"
+   ],
+   [
+    "1024&sup2;",
+    "PBR textures"
+   ]
+  ],
+  "image_alt": "Key art of the Low Poly Enemy Melee Weapons pack: a mound of planted axes, polearms, a skull mace and shields lit by a low orange sun."
+ },
+ "pairs_with": {
+  "slug": "low-poly-enemy-encampment-props",
+  "title_html": "The camp these enemies come from",
+  "lead_html": "Low Poly Enemy Encampment Props is made to the same art direction: 50 props for enemy camps, from palisade walls and tents to campfires, cages and weapon racks, with the colors of the shared materials matched to these weapons. The two packs are sold separately."
+ }
+}

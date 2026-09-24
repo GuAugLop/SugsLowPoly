@@ -11,7 +11,7 @@
         <h1 class="display" id="hero-title">Game-ready <span class="accent nowrap">low-poly</span> assets for Unity</h1>
         <p class="lead">{{publisher}} makes lightweight, stylized 3D packs with consistent pivots, real-world scale and specs you can check, so they drop into your project and work.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="low-poly-enemy-melee-weapons.html">See the first pack
+          <a class="btn btn-primary" href="#packs">See the packs
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="square" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg></a>
           <a class="btn btn-ghost" href="contact.html">Contact &amp; support</a>
         </div>
@@ -23,31 +23,13 @@
     <div class="wrap">
       <div class="section-head reveal">
         <p class="eyebrow">Packs</p>
-        <h2 class="display" id="packs-title">One pack so far. Built properly.</h2>
-        <p class="lead">We would rather ship one pack that is pleasant to use than ten that need fixing. More are planned, and each one will follow the same conventions.</p>
+        <h2 class="display" id="packs-title">Two packs so far. Built properly.</h2>
+        <p class="lead">We would rather ship a few packs that are pleasant to use than dozens that need fixing. The two packs share one art direction, so the enemies and their camp fit in the same scene. More are planned, and each one will follow the same conventions.</p>
       </div>
 
-      <article class="pack reveal">
-        <a class="pack-media" href="low-poly-enemy-melee-weapons.html" aria-label="Low Poly Enemy Melee Weapons, pack page">
-          <img src="assets/img/pack-card-1200.webp" width="1200" height="800" loading="lazy" alt="Key art of the Low Poly Enemy Melee Weapons pack: a mound of planted axes, polearms, a skull mace and shields lit by a low orange sun.">
-          {{#if pack_store_url}}<span class="pill"><span class="dot"></span>Available now</span>{{else}}<span class="pill soon"><span class="dot"></span>Coming soon</span>{{/if}}
-        </a>
-        <div>
-          <p class="eyebrow">3D &middot; Props &middot; Weapons</p>
-          <h3 class="display">Low Poly Enemy Melee Weapons</h3>
-          <p class="muted">50 weapons and shields for everything your players fight: raiders, cultists, orcs, skeletons and monsters. Every piece is a prefab with the pivot at the grip, so it snaps into a hand without per-weapon offsets.</p>
-          <ul class="facts" aria-label="Pack facts">
-            <li><b>50</b><span>Prefabs</span></li>
-            <li><b>7</b><span>Categories</span></li>
-            <li><b>331</b><span>Avg. triangles</span></li>
-            <li><b>1024&sup2;</b><span>PBR textures</span></li>
-          </ul>
-          <div class="actions">
-            <a class="btn btn-primary" href="low-poly-enemy-melee-weapons.html">View pack</a>
-            {{#if pack_store_url}}<a class="btn btn-ghost" href="{{pack_store_url}}" rel="noopener">Get it on the Asset Store</a>{{/if}}
-          </div>
-        </div>
-      </article>
+      <div class="packs">
+{{{pack_cards}}}
+      </div>
     </div>
   </section>
 
@@ -66,12 +48,12 @@
         <div class="card reveal">
           <span class="num">02</span>
           <h3>Light geometry</h3>
-          <p>Hundreds of triangles per asset, not thousands. The faceted look comes from the mesh, so there are no normal maps to pay for.</p>
+          <p>Hundreds of triangles per asset, not tens of thousands: 331 on average for the weapons, 848 for the camp props. The faceted look comes from the mesh, so there are no normal maps to pay for.</p>
         </div>
         <div class="card reveal">
           <span class="num">03</span>
           <h3>Specs you can check</h3>
-          <p>Triangle count and length are printed next to every asset on the preview sheets, and the store page lists texture sizes and totals.</p>
+          <p>Triangle count and size are printed next to every asset on the preview sheets, and the store page lists texture sizes and totals.</p>
         </div>
         <div class="card reveal">
           <span class="num">04</span>
@@ -86,19 +68,19 @@
     <div class="wrap grid-2">
       <div class="stack">
         <div class="shot reveal">
-          <img src="assets/img/inuse-1400.webp" width="1400" height="933" loading="lazy" alt="Three posed mannequins holding weapons from the pack: a two-handed executioner axe, a rusty sword with a wooden shield, and a giant bone club.">
+          <img src="assets/img/inuse-1400.webp" width="1400" height="933" loading="lazy" alt="Three posed mannequins holding weapons from the weapons pack: a two-handed executioner axe, a rusty sword with a wooden shield, and a giant bone club.">
         </div>
         <div class="shot reveal">
-          <img src="assets/img/armory-1400.webp" width="1400" height="933" loading="lazy" alt="A torch-lit stone armory dressed with the pack: polearms on a wall rack, axes and blades on a table, a skull mace in the foreground.">
+          <img src="assets/img/armory-1400.webp" width="1400" height="933" loading="lazy" alt="A torch-lit stone armory dressed with the weapons pack: polearms on a wall rack, axes and blades on a table, a skull mace in the foreground.">
         </div>
       </div>
       <div class="prose reveal">
         <p class="eyebrow">About</p>
         <h2 class="display" id="about-title">Small publisher, strict checklist</h2>
         <p>{{publisher}} is an independent publisher of low-poly game assets for Unity. We make the kind of packs we want to find when prototyping: consistent, light, and honest about what is inside.</p>
-        <p><strong>How the packs are made.</strong> Our production pipeline is AI-assisted. Models are built through scripted Blender workflows driven by AI agents, texture sources are AI-generated and then baked and packed for Unity, and the prefabs are assembled by an import script. Before release, every asset is checked in the engine against fixed limits for triangle count, scale, orientation and texture size. Each store listing says this plainly as well.</p>
+        <p><strong>How the packs are made.</strong> Our production pipeline is AI-assisted. Models are built through scripted Blender workflows driven by AI agents. Textures are baked and packed for Unity from AI-generated images (the weapons) or from procedural materials written in code (the camp props), and the Unity side, from import settings to prefabs, is automated as well. Before release, every asset is checked in the engine against fixed limits such as triangle count, scale and orientation. Each store listing says this plainly as well.</p>
         <ul class="checks">
-          <li><strong>One convention per pack</strong>, documented in a short README.</li>
+          <li><strong>One convention per pack</strong>, documented in its README.</li>
           <li><strong>A demo scene</strong> that shows every asset.</li>
           <li><strong>Support by email</strong>, answered by the publisher.</li>
         </ul>
@@ -113,7 +95,7 @@
       <p class="lead">Bug reports, requests for the next pack and business enquiries all go to the same inbox.</p>
       <div class="actions">
         <a class="btn btn-primary" href="contact.html">Contact us</a>
-        <a class="btn btn-ghost" href="low-poly-enemy-melee-weapons.html#faq">Read the pack FAQ</a>
+{{{faq_buttons}}}
       </div>
     </div>
   </section>
