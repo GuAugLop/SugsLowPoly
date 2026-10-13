@@ -88,6 +88,8 @@ def load_packs(cfg):
         need = [img["card"], img.get("og") or DEFAULT_OG_IMAGE]
         for slug, _ in p["gallery"]["images"]:
             need += [f"{img['gallery_dir']}/{slug}.webp", f"{img['gallery_dir']}/{slug}-thumb.webp"]
+        if p.get("video"):
+            need += [p["video"]["src"], p["video"]["poster"]]
         absent = [n for n in need if not os.path.isfile(os.path.join(SRC, *n.split("/")))]
         if absent:
             sys.exit(f"src/data/packs/{fn}: image not found in src/: {absent[0]}" + (f" (and {len(absent) - 1} more)" if len(absent) > 1 else ""))
@@ -117,6 +119,14 @@ def pack_page_ctx(p, by_slug, partials):
     categories = "\n".join(
         f'        <div class="cat"><h3>{html.escape(c["name"])} <span>{c["count"]}</span></h3><p>{html.escape(c["blurb"])} <span class="muted">{html.escape(", ".join(c["items"]))}.</span></p></div>'
         for c in p["categories"])
+    video = ""
+    if p.get("video"):
+        v = p["video"]
+        video = (f'      <figure class="video">\n'
+                 f'        <video controls preload="none" playsinline poster="{v["poster"]}" width="{v.get("width", 1280)}" height="{v.get("height", 720)}">'
+                 f'<source src="{v["src"]}" type="video/mp4">Your browser cannot play this video. <a href="{v["src"]}">Download the trailer (MP4)</a>.</video>\n'
+                 + (f'        <figcaption class="small muted">{v["caption_html"]}</figcaption>\n' if v.get("caption_html") else "")
+                 + '      </figure>\n')
     pair = ""
     if p.get("pairs_with"):
         other = by_slug.get(p["pairs_with"]["slug"])
@@ -136,7 +146,7 @@ def pack_page_ctx(p, by_slug, partials):
         facts="\n".join(f"        <li><b>{b}</b><span>{s}</span></li>" for b, s in p["facts"]),
         overview="\n".join(f"          <p>{t}</p>" for t in p["overview_html"]),
         checks="\n".join(f"          <li>{t}</li>" for t in p["checks_html"]),
-        gallery_title=gal["title_html"], gallery_lead=gal["lead_html"], gallery_note=gal["note_html"], gallery=gallery,
+        gallery_title=gal["title_html"], gallery_lead=gal["lead_html"], gallery_note=gal["note_html"], gallery=gallery, gallery_video=video,
         contents_title=p["contents_title_html"], categories=categories,
         specs="\n".join(f'            <tr><th scope="row">{k}</th><td>{v}</td></tr>' for k, v in p["specs"]),
         compat_eyebrow=p["compat"]["eyebrow_html"], compat_title=p["compat"]["title_html"],

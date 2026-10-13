@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voxel City: Animated Town | Sug&#x27;s LowPoly</title>
+<meta name="description" content="214 stylized voxel prefabs for a whole animated town: houses, shops, landmarks, trees, street props, a harbor, a steam train and modular tiles. URP shaders move wind, water, smoke and machinery, and one line of C# turns day into night.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="theme-color" content="#0b161e">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://suglowpoly.com/voxel-city-animated-town.html">
+<meta property="og:url" content="https://suglowpoly.com/voxel-city-animated-town.html">
+<meta property="og:image" content="https://suglowpoly.com/assets/img/voxel-city/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://suglowpoly.com/assets/img/voxel-city/og-image.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sug&#x27;s LowPoly">
+<meta property="og:title" content="Voxel City: Animated Town | Sug&#x27;s LowPoly">
+<meta property="og:description" content="214 stylized voxel prefabs for a whole animated town: houses, shops, landmarks, trees, street props, a harbor, a steam train and modular tiles. URP shaders move wind, water, smoke and machinery, and one line of C# turns day into night.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Sug&#x27;s LowPoly home">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5NzMwN2M1ZS1iN2Q1LTQwZTEtODUwYy1iZWExMWUyZTA5ZDUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaExcunEe0mK5WV1+iVwfGboAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoyZmE1NmI4Ny1jYzRmLTRiMzQtYmViYi0yYWZmN2QwMGExYjBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNowfWQNdZeTULjVNl9eciM/AAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggoo6vVRgLgKvr/e0RtFqKIzhzky7ohCxXf8XM2bxRZ7ikZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaGBv52s2yxcYARkO8X48DkkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAVTv0TEpKd3uVlEnTUTVTuHFsujgzWxwNwVDwaVLcdLGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjk3MzA3YzVlLWI3ZDUtNDBlMS04NTBjLWJlYTExZTJlMDlkNS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjc3ZTY2OGU1LWEwZDUtNDAzOS04MGRhLTFhN2JjMmJlZDA5NnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCijq9VGAuAq+v97RG0WoojOHOTLuiELFd/xczZvFFnuKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggS9V3xRnsVH8oeGOuRynQxhuUXZj3qkyyDHsj8jSM3RqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggpIt2BOcqtvO/qD1bWjFMfgOIa3RfsLyRBag7An9fP8R0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQK4OBwgASMHvu6+ySZ1ZwsZs9i7fCKFOZsHu+LXQMMAwK/ay9P9viQqAwz6boM625A8xRcRaYuKQ33Kp2hIqToc=</c2pa:manifest></metadata><defs><clipPath id="r"><rect width="120" height="120" rx="22"/></clipPath></defs><g clip-path="url(#r)"><polygon points="0,0 70,0 56,66" fill="rgb(20,40,52)" stroke="rgb(20,40,52)" stroke-width="0.6"/><polygon points="70,0 120,0 56,66" fill="rgb(16,33,44)" stroke="rgb(16,33,44)" stroke-width="0.6"/><polygon points="120,0 120,52 56,66" fill="rgb(13,28,38)" stroke="rgb(13,28,38)" stroke-width="0.6"/><polygon points="120,52 120,120 56,66" fill="rgb(10,21,29)" stroke="rgb(10,21,29)" stroke-width="0.6"/><polygon points="120,120 44,120 56,66" fill="rgb(8,17,24)" stroke="rgb(8,17,24)" stroke-width="0.6"/><polygon points="44,120 0,120 56,66" fill="rgb(10,22,30)" stroke="rgb(10,22,30)" stroke-width="0.6"/><polygon points="0,120 0,74 56,66" fill="rgb(14,29,39)" stroke="rgb(14,29,39)" stroke-width="0.6"/><polygon points="0,74 0,0 56,66" fill="rgb(18,36,47)" stroke="rgb(18,36,47)" stroke-width="0.6"/><polygon points="98.00,14.50 39.65,14.50 48.35,35.50" fill="rgb(255,176,96)" stroke="rgb(255,176,96)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="98.00,14.50 48.35,35.50 84.00,35.50" fill="rgb(255,150,70)" stroke="rgb(255,150,70)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 17.50,36.65 38.50,45.35" fill="rgb(255,128,48)" stroke="rgb(255,128,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 38.50,45.35 48.35,35.50" fill="rgb(240,104,32)" stroke="rgb(240,104,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 17.50,51.76 38.50,42.24" fill="rgb(214,80,24)" stroke="rgb(214,80,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 38.50,42.24 38.50,45.35" fill="rgb(196,68,18)" stroke="rgb(196,68,18)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 40.05,71.50 47.95,50.50" fill="rgb(232,96,30)" stroke="rgb(232,96,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 47.95,50.50 38.50,42.24" fill="rgb(250,120,44)" stroke="rgb(250,120,44)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 71.65,71.50 80.35,50.50" fill="rgb(255,158,78)" stroke="rgb(255,158,78)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 80.35,50.50 47.95,50.50" fill="rgb(255,136,56)" stroke="rgb(255,136,56)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 81.50,81.35 102.50,72.65" fill="rgb(236,100,32)" stroke="rgb(236,100,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 102.50,72.65 80.35,50.50" fill="rgb(216,82,24)" stroke="rgb(216,82,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 81.50,76.65 102.50,85.35" fill="rgb(186,62,16)" stroke="rgb(186,62,16)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 102.50,85.35 102.50,72.65" fill="rgb(168,52,14)" stroke="rgb(168,52,14)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 71.65,86.50 80.35,107.50" fill="rgb(206,74,20)" stroke="rgb(206,74,20)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 80.35,107.50 102.50,85.35" fill="rgb(228,94,30)" stroke="rgb(228,94,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 22.00,86.50 36.00,107.50" fill="rgb(250,126,48)" stroke="rgb(250,126,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 36.00,107.50 80.35,107.50" fill="rgb(255,146,66)" stroke="rgb(255,146,66)" stroke-width="0.5" stroke-linejoin="round"/></g></svg>
+      <span class="brand-name">Sug's <span class="accent">LowPoly</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="./#packs">Packs</a></li>
+        <li><a href="low-poly-enemy-melee-weapons.html">Weapons</a></li>
+        <li><a href="low-poly-enemy-encampment-props.html">Encampment</a></li>
+        <li><a href="voxel-city-animated-town.html" aria-current="page">Voxel City</a></li>
+        <li><a href="./#about">About</a></li>
+        <li><a class="btn btn-primary" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head with-art art-voxel-city" aria-labelledby="page-title">
+    <div class="wrap">
+      <p class="crumbs"><a href="./">Home</a> &nbsp;/&nbsp; <a href="./#packs">Packs</a> &nbsp;/&nbsp; Voxel City</p>
+      <p><span class="pill soon"><span class="dot"></span>Coming soon to the Unity Asset Store</span></p>
+      <h1 class="display" id="page-title">Voxel City: <span class="accent">Animated</span> Town</h1>
+      <p class="lead">214 stylized voxel prefabs for a whole town that moves: houses and shops, landmarks with working parts, trees, a harbor and a steam train, street props and snap-together ground tiles. Wind, water, smoke and machinery animate in the shader, and one line of C# turns day into night.</p>
+      <p class="small muted">Ships with the demo town from the trailer: 8,579 placed prefabs, about 225,000 instanced grass tufts and 195 lamps.</p>
+      <div class="actions">
+        <span class="btn" aria-disabled="true">Store link coming soon</span>
+        <a class="btn btn-ghost" href="#gallery">See the gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="facts-title">
+    <div class="wrap">
+      <h2 class="display" id="facts-title">At a glance</h2>
+      <ul class="facts" aria-label="Pack facts">
+        <li><b>214</b><span>Prefabs</span></li>
+        <li><b>8</b><span>Categories</span></li>
+        <li><b>115</b><span>Animated prefabs</span></li>
+        <li><b>16&times;16</b><span>Palette texture</span></li>
+      </ul>
+      <div class="grid-2">
+        <div class="prose">
+          <p>Voxel City is a complete stylized town in one pack: <strong>cottages, town houses and eight color-coded row houses, eleven shops, civic buildings and ten landmarks, twenty trees with the plants, hedges and rocks around them, street lamps, benches, bridges and fountains, market stalls, boats, docks and a steam train</strong>, plus 26 modular 4 &times; 4 m ground tiles and the 55 terrain and water pieces of the demo world. Every prefab is ready to drop in, at real-world scale, and the whole town is colored from one small palette texture.</p>
+          <p>Motion is the point. Trees and crops sway in the wind, flags and awnings flap, chimneys smoke, boats float, windmill sails, clock hands, wheels and the lighthouse lens turn on real pivots, and the water pans and ripples. All of it runs in the vertex shader, so nothing needs an Animator or a script per object, and global channels for wind, mechanisms, lights and night change the whole town at once.</p>
+          <p>When night falls, windows, lamps and stained glass light up, and the lamp prefabs carry real lights that fade in with them. Characters, NPCs, traffic logic and gameplay scripts are not part of the pack; the train and the boats in the demo follow simple paths with the included <code>VoxelMover</code> component.</p>
+        </div>
+        <ul class="checks">
+          <li><strong>Day to night in one line:</strong> <code>VoxelCity.SetNight(true, 3f)</code> fades in lamps and windows, and the included controller follows with sun, moon, ambient light and fog</li>
+          <li><strong>Shader-driven animation</strong> for wind, foliage, crops, swing, cloth, flags, floating, rotation and grass, SRP Batcher compatible</li>
+          <li><strong>Moving parts on real pivots:</strong> 41 prefabs have separate sails, hands, bells, wheels or awnings you can drive from code</li>
+          <li><strong>26 modular ground tiles</strong>, 4 &times; 4 m, for roads, paths, plazas, fields, beach and quay</li>
+          <li><strong>1 unit = 1 meter</strong>, Y up, colliders on 204 of the 214 prefabs</li>
+          <li><strong>Editor preview:</strong> the scene animates in edit mode, with a menu to preview the night</li>
+          <li><strong>A demo scene</strong> with the whole town, a fly camera and a README</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="gallery" aria-labelledby="gallery-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Gallery</p>
+        <h2 class="display" id="gallery-title">The whole town, on the record</h2>
+        <p class="lead">All images are real-time renders of the actual prefabs in Unity 6 with URP. Images 01 and 03 to 09 show the demo town that ships with the pack; the category sheets print the name, triangle count and size of each prefab, at a compressed display scale so that small and large pieces fit side by side.</p>
+      </div>
+      <figure class="video">
+        <video controls preload="none" playsinline poster="assets/img/voxel-city/trailer-poster.webp" width="1280" height="720"><source src="assets/video/voxel-city/voxel-city-trailer-720p.mp4" type="video/mp4">Your browser cannot play this video. <a href="assets/video/voxel-city/voxel-city-trailer-720p.mp4">Download the trailer (MP4)</a>.</video>
+        <figcaption class="small muted">Trailer, 1:05, with sound. Recorded in real time in Unity 6 with URP, in the demo town that ships with the pack. The music is an original piece made for this trailer and is not part of the pack.</figcaption>
+      </figure>
+      <ul class="gallery">
+        <li><a class="tile" href="assets/img/voxel-city/gallery/01-key-art.webp" data-full="assets/img/voxel-city/gallery/01-key-art.webp" data-caption="Key art: the voxel town at golden hour"><img src="assets/img/voxel-city/gallery/01-key-art-thumb.webp" width="720" height="480" loading="lazy" alt="Key art: the voxel town at golden hour"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/02-overview-all-prefabs.webp" data-full="assets/img/voxel-city/gallery/02-overview-all-prefabs.webp" data-caption="All 214 prefabs in 8 categories"><img src="assets/img/voxel-city/gallery/02-overview-all-prefabs-thumb.webp" width="720" height="480" loading="lazy" alt="All 214 prefabs in 8 categories"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/03-day-to-night.webp" data-full="assets/img/voxel-city/gallery/03-day-to-night.webp" data-caption="Day to night with one line of C#"><img src="assets/img/voxel-city/gallery/03-day-to-night-thumb.webp" width="720" height="480" loading="lazy" alt="Day to night with one line of C#"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/04-light-up-the-night.webp" data-full="assets/img/voxel-city/gallery/04-light-up-the-night.webp" data-caption="Light up the night: 195 lamps in the demo"><img src="assets/img/voxel-city/gallery/04-light-up-the-night-thumb.webp" width="720" height="480" loading="lazy" alt="Light up the night: 195 lamps in the demo"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/05-everything-moves.webp" data-full="assets/img/voxel-city/gallery/05-everything-moves.webp" data-caption="Everything moves, in the vertex shader"><img src="assets/img/voxel-city/gallery/05-everything-moves-thumb.webp" width="720" height="480" loading="lazy" alt="Everything moves, in the vertex shader"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/06-streets-with-character.webp" data-full="assets/img/voxel-city/gallery/06-streets-with-character.webp" data-caption="Streets with character: 8 colored row houses"><img src="assets/img/voxel-city/gallery/06-streets-with-character-thumb.webp" width="720" height="480" loading="lazy" alt="Streets with character: 8 colored row houses"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/07-built-around-landmarks.webp" data-full="assets/img/voxel-city/gallery/07-built-around-landmarks.webp" data-caption="Built around landmarks: 10 hero buildings"><img src="assets/img/voxel-city/gallery/07-built-around-landmarks-thumb.webp" width="720" height="480" loading="lazy" alt="Built around landmarks: 10 hero buildings"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/08-living-water.webp" data-full="assets/img/voxel-city/gallery/08-living-water.webp" data-caption="Living water: sea, rivers, ponds and fountains"><img src="assets/img/voxel-city/gallery/08-living-water-thumb.webp" width="720" height="480" loading="lazy" alt="Living water: sea, rivers, ponds and fountains"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/09-town-to-countryside.webp" data-full="assets/img/voxel-city/gallery/09-town-to-countryside.webp" data-caption="Town to countryside: fields with wind-driven crops"><img src="assets/img/voxel-city/gallery/09-town-to-countryside-thumb.webp" width="720" height="480" loading="lazy" alt="Town to countryside: fields with wind-driven crops"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/10-sheet-houses.webp" data-full="assets/img/voxel-city/gallery/10-sheet-houses.webp" data-caption="Houses &amp; Row Houses: 19 prefabs"><img src="assets/img/voxel-city/gallery/10-sheet-houses-thumb.webp" width="720" height="480" loading="lazy" alt="Houses &amp; Row Houses: 19 prefabs"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/11-sheet-shops-civic.webp" data-full="assets/img/voxel-city/gallery/11-sheet-shops-civic.webp" data-caption="Shops &amp; Civic: 16 prefabs"><img src="assets/img/voxel-city/gallery/11-sheet-shops-civic-thumb.webp" width="720" height="480" loading="lazy" alt="Shops &amp; Civic: 16 prefabs"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/12-sheet-landmarks.webp" data-full="assets/img/voxel-city/gallery/12-sheet-landmarks.webp" data-caption="Landmarks: 10 prefabs"><img src="assets/img/voxel-city/gallery/12-sheet-landmarks-thumb.webp" width="720" height="480" loading="lazy" alt="Landmarks: 10 prefabs"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/13-sheet-trees.webp" data-full="assets/img/voxel-city/gallery/13-sheet-trees.webp" data-caption="Trees: 20, plus 5 LOD trees"><img src="assets/img/voxel-city/gallery/13-sheet-trees-thumb.webp" width="720" height="480" loading="lazy" alt="Trees: 20, plus 5 LOD trees"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/14-sheet-plants-rocks.webp" data-full="assets/img/voxel-city/gallery/14-sheet-plants-rocks.webp" data-caption="Plants &amp; Rocks: 17 prefabs"><img src="assets/img/voxel-city/gallery/14-sheet-plants-rocks-thumb.webp" width="720" height="480" loading="lazy" alt="Plants &amp; Rocks: 17 prefabs"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/15-sheet-street-plaza.webp" data-full="assets/img/voxel-city/gallery/15-sheet-street-plaza.webp" data-caption="Street &amp; Plaza: 26 prefabs"><img src="assets/img/voxel-city/gallery/15-sheet-street-plaza-thumb.webp" width="720" height="480" loading="lazy" alt="Street &amp; Plaza: 26 prefabs"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/16-sheet-market-harbor-rail.webp" data-full="assets/img/voxel-city/gallery/16-sheet-market-harbor-rail.webp" data-caption="Market, Harbor &amp; Rail: 20 prefabs"><img src="assets/img/voxel-city/gallery/16-sheet-market-harbor-rail-thumb.webp" width="720" height="480" loading="lazy" alt="Market, Harbor &amp; Rail: 20 prefabs"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/17-sheet-modular-tiles.webp" data-full="assets/img/voxel-city/gallery/17-sheet-modular-tiles.webp" data-caption="Modular tiles: 26 prefabs, 4 × 4 m"><img src="assets/img/voxel-city/gallery/17-sheet-modular-tiles-thumb.webp" width="720" height="480" loading="lazy" alt="Modular tiles: 26 prefabs, 4 × 4 m"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/18-one-palette.webp" data-full="assets/img/voxel-city/gallery/18-one-palette.webp" data-caption="One tiny palette: 16 × 16 px for the whole town"><img src="assets/img/voxel-city/gallery/18-one-palette-thumb.webp" width="720" height="480" loading="lazy" alt="One tiny palette: 16 × 16 px for the whole town"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/19-plug-and-play.webp" data-full="assets/img/voxel-city/gallery/19-plug-and-play.webp" data-caption="Plug and play: a C# API and 8 components"><img src="assets/img/voxel-city/gallery/19-plug-and-play-thumb.webp" width="720" height="480" loading="lazy" alt="Plug and play: a C# API and 8 components"></a></li>
+        <li><a class="tile" href="assets/img/voxel-city/gallery/20-whats-inside.webp" data-full="assets/img/voxel-city/gallery/20-whats-inside.webp" data-caption="What is inside the pack"><img src="assets/img/voxel-city/gallery/20-whats-inside-thumb.webp" width="720" height="480" loading="lazy" alt="What is inside the pack"></a></li>
+      </ul>
+      <p class="small muted">The gradient sky, color grading and floating light motes in the images are a presentation setup for the screenshots. The demo scene ships with its own procedural skybox and post-processing.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="contents-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Contents</p>
+        <h2 class="display" id="contents-title">214 prefabs in 8 categories</h2>
+      </div>
+      <div class="cats">
+        <div class="cat"><h3>Houses &amp; Row Houses <span>19</span></h3><p>Cottages, town houses, tall houses and a villa, plus eight row houses in eight colors. Chimneys smoke and window plants sway. <span class="muted">Cottage A, Cottage B, Farmer&#x27;s House, Town House A, Town House B, Town House C, Town House D, Town House E, Tall House A, Tall House B, Villa, Row House in blue, lime, orange, pink, red, teal, white and yellow.</span></p></div>
+        <div class="cat"><h3>Shops &amp; Civic <span>16</span></h3><p>Eleven shopfronts with cloth awnings and signs, three civic buildings, a farm shed and a harbor warehouse. <span class="muted">Apothecary, Bakery, Bistro, Cafe, Florist, Grocer, Hattery, Perfumer, Pub, Tailor, Winery, Mayor&#x27;s House, Research Center, Social Club, Farm Shed, Harbor Warehouse.</span></p></div>
+        <div class="cat"><h3>Landmarks <span>10</span></h3><p>Hero buildings with working parts: turning sails, clock hands, swinging bells and a rotating lighthouse lens with two light beams. The windmill also comes as base and sails. <span class="muted">Cathedral, Train Station, Town Hall, Church, Lighthouse, Windmill, Windmill Base, Windmill Sails, Observatory, Obelisk.</span></p></div>
+        <div class="cat"><h3>Nature <span>42</span></h3><p>Twenty wind-animated trees in seasonal colors, five light LOD trees for distant hills, fifteen plants with foliage motion and two rock sets. <span class="muted">Big Oak, Round Tree A, Round Tree B, Olive, Orange Tree, Autumn Tree, Red Tree, Blossom Tree, Pink Ipe, Yellow Ipe, Magenta Tree, Purple Tree, Big Purple Tree, Willow, Birch, Poplar, Cypress, Pine, Big Pine, Palm, 5 LOD trees, Bush, Flowering Bush, Hydrangea, Lavender, Rose Bush, Flower Bed, Round Flower Bed, Hedge, Hedge Arch, Hedge Corner, Ball, Cone and Spiral Topiary, Ivy, Lily Pads, Big Rock, Rocks.</span></p></div>
+        <div class="cat"><h3>Street &amp; Plaza <span>26</span></h3><p>Lamps that switch on at dusk, benches, fences, bridges, fountains, a gazebo, a pergola and a whole hedge maze. <span class="muted">Street Lamp, Double Street Lamp, Garden Lamp, Wall Lantern, Bench, Park Bench, Stone Bench, Picket Fence, Wooden Fence, Signpost, Flag Pole, Arch Bridge, Stone Bridge, Animated Fountain, Fountain, Wall Fountain, Birdbath, Well, Gazebo, Pergola, Hedge Maze, Planter Box, Planter Pot, Cafe Table, Canal, Canal End.</span></p></div>
+        <div class="cat"><h3>Market, Harbor &amp; Rail <span>20</span></h3><p>Market stalls with flapping awnings, floating boats with sails, docks and cargo, and a steam train with turning wheels. <span class="muted">Bread Stall, Fish Stall, Flower Stall, Fruit Stall, Cart, Sailboat, Fishing Boat, Rowboat, Dock, Dock End, Barrel, Crate, Crate Stack, Bollard, Locomotive, Coach, Station Platform, Rail, Tunnel Portal, Haystack.</span></p></div>
+        <div class="cat"><h3>Modular Tiles <span>26</span></h3><p>4 × 4 m ground tiles that snap together: roads, crossings, paths, plazas, fields with waving crops, beach, seabed, water and quay. <span class="muted">Road Straight, Road Corner, Road T, Road Cross, Crosswalk, Road End, Cobble, Paving, Gravel, Dirt, Cobble Path, Cobble Path Corner, Dirt Path, Dirt Path Corner, Grass, Grass with Flowers, Plaza, Plaza Center, Wheat Field, Vegetable Field, Lavender Field, Vineyard, Beach, Seabed, Water, Quay.</span></p></div>
+        <div class="cat"><h3>World Terrain &amp; Water <span>55</span></h3><p>The pieces the demo world is built from, ready to reuse: the city base, hilly terrain chunks around the town, a wider ring of far chunks, the ocean floor and two water surfaces. <span class="muted">City Base, 26 terrain chunks (up to 64 × 64 m), 25 far terrain chunks, Ocean Seabed, Ocean Water, Pond Water.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="specs-title">
+    <div class="wrap grid-2">
+      <div>
+        <p class="eyebrow">Technical details</p>
+        <h2 class="display" id="specs-title">Specs</h2>
+        <table class="spec">
+          <tbody>
+            <tr><th scope="row">Prefabs</th><td>214, sorted by category; 41 with separate moving parts, 5 with real lights</td></tr>
+            <tr><th scope="row">Meshes</th><td>359 FBX files, 1 unit = 1 m, Y up, no embedded materials</td></tr>
+            <tr><th scope="row">Triangles</th><td>52 to 62,380 per prefab outside the world pieces, 2,859 on average (houses 2,010 to 5,230); the 55 terrain and water pieces add about 2.9 million</td></tr>
+            <tr><th scope="row">Shaders</th><td>6 included URP shaders: <code>VoxelCity/Lit</code>, <code>Water</code>, <code>PannedTranslucent</code>, <code>Ripple</code>, <code>Smoke</code> and <code>LightBeam</code></td></tr>
+            <tr><th scope="row">Materials</th><td>28: 25 on the included shaders, 2 URP Lit and the demo skybox</td></tr>
+            <tr><th scope="row">Textures</th><td>5 PNG files: the 16 &times; 16 color palette and its emissive twin, a 512 &times; 512 water normal, waterfall streaks and foam</td></tr>
+            <tr><th scope="row">Animation</th><td>Vertex animation in the shader in 9 modes (wind, foliage, crops, swing, rotate, cloth, flag, float, grass), driven by 10 global channels. No Animator, no AnimationClips</td></tr>
+            <tr><th scope="row">Scripts</th><td>10 C# files in the <code>VoxelCityKit</code> namespace: the <code>VoxelCity</code> API, 8 components and the editor preview</td></tr>
+            <tr><th scope="row">Colliders</th><td>Box or mesh colliders on 204 of the 214 prefabs</td></tr>
+            <tr><th scope="row">Demo scene</th><td>8,579 placed prefabs, about 225,000 instanced grass tufts, 193 point lights and 2 spot lights</td></tr>
+            <tr><th scope="row">LODs, rig, character animation</th><td>5 separate low-detail trees for distant hills; no LOD Groups, rigs or characters</td></tr>
+            <tr><th scope="row">Made with</th><td>Unity 6000.4.5f1 and URP 17.4.0</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose">
+        <p class="eyebrow">Compatibility</p>
+        <h2 class="display">Render pipelines</h2>
+        <p><strong>Universal Render Pipeline:</strong> required. The materials use the six included URP shaders, which is where the animation lives. Turn on the Depth Texture (in the URP Asset or on the camera) for the water, waterfalls, fountains and light beams; the demo camera does it for you. The Forward+ renderer is recommended for scenes with many lamps.</p>
+        <p><strong>Built-in and HDRP:</strong> not supported. The shaders are written for URP, so in another pipeline the materials render pink and nothing moves.</p>
+        <p><strong>Performance:</strong> the animation costs no CPU per object. In big scenes the cost is in real lights and grass: lower the grass density or draw distance, switch off lamp lights you do not need and set the shadow distance in the URP Asset.</p>
+        <p><strong>Not included:</strong> characters, NPCs, traffic or gameplay scripts, audio, and the presentation sky and effects of the store images.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="display" id="faq-title">Before you ask</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>How do I switch the town to night?</summary>
+          <div class="answer"><p>Call <code>VoxelCity.SetNight(true, 3f)</code> from any script to fade to night in three seconds, or add the controller from <code>GameObject &gt; VoxelCity &gt; Controller</code>, which also handles the sun, moon, ambient light and fog. In the demo, press <strong>N</strong>. <code>VoxelCity.SetLights(false, 1f)</code> switches the lamps and windows on their own.</p></div>
+        </details>
+        <details>
+          <summary>Can I slow down or stop the animations?</summary>
+          <div class="answer"><p>Yes, for the whole town at once. <code>VoxelCity.SetAnimationsEnabled(false, 1.5f)</code> freezes everything smoothly, <code>VoxelCity.SetMechanismSpeed(0.5f, 2f)</code> runs windmills, clocks and wheels at half speed, <code>VoxelCity.WindStrength</code> sets the wind and <code>VoxelCity.SetChannel</code> controls each channel (wind, swing, flags, cloth, water, smoke, flicker, mechanisms, lights, night).</p></div>
+        </details>
+        <details>
+          <summary>A windmill or clock stopped turning around its axis. Why?</summary>
+          <div class="answer"><p>The pivot of each moving part is its axis, and static batching merges meshes and loses it. Do not mark animated objects as Batching Static; the prefabs ship without static flags.</p></div>
+        </details>
+        <details>
+          <summary>The water or the fountain looks wrong. What is missing?</summary>
+          <div class="answer"><p>Usually the Depth Texture. Water, waterfalls, fountains and the lighthouse beams read the scene depth, so turn it on in the URP Asset or on the camera.</p></div>
+        </details>
+        <details>
+          <summary>Does it work with the Built-in pipeline or HDRP?</summary>
+          <div class="answer"><p>No. The look and every animation come from the six included URP shaders, so the pack needs the Universal Render Pipeline.</p></div>
+        </details>
+        <details>
+          <summary>Is the sky in the images included?</summary>
+          <div class="answer"><p>The demo scene ships with a procedural skybox and its own post-processing. The gradient sky, color grading and light motes in the store images are a presentation setup for the screenshots and are not part of the pack.</p></div>
+        </details>
+        <details>
+          <summary>Can I use the pack in a commercial game?</summary>
+          <div class="answer"><p>Yes. The pack is sold under the standard Unity Asset Store EULA, which allows use in commercial games. It does not allow reselling or redistributing the assets themselves.</p></div>
+        </details>
+        <details>
+          <summary>Was AI used to make this pack?</summary>
+          <div class="answer"><p>Yes, and the store listing will say so too. The voxel models were built by an AI model (Anthropic Claude) that wrote modelling scripts for Blender; no text-to-3D or image-to-3D generator was used. The color palette, the six URP shaders, the C# components, the Unity prefabs, the demo scene and the documentation were made by the same process. The publisher defined the town and its catalogue, made the production decisions and decides what is published. The store images and the trailer are real-time Unity recordings of the pack's own prefabs; none was made with an AI image or video generator.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="band cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <p class="eyebrow">Support</p>
+      <h2 class="display" id="cta-title">Something not working?</h2>
+      <p class="lead">Tell us your Unity version, your render pipeline and what you see. We will help you sort it out.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="contact.html">Contact support</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="./" aria-label="Sug&#x27;s LowPoly home">
+          <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5NzMwN2M1ZS1iN2Q1LTQwZTEtODUwYy1iZWExMWUyZTA5ZDUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaExcunEe0mK5WV1+iVwfGboAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoyZmE1NmI4Ny1jYzRmLTRiMzQtYmViYi0yYWZmN2QwMGExYjBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNowfWQNdZeTULjVNl9eciM/AAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggoo6vVRgLgKvr/e0RtFqKIzhzky7ohCxXf8XM2bxRZ7ikZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaGBv52s2yxcYARkO8X48DkkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAVTv0TEpKd3uVlEnTUTVTuHFsujgzWxwNwVDwaVLcdLGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjk3MzA3YzVlLWI3ZDUtNDBlMS04NTBjLWJlYTExZTJlMDlkNS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjc3ZTY2OGU1LWEwZDUtNDAzOS04MGRhLTFhN2JjMmJlZDA5NnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCijq9VGAuAq+v97RG0WoojOHOTLuiELFd/xczZvFFnuKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggS9V3xRnsVH8oeGOuRynQxhuUXZj3qkyyDHsj8jSM3RqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggpIt2BOcqtvO/qD1bWjFMfgOIa3RfsLyRBag7An9fP8R0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQK4OBwgASMHvu6+ySZ1ZwsZs9i7fCKFOZsHu+LXQMMAwK/ay9P9viQqAwz6boM625A8xRcRaYuKQ33Kp2hIqToc=</c2pa:manifest></metadata><defs><clipPath id="r"><rect width="120" height="120" rx="22"/></clipPath></defs><g clip-path="url(#r)"><polygon points="0,0 70,0 56,66" fill="rgb(20,40,52)" stroke="rgb(20,40,52)" stroke-width="0.6"/><polygon points="70,0 120,0 56,66" fill="rgb(16,33,44)" stroke="rgb(16,33,44)" stroke-width="0.6"/><polygon points="120,0 120,52 56,66" fill="rgb(13,28,38)" stroke="rgb(13,28,38)" stroke-width="0.6"/><polygon points="120,52 120,120 56,66" fill="rgb(10,21,29)" stroke="rgb(10,21,29)" stroke-width="0.6"/><polygon points="120,120 44,120 56,66" fill="rgb(8,17,24)" stroke="rgb(8,17,24)" stroke-width="0.6"/><polygon points="44,120 0,120 56,66" fill="rgb(10,22,30)" stroke="rgb(10,22,30)" stroke-width="0.6"/><polygon points="0,120 0,74 56,66" fill="rgb(14,29,39)" stroke="rgb(14,29,39)" stroke-width="0.6"/><polygon points="0,74 0,0 56,66" fill="rgb(18,36,47)" stroke="rgb(18,36,47)" stroke-width="0.6"/><polygon points="98.00,14.50 39.65,14.50 48.35,35.50" fill="rgb(255,176,96)" stroke="rgb(255,176,96)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="98.00,14.50 48.35,35.50 84.00,35.50" fill="rgb(255,150,70)" stroke="rgb(255,150,70)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 17.50,36.65 38.50,45.35" fill="rgb(255,128,48)" stroke="rgb(255,128,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 38.50,45.35 48.35,35.50" fill="rgb(240,104,32)" stroke="rgb(240,104,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 17.50,51.76 38.50,42.24" fill="rgb(214,80,24)" stroke="rgb(214,80,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 38.50,42.24 38.50,45.35" fill="rgb(196,68,18)" stroke="rgb(196,68,18)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 40.05,71.50 47.95,50.50" fill="rgb(232,96,30)" stroke="rgb(232,96,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 47.95,50.50 38.50,42.24" fill="rgb(250,120,44)" stroke="rgb(250,120,44)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 71.65,71.50 80.35,50.50" fill="rgb(255,158,78)" stroke="rgb(255,158,78)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 80.35,50.50 47.95,50.50" fill="rgb(255,136,56)" stroke="rgb(255,136,56)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 81.50,81.35 102.50,72.65" fill="rgb(236,100,32)" stroke="rgb(236,100,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 102.50,72.65 80.35,50.50" fill="rgb(216,82,24)" stroke="rgb(216,82,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 81.50,76.65 102.50,85.35" fill="rgb(186,62,16)" stroke="rgb(186,62,16)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 102.50,85.35 102.50,72.65" fill="rgb(168,52,14)" stroke="rgb(168,52,14)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 71.65,86.50 80.35,107.50" fill="rgb(206,74,20)" stroke="rgb(206,74,20)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 80.35,107.50 102.50,85.35" fill="rgb(228,94,30)" stroke="rgb(228,94,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 22.00,86.50 36.00,107.50" fill="rgb(250,126,48)" stroke="rgb(250,126,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 36.00,107.50 80.35,107.50" fill="rgb(255,146,66)" stroke="rgb(255,146,66)" stroke-width="0.5" stroke-linejoin="round"/></g></svg>
+          <span class="brand-name">Sug's <span class="accent">LowPoly</span></span>
+        </a>
+        <p>Game-ready low-poly asset packs for Unity, with consistent pivots, real-world scale and specs you can check.</p>
+      </div>
+      <div>
+        <h4>Packs</h4>
+        <ul>
+          <li><a href="low-poly-enemy-melee-weapons.html">Low Poly Enemy Melee Weapons</a></li>
+          <li><a href="low-poly-enemy-encampment-props.html">Low Poly Enemy Encampment Props</a></li>
+          <li><a href="voxel-city-animated-town.html">Voxel City: Animated Town</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact &amp; support</a></li>
+          <li><a href="low-poly-enemy-melee-weapons.html#faq">Weapons FAQ</a></li>
+          <li><a href="low-poly-enemy-encampment-props.html#faq">Encampment FAQ</a></li>
+          <li><a href="voxel-city-animated-town.html#faq">Voxel City FAQ</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">&copy; <span id="year">2026</span> Sug&#x27;s LowPoly. All rights reserved. Unity and the Unity Asset Store are trademarks or registered trademarks of Unity Technologies or its affiliates. Sug&#x27;s LowPoly is an independent publisher and is not affiliated with, sponsored by or endorsed by Unity Technologies.</p>
+  </div>
+</footer>
+</body>
+</html>
+

@@ -85,7 +85,8 @@ h3.display { font-size: clamp(1.5rem, 2.6vw, 2rem); letter-spacing: .02em; }
 .nav-toggle { display: none; background: none; border: 0; color: var(--bone); padding: 10px; cursor: pointer; }
 .nav-toggle svg { width: 28px; height: 28px; display: block; }
 
-@media (max-width: 760px) {
+/* The full menu needs about 900 px with three packs in it; below that the header switches to the menu button. */
+@media (max-width: 900px) {
   .nav-toggle { display: block; }
   .nav { position: absolute; inset: 72px 0 auto 0; background: rgba(9, 18, 25, .98); border-bottom: 1px solid var(--line); display: none; }
   .nav.open { display: block; }
@@ -270,3 +271,13 @@ section > .wrap > h2.display { margin-bottom: 8px; }
 /* pack pages: each pack's banner behind the page title (the weapons pack uses the default above) */
 .page-head.with-art.art-encampment::after { background-image: url("../img/encampment/pack-banner-1100.webp"); }
 @media (min-width: 900px) { .page-head.with-art.art-encampment::after { background-image: url("../img/encampment/pack-banner-2000.webp"); } }
+.page-head.with-art.art-voxel-city::after { background-image: url("../img/voxel-city/pack-banner-1100.webp"); }
+@media (min-width: 900px) { .page-head.with-art.art-voxel-city::after { background-image: url("../img/voxel-city/pack-banner-2000.webp"); } }
+/* home page: with an odd number of packs the last card takes the whole row, image beside the text */
+@media (min-width: 901px) { .packs .pack:last-child:nth-child(odd) { grid-column: 1 / -1; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: center; } }
+/* home page: keep the "Coming soon" pill readable over bright card images */
+.pack-media .pill.soon { background: rgba(7, 13, 18, .78); }
+/* pack pages: optional trailer above the gallery (pack data "video") */
+.video { margin: 0 0 28px; }
+.video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--ink); border: 1px solid var(--line); }
+.video figcaption { margin-top: 10px; }

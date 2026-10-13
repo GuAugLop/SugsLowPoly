@@ -44,6 +44,7 @@
         <li><a href="./#packs" aria-current="page">Packs</a></li>
         <li><a href="low-poly-enemy-melee-weapons.html">Weapons</a></li>
         <li><a href="low-poly-enemy-encampment-props.html">Encampment</a></li>
+        <li><a href="voxel-city-animated-town.html">Voxel City</a></li>
         <li><a href="./#about">About</a></li>
         <li><a class="btn btn-primary" href="contact.html">Contact</a></li>
       </ul>
@@ -74,8 +75,8 @@
     <div class="wrap">
       <div class="section-head reveal">
         <p class="eyebrow">Packs</p>
-        <h2 class="display" id="packs-title">Two packs so far. Built properly.</h2>
-        <p class="lead">We would rather ship a few packs that are pleasant to use than dozens that need fixing. The two packs share one art direction, so the enemies and their camp fit in the same scene. More are planned, and each one will follow the same conventions.</p>
+        <h2 class="display" id="packs-title">Three packs so far. Built properly.</h2>
+        <p class="lead">We would rather ship a few packs that are pleasant to use than dozens that need fixing. The two enemy packs share one art direction, so the enemies and their camp fit in the same scene, and Voxel City builds a whole animated town in a voxel style. More are planned, and each one will follow the same conventions.</p>
       </div>
 
       <div class="packs">
@@ -121,6 +122,27 @@
           </div>
         </div>
       </article>
+      <article class="pack reveal">
+        <a class="pack-media" href="voxel-city-animated-town.html" aria-label="Voxel City: Animated Town, pack page">
+          <img src="assets/img/voxel-city/pack-card-1200.webp" width="1200" height="800" loading="lazy" alt="Key art of the Voxel City pack: a colorful voxel town of row houses and red roofs with a clock tower, windmills and a cathedral on the hill behind, at golden hour.">
+          <span class="pill soon"><span class="dot"></span>Coming soon</span>
+        </a>
+        <div>
+          <p class="eyebrow">3D &middot; Environments &middot; Urban</p>
+          <h3 class="display">Voxel City: Animated Town</h3>
+          <p class="muted">A whole voxel town in 214 prefabs: row houses, shops, landmarks, trees, a harbor and a steam train. Wind, water, smoke and machinery move in the shader, and one line of C# turns day into night.</p>
+          <ul class="facts" aria-label="Pack facts">
+            <li><b>214</b><span>Prefabs</span></li>
+            <li><b>8</b><span>Categories</span></li>
+            <li><b>115</b><span>Animated</span></li>
+            <li><b>16&sup2;</b><span>Palette texture</span></li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary" href="voxel-city-animated-town.html">View pack</a>
+            
+          </div>
+        </div>
+      </article>
       </div>
     </div>
   </section>
@@ -135,12 +157,12 @@
         <div class="card reveal">
           <span class="num">01</span>
           <h3>Attach and play</h3>
-          <p>Pivots sit where a hand or a socket goes. Axes are shared across the whole pack and one unit is always one meter.</p>
+          <p>Pivots sit where a hand, a socket or the ground meets the asset, and on the axle of every moving part. Axes are shared across each pack and one unit is always one meter.</p>
         </div>
         <div class="card reveal">
           <span class="num">02</span>
-          <h3>Light geometry</h3>
-          <p>Hundreds of triangles per asset, not tens of thousands: 331 on average for the weapons, 848 for the camp props. The faceted look comes from the mesh, so there are no normal maps to pay for.</p>
+          <h3>Lean geometry</h3>
+          <p>Hundreds of triangles per asset in the enemy packs: 331 on average for the weapons, 848 for the camp props, with the faceted look in the mesh instead of normal maps. Voxel City colors a whole town from one 16 &times; 16 palette texture.</p>
         </div>
         <div class="card reveal">
           <span class="num">03</span>
@@ -150,7 +172,7 @@
         <div class="card reveal">
           <span class="num">04</span>
           <h3>URP first</h3>
-          <p>Built and checked in Unity 6 with URP. Masks are channel-packed in the layout that Built-in and HDRP also read.</p>
+          <p>Built and checked in Unity 6 with URP. Each pack page says what changes in Built-in and HDRP, and which packs need URP.</p>
         </div>
       </div>
     </div>
@@ -170,10 +192,10 @@
         <p class="eyebrow">About</p>
         <h2 class="display" id="about-title">Small publisher, strict checklist</h2>
         <p>Sug&#x27;s LowPoly is an independent publisher of low-poly game assets for Unity. We make the kind of packs we want to find when prototyping: consistent, light, and honest about what is inside.</p>
-        <p><strong>How the packs are made.</strong> Our production pipeline is AI-assisted. Models are built through scripted Blender workflows driven by AI agents. Textures are baked and packed for Unity from AI-generated images (the weapons) or from procedural materials written in code (the camp props), and the Unity side, from import settings to prefabs, is automated as well. Before release, every asset is checked in the engine against fixed limits such as triangle count, scale and orientation. Each store listing says this plainly as well.</p>
+        <p><strong>How the packs are made.</strong> Our production pipeline is AI-assisted. Models are built through scripted Blender workflows driven by AI agents. Textures are baked and packed for Unity from AI-generated images (the weapons), from procedural materials written in code (the camp props) or from one small color palette (the voxel town), and the Unity side, from import settings to prefabs, is automated as well. Before release, every asset is checked in the engine against fixed limits such as triangle count, scale and orientation. Each store listing says this plainly as well.</p>
         <ul class="checks">
           <li><strong>One convention per pack</strong>, documented in its README.</li>
-          <li><strong>A demo scene</strong> that shows every asset.</li>
+          <li><strong>A demo scene</strong> that puts the assets to work.</li>
           <li><strong>Support by email</strong>, answered by the publisher.</li>
         </ul>
       </div>
@@ -189,6 +211,7 @@
         <a class="btn btn-primary" href="contact.html">Contact us</a>
         <a class="btn btn-ghost" href="low-poly-enemy-melee-weapons.html#faq">Weapons FAQ</a>
         <a class="btn btn-ghost" href="low-poly-enemy-encampment-props.html#faq">Encampment FAQ</a>
+        <a class="btn btn-ghost" href="voxel-city-animated-town.html#faq">Voxel City FAQ</a>
       </div>
     </div>
   </section>
@@ -209,6 +232,7 @@
         <ul>
           <li><a href="low-poly-enemy-melee-weapons.html">Low Poly Enemy Melee Weapons</a></li>
           <li><a href="low-poly-enemy-encampment-props.html">Low Poly Enemy Encampment Props</a></li>
+          <li><a href="voxel-city-animated-town.html">Voxel City: Animated Town</a></li>
         </ul>
       </div>
       <div>
@@ -217,6 +241,7 @@
           <li><a href="contact.html">Contact &amp; support</a></li>
           <li><a href="low-poly-enemy-melee-weapons.html#faq">Weapons FAQ</a></li>
           <li><a href="low-poly-enemy-encampment-props.html#faq">Encampment FAQ</a></li>
+          <li><a href="voxel-city-animated-town.html#faq">Voxel City FAQ</a></li>
           <li><a href="privacy.html">Privacy</a></li>
         </ul>
       </div>

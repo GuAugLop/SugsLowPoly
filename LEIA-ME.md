@@ -1,6 +1,6 @@
 # Site do publisher — Sug's LowPoly
 
-Site estático, em inglês, feito para servir de "Website" e "Customer Support" no perfil de publisher da Unity Asset Store. Tem página inicial com um card por pack, uma página para cada pack (Low Poly Enemy Melee Weapons e Low Poly Enemy Encampment Props: galeria, conteúdo, especificações, FAQ e um link cruzado "Pairs well with" entre as duas), página de contato dedicada, página de privacidade e página 404. Não depende de nenhum serviço externo: fontes e imagens ficam na própria pasta, não há cookies, rastreadores nem formulários.
+Site estático, em inglês, feito para servir de "Website" e "Customer Support" no perfil de publisher da Unity Asset Store. Tem página inicial com um card por pack, uma página para cada pack (Low Poly Enemy Melee Weapons, Low Poly Enemy Encampment Props e Voxel City: Animated Town: galeria, conteúdo, especificações, FAQ, um link cruzado "Pairs well with" entre os dois packs de inimigos e, no Voxel City, o trailer acima da galeria), página de contato dedicada, página de privacidade e página 404. Não depende de nenhum serviço externo: fontes e imagens ficam na própria pasta, não há cookies, rastreadores nem formulários.
 
 ## O que tem nesta pasta
 
@@ -26,7 +26,8 @@ Abra `site.json` e preencha:
   "pack_store_url": "",
   "store_urls": {
     "low-poly-enemy-melee-weapons": "",
-    "low-poly-enemy-encampment-props": ""
+    "low-poly-enemy-encampment-props": "",
+    "voxel-city-animated-town": ""
   },
   "publisher_store_url": ""
 }
@@ -46,16 +47,18 @@ python build.py
 |---|---|---|---|
 | Low Poly Enemy Melee Weapons (pacote 409356) | `low-poly-enemy-melee-weapons.html` | `store_urls` → `low-poly-enemy-melee-weapons` (ou `pack_store_url`) | https://assetstore.unity.com/packages/slug/409356 (curto: https://u3d.as/4bsg) |
 | Low Poly Enemy Encampment Props (pacote 410366) | `low-poly-enemy-encampment-props.html` | `store_urls` → `low-poly-enemy-encampment-props` | https://assetstore.unity.com/packages/slug/410366 (curto: https://u3d.as/4bTo) |
+| Voxel City: Animated Town (ainda não enviado) | `voxel-city-animated-town.html` | `store_urls` → `voxel-city-animated-town` | — |
 
 Cole o link só depois que o pack estiver publicado; antes disso ele não abre para o público. Depois de publicar os dois, também vale preencher `publisher_store_url` com a página do publisher na loja.
 
 ## Como adicionar um pack
 
 1. Copie um dos arquivos de `src/data/packs/` para `src/data/packs/<slug>.json`. O nome do arquivo é o slug, que vira também o nome da página (`<slug>.html`). O campo `order` define a ordem na página inicial e nos menus.
-2. Troque os textos. Campos que terminam em `_html`, as listas de parágrafos e de itens, os valores das especificações e as respostas do FAQ são HTML; os outros são texto simples. `nav_label` é o nome curto no menu do topo (precisa ser curto para caber em telas de 761 px). `pairs_with` é opcional e cria a seção "Pairs well with" com o card de outro pack.
+2. Troque os textos. Campos que terminam em `_html`, as listas de parágrafos e de itens, os valores das especificações e as respostas do FAQ são HTML; os outros são texto simples. `nav_label` é o nome curto no menu do topo (precisa ser curto: com três packs o menu completo precisa de uns 900 px, e abaixo disso aparece o botão de menu; o limite é a regra `max-width: 900px` do `site.css`). `pairs_with` é opcional e cria a seção "Pairs well with" com o card de outro pack.
 3. Ponha as imagens em `src/assets/img/<pasta-do-pack>/`: `gallery/NN-nome.webp` com 1800 × 1200 e `gallery/NN-nome-thumb.webp` com 720 × 480 (WebP qualidade 82), `pack-card-1200.webp` (1200 × 800), `pack-banner-2000.webp` (2000 × 1050) e `pack-banner-1100.webp` (1100 × 578), e `og-image.jpg` (1200 × 630). Aponte o bloco `images` do JSON para elas.
+   Opcional: o bloco `video` coloca um trailer acima da galeria. Ponha o MP4 (H.264 + AAC com `+faststart`, de preferência abaixo de 25 MB) em `src/assets/video/<pasta-do-pack>/` e um poster WebP de 1280 × 720 junto das imagens, e preencha `src`, `poster`, `width`, `height` e `caption_html` (veja o arquivo do Voxel City). O vídeo só é baixado quando a pessoa aperta play.
 4. O banner do topo da página vem do CSS, porque a política de segurança do site não aceita estilo dentro do HTML: copie as duas regras `art-encampment` do fim de `src/assets/css/site.css`, troque o nome e os caminhos e ponha o nome da classe em `images.banner_class`.
-5. Acrescente `"<slug>": ""` em `store_urls` no `site.json` e rode `python build.py`. A página, o card da página inicial, os links do topo e do rodapé e o `sitemap.xml` saem sozinhos; o build para com uma mensagem se faltar alguma imagem. Revise à mão o texto da seção de packs da página inicial ("Two packs so far"), que é fixo.
+5. Acrescente `"<slug>": ""` em `store_urls` no `site.json` e rode `python build.py`. A página, o card da página inicial, os links do topo e do rodapé e o `sitemap.xml` saem sozinhos; o build para com uma mensagem se faltar alguma imagem. Revise à mão o texto da seção de packs da página inicial ("Three packs so far"), que é fixo.
 
 ## Publicar no GitHub Pages
 
