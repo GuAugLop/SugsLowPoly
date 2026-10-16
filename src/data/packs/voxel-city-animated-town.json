@@ -7,7 +7,7 @@
  "nav_label": "Voxel City",
  "faq_label": "Voxel City FAQ",
  "title": "Voxel City: Animated Town | Sug's LowPoly",
- "description": "214 stylized voxel prefabs for a whole animated town: houses, shops, landmarks, trees, street props, a harbor, a steam train and modular tiles. URP shaders move wind, water, smoke and machinery, and one line of C# turns day into night.",
+ "description": "560 stylized voxel prefabs for a whole animated town: houses, shops, landmarks, a fairground with a turning Ferris wheel, a harbor, a steam train, stone stairs, detailed ground tiles and 264 facade decorations. URP shaders move wind, water, smoke and machinery, and one line of C# turns day into night.",
  "store_url": "",
  "uses_pack_store_url": false,
  "images": {
@@ -21,48 +21,49 @@
   "poster": "assets/img/voxel-city/trailer-poster.webp",
   "width": 1280,
   "height": 720,
-  "caption_html": "Trailer, 1:05, with sound. Recorded in real time in Unity 6 with URP, in the demo town that ships with the pack. The music is an original piece made for this trailer and is not part of the pack."
+  "caption_html": "Trailer, 1:33, with sound. Recorded in real time in Unity 6 with URP, in the demo town that ships with the pack. The music is an original piece made for this trailer and is not part of the pack."
  },
  "hero": {
   "name_html": "Voxel City: <span class=\"accent\">Animated</span> Town",
-  "lead_html": "214 stylized voxel prefabs for a whole town that moves: houses and shops, landmarks with working parts, trees, a harbor and a steam train, street props and snap-together ground tiles. Wind, water, smoke and machinery animate in the shader, and one line of C# turns day into night.",
-  "note_html": "Ships with the demo town from the trailer: 8,579 placed prefabs, about 225,000 instanced grass tufts and 195 lamps."
+  "lead_html": "560 stylized voxel prefabs for a whole town that moves: houses and shops, landmarks with working parts, a fairground with a turning Ferris wheel, a harbor and a steam train, stone stairs and lookouts, detailed ground tiles and 264 facade decorations. Wind, water, smoke and machinery animate in the shader, and one line of C# turns day into night.",
+  "note_html": "Ships with the demo town from the trailer: about 10,000 placed prefabs, a fairground reached by stairs and paths, and about 390 lamps."
  },
  "facts": [
   [
-   "214",
+   "560",
    "Prefabs"
   ],
   [
-   "8",
-   "Categories"
+   "264",
+   "Decorations"
   ],
   [
-   "115",
+   "132",
    "Animated prefabs"
   ],
   [
-   "16&times;16",
-   "Palette texture"
+   "93 s",
+   "Trailer"
   ]
  ],
  "overview_html": [
-  "Voxel City is a complete stylized town in one pack: <strong>cottages, town houses and eight color-coded row houses, eleven shops, civic buildings and ten landmarks, twenty trees with the plants, hedges and rocks around them, street lamps, benches, bridges and fountains, market stalls, boats, docks and a steam train</strong>, plus 26 modular 4 &times; 4 m ground tiles and the 55 terrain and water pieces of the demo world. Every prefab is ready to drop in, at real-world scale, and the whole town is colored from one small palette texture.",
-  "Motion is the point. Trees and crops sway in the wind, flags and awnings flap, chimneys smoke, boats float, windmill sails, clock hands, wheels and the lighthouse lens turn on real pivots, and the water pans and ripples. All of it runs in the vertex shader, so nothing needs an Animator or a script per object, and global channels for wind, mechanisms, lights and night change the whole town at once.",
-  "When night falls, windows, lamps and stained glass light up, and the lamp prefabs carry real lights that fade in with them. Characters, NPCs, traffic logic and gameplay scripts are not part of the pack; the train and the boats in the demo follow simple paths with the included <code>VoxelMover</code> component."
+  "Voxel City is a complete stylized town in one pack: <strong>cottages, town houses and eight canal-gable row houses, eleven shops, civic buildings and eight landmarks, a fairground with a Ferris wheel, carousel and circus tent, twenty-one trees with the plants, hedges and topiary around them, street lamps, a working street clock, benches, bridges and fountains, market stalls, boats, docks, a steam train with a level crossing, stone stairs and lookouts</strong>, plus 26 detailed 4 &times; 4 m ground tiles, 264 facade decorations and the 55 terrain and water pieces of the demo world. Every prefab is ready to drop in, at real-world scale, with hand-shaded voxel textures and baked ambient occlusion.",
+  "Motion is the point. Trees and crops sway in the wind, flags, bunting and awnings flap, chimneys smoke, boats float, windmill sails, clock hands, wheels, the carousel and the lighthouse lens turn on real pivots, the Ferris wheel turns with its gondolas hanging level, and the water pans and ripples. Nearly all of it runs in the vertex shader, so nothing needs an Animator, and global channels for wind, mechanisms, lights and night change the whole town at once.",
+  "When night falls, windows, lamps, fair bulbs and stained glass light up, and the lamp prefabs carry real lights that fade in with them. The <code>VoxelLine</code> tool draws wood fences, picket fences and strings of bunting along any curve. Characters, NPCs, traffic logic and gameplay scripts are not part of the pack; the train and the boats in the demo follow simple paths with the included <code>VoxelMover</code> component."
  ],
  "checks_html": [
-  "<strong>Day to night in one line:</strong> <code>VoxelCity.SetNight(true, 3f)</code> fades in lamps and windows, and the included controller follows with sun, moon, ambient light and fog",
+  "<strong>Day to night in one line:</strong> <code>VoxelCity.SetNight(true, 3f)</code> fades in lamps, windows and fair bulbs, and the included controller follows with sun, moon, ambient light and fog",
   "<strong>Shader-driven animation</strong> for wind, foliage, crops, swing, cloth, flags, floating, rotation and grass, SRP Batcher compatible",
-  "<strong>Moving parts on real pivots:</strong> 41 prefabs have separate sails, hands, bells, wheels or awnings you can drive from code",
-  "<strong>26 modular ground tiles</strong>, 4 &times; 4 m, for roads, paths, plazas, fields, beach and quay",
-  "<strong>1 unit = 1 meter</strong>, Y up, colliders on 204 of the 214 prefabs",
-  "<strong>Editor preview:</strong> the scene animates in edit mode, with a menu to preview the night",
-  "<strong>A demo scene</strong> with the whole town, a fly camera and a README"
+  "<strong>Moving parts on real pivots:</strong> 58 prefabs have separate sails, hands, bells, wheels, rides or awnings you can drive from code; the Ferris wheel and the village well have their own components",
+  "<strong>Curved fences and bunting:</strong> the <code>VoxelLine</code> tool follows any curve, with gates and openings, in one merged mesh",
+  "<strong>264 facade decorations</strong> in 15 families, one model per surface: window boxes, climbers, lanterns, string lights, awnings, wreaths and more",
+  "<strong>26 detailed ground tiles</strong>, 4 &times; 4 m, for roads, curved paths, plazas, fields, beach and quay, plus 14 modular stone stairs and lookouts",
+  "<strong>1 unit = 1 meter</strong>, Y up, colliders on 286 prefabs (decorations have none)",
+  "<strong>A demo scene</strong> with the whole town, a fly camera with adjustable field of view and a README"
  ],
  "gallery": {
   "title_html": "The whole town, on the record",
-  "lead_html": "All images are real-time renders of the actual prefabs in Unity 6 with URP. Images 01 and 03 to 09 show the demo town that ships with the pack; the category sheets print the name, triangle count and size of each prefab, at a compressed display scale so that small and large pieces fit side by side.",
+  "lead_html": "All images are real-time renders of the actual prefabs in Unity 6 with URP. The scene images show the demo town that ships with the pack; the category sheets print the name, triangle count and size of each prefab, at a compressed display scale so that small and large pieces fit side by side.",
   "note_html": "The gradient sky, color grading and floating light motes in the images are a presentation setup for the screenshots. The demo scene ships with its own procedural skybox and post-processing.",
   "images": [
    [
@@ -71,7 +72,7 @@
    ],
    [
     "02-overview-all-prefabs",
-    "All 214 prefabs in 8 categories"
+    "All 560 prefabs in 8 families"
    ],
    [
     "03-day-to-night",
@@ -79,163 +80,432 @@
    ],
    [
     "04-light-up-the-night",
-    "Light up the night: 195 lamps in the demo"
+    "Light up the night: about 390 lamps in the demo"
    ],
    [
     "05-everything-moves",
-    "Everything moves, in the vertex shader"
+    "Everything moves: Ferris wheel, carousel, sails, clocks, fountains and crops"
    ],
    [
-    "06-streets-with-character",
-    "Streets with character: 8 colored row houses"
+    "06-the-fairground",
+    "The fairground: Ferris wheel, carousel, circus tent and treat carts"
    ],
    [
-    "07-built-around-landmarks",
-    "Built around landmarks: 10 hero buildings"
+    "07-fun-after-dark",
+    "The fair after dark"
    ],
    [
-    "08-living-water",
-    "Living water: sea, rivers, ponds and fountains"
+    "08-routes-and-stairs",
+    "Routes and stairs: 14 modular stone pieces and a lookout"
    ],
    [
-    "09-town-to-countryside",
-    "Town to countryside: fields with wind-driven crops"
+    "09-curved-fences-and-bunting",
+    "Curved fences and bunting with the VoxelLine tool"
    ],
    [
-    "10-sheet-houses",
+    "10-264-decorations",
+    "264 facade decorations in 15 families"
+   ],
+   [
+    "11-dressed-to-the-detail",
+    "Decorated shopfronts and facades"
+   ],
+   [
+    "12-streets-with-character",
+    "Streets with character: eight row houses"
+   ],
+   [
+    "13-built-around-landmarks",
+    "Built around landmarks: 8 hero buildings"
+   ],
+   [
+    "14-living-water",
+    "Living water: sea, harbor, ponds and fountains"
+   ],
+   [
+    "15-the-countryside",
+    "The countryside: fields, a hedge maze and lavender"
+   ],
+   [
+    "16-sheet-houses",
     "Houses & Row Houses: 19 prefabs"
    ],
    [
-    "11-sheet-shops-civic",
+    "17-sheet-shops-civic",
     "Shops & Civic: 16 prefabs"
    ],
    [
-    "12-sheet-landmarks",
-    "Landmarks: 10 prefabs"
+    "18-sheet-landmarks",
+    "Landmarks: 8 prefabs"
    ],
    [
-    "13-sheet-trees",
-    "Trees: 20, plus 5 LOD trees"
+    "19-sheet-trees",
+    "Trees: 21, plus 5 light trees"
    ],
    [
-    "14-sheet-plants-rocks",
-    "Plants & Rocks: 17 prefabs"
+    "20-sheet-plants-rocks",
+    "Plants & Rocks: 20 prefabs"
    ],
    [
-    "15-sheet-street-plaza",
-    "Street & Plaza: 26 prefabs"
+    "21-sheet-street-props",
+    "Street props: 21 prefabs"
    ],
    [
-    "16-sheet-market-harbor-rail",
-    "Market, Harbor & Rail: 20 prefabs"
+    "22-sheet-plaza-garden",
+    "Plaza & Garden: 27 prefabs"
    ],
    [
-    "17-sheet-modular-tiles",
-    "Modular tiles: 26 prefabs, 4 × 4 m"
+    "23-sheet-park-fairground",
+    "Park & Fairground: 29 prefabs"
    ],
    [
-    "18-one-palette",
-    "One tiny palette: 16 × 16 px for the whole town"
+    "24-sheet-market-harbor-rail-works",
+    "Market, Harbor, Rail & Works: 35 prefabs"
    ],
    [
-    "19-plug-and-play",
-    "Plug and play: a C# API and 8 components"
+    "25-sheet-ground-tiles",
+    "Modular ground tiles: 26 prefabs, 4 &times; 4 m"
    ],
    [
-    "20-whats-inside",
+    "26-sheet-stairs-lookouts",
+    "Stairs & Lookouts: 14 modular pieces"
+   ],
+   [
+    "27-crafted-detail",
+    "Crafted detail: hand-shaded voxels with baked AO"
+   ],
+   [
+    "28-plug-and-play",
+    "Plug and play: a C# API and components"
+   ],
+   [
+    "29-whats-inside",
     "What is inside the pack"
    ]
   ]
  },
- "contents_title_html": "214 prefabs in 8 categories",
+ "contents_title_html": "560 prefabs in 8 families",
  "categories": [
   {
-   "name": "Houses & Row Houses",
-   "count": 19,
-   "blurb": "Cottages, town houses, tall houses and a villa, plus eight row houses in eight colors. Chimneys smoke and window plants sway.",
+   "name": "Buildings",
+   "count": 43,
+   "blurb": "Eleven houses, eight canal-gable row houses, eleven shopfronts with awnings, three civic buildings, a farm shed, a harbor warehouse and eight landmarks with working parts.",
    "items": [
-    "Cottage A", "Cottage B", "Farmer's House", "Town House A", "Town House B", "Town House C", "Town House D", "Town House E",
-    "Tall House A", "Tall House B", "Villa", "Row House in blue, lime, orange, pink, red, teal, white and yellow"
-   ]
-  },
-  {
-   "name": "Shops & Civic",
-   "count": 16,
-   "blurb": "Eleven shopfronts with cloth awnings and signs, three civic buildings, a farm shed and a harbor warehouse.",
-   "items": [
-    "Apothecary", "Bakery", "Bistro", "Cafe", "Florist", "Grocer", "Hattery", "Perfumer", "Pub", "Tailor", "Winery",
-    "Mayor's House", "Research Center", "Social Club", "Farm Shed", "Harbor Warehouse"
-   ]
-  },
-  {
-   "name": "Landmarks",
-   "count": 10,
-   "blurb": "Hero buildings with working parts: turning sails, clock hands, swinging bells and a rotating lighthouse lens with two light beams. The windmill also comes as base and sails.",
-   "items": [
-    "Cathedral", "Train Station", "Town Hall", "Church", "Lighthouse", "Windmill", "Windmill Base", "Windmill Sails", "Observatory", "Obelisk"
+    "House Cottage A",
+    "House Cottage B",
+    "House Farmer",
+    "House Tall A",
+    "House Tall B",
+    "House Town A",
+    "House Town B",
+    "House Town C",
+    "House Town D",
+    "House Town E",
+    "House Villa",
+    "Row House in blue, lime, orange, pink, red, teal, white and yellow",
+    "Apothecary",
+    "Bakery",
+    "Bistro",
+    "Cafe",
+    "Florist",
+    "Grocer",
+    "Hattery",
+    "Perfumer",
+    "Pub",
+    "Tailor",
+    "Winery",
+    "Mayor House",
+    "Research Center",
+    "Social Club",
+    "Shed Farm",
+    "Warehouse Harbor",
+    "Cathedral",
+    "Church",
+    "Lighthouse",
+    "Obelisk",
+    "Observatory",
+    "Town Hall",
+    "Train Station",
+    "Windmill"
    ]
   },
   {
    "name": "Nature",
-   "count": 42,
-   "blurb": "Twenty wind-animated trees in seasonal colors, five light LOD trees for distant hills, fifteen plants with foliage motion and two rock sets.",
+   "count": 46,
+   "blurb": "Twenty-one wind-animated trees with two LOD levels, five light trees for distant hills, eighteen plants, hedges and topiary animals, and two rock sets.",
    "items": [
-    "Big Oak", "Round Tree A", "Round Tree B", "Olive", "Orange Tree", "Autumn Tree", "Red Tree", "Blossom Tree", "Pink Ipe", "Yellow Ipe",
-    "Magenta Tree", "Purple Tree", "Big Purple Tree", "Willow", "Birch", "Poplar", "Cypress", "Pine", "Big Pine", "Palm",
-    "5 LOD trees", "Bush", "Flowering Bush", "Hydrangea", "Lavender", "Rose Bush", "Flower Bed", "Round Flower Bed", "Hedge", "Hedge Arch",
-    "Hedge Corner", "Ball, Cone and Spiral Topiary", "Ivy", "Lily Pads", "Big Rock", "Rocks"
+    "Autumn",
+    "Birch",
+    "Blossom",
+    "Cloud",
+    "Cypress",
+    "Ipe Pink",
+    "Ipe Yellow",
+    "Magenta",
+    "Oak Big",
+    "Olive",
+    "Orange",
+    "Palm",
+    "Pine",
+    "Pine Big",
+    "Poplar",
+    "Purple",
+    "Purple Big",
+    "Red",
+    "Round A",
+    "Round B",
+    "Willow",
+    "5 light trees",
+    "Bush A",
+    "Bush Flower",
+    "Bush Hydrangea",
+    "Bush Lavender",
+    "Bush Rose",
+    "Flower Bed",
+    "Flower Bed Round",
+    "Hedge",
+    "Hedge Arch",
+    "Hedge Corner",
+    "Lily Pads",
+    "Topiary Ball",
+    "Topiary Bear",
+    "Topiary Cone",
+    "Topiary Rabbit",
+    "Topiary Spiral",
+    "Topiary Swan",
+    "Vine Ivy",
+    "Rock Big",
+    "Rocks"
    ]
   },
   {
-   "name": "Street & Plaza",
+   "name": "Street, Plaza & Stairs",
+   "count": 62,
+   "blurb": "Lamps that switch on at dusk, a working street clock, benches, fences and fence kits, bridges, fountains, a well, pergolas, planters, statues, a hedge maze, and 14 stone stair pieces and lookouts.",
+   "items": [
+    "Bench",
+    "Bench Park",
+    "Bench Stone",
+    "Bollard Street",
+    "Bridge Arch",
+    "Bridge Stone",
+    "Fence Kit Picket",
+    "Fence Kit Wood",
+    "Fence Picket",
+    "Fence Wood",
+    "Flag Pole",
+    "Lamp Garden",
+    "Lantern Wall",
+    "Notice Board",
+    "Postbox",
+    "Sidewalk Sign",
+    "Signpost",
+    "Street Clock",
+    "Street Lamp",
+    "Street Lamp Double",
+    "Trash Can",
+    "Fountain Animated",
+    "Birdbath",
+    "Cafe Table",
+    "Canal End",
+    "Canal Straight",
+    "Drinking Fountain",
+    "Fountain",
+    "Fountain Wall",
+    "Gazebo",
+    "Hedge Maze",
+    "Parasol",
+    "Pergola",
+    "Pergola Blue",
+    "Pergola Green",
+    "Pergola White",
+    "Planter Box",
+    "Planter Box Blue",
+    "Planter Box Oak",
+    "Planter Box White",
+    "Planter Pot",
+    "Planter Pot Blue",
+    "Planter Pot Green",
+    "Planter Pot Stone",
+    "Statue Founder",
+    "Statue Lion",
+    "Sundial",
+    "Well",
+    "Lookout Platform",
+    "Lookout Platform Pass",
+    "Stairs Stone",
+    "Stairs Stone Base",
+    "Stairs Stone Base Cap",
+    "Stairs Stone End",
+    "Stairs Stone Landing",
+    "Stairs Stone Landing Open",
+    "Stairs Stone Mid",
+    "Stairs Stone Rail",
+    "Stairs Stone Rail Level",
+    "Stairs Stone Rail Mid",
+    "Stairs Stone Rail Step",
+    "Stairs Stone Step"
+   ]
+  },
+  {
+   "name": "Park & Fairground",
+   "count": 29,
+   "blurb": "Ferris wheel, carousel, circus tent, ticket booth, popcorn cart and lemonade stand, a bunting kit, a playground and picnic sets.",
+   "items": [
+    "Book Nook",
+    "Bunting Kit",
+    "Carousel",
+    "Circus Tent",
+    "Climbing Dome",
+    "Ferris Wheel",
+    "Garden Arch",
+    "Garden Arch Clematis",
+    "Garden Arch Honeysuckle",
+    "Garden Arch Wisteria",
+    "Lemonade Stand",
+    "Picnic Blanket",
+    "Picnic Blanket Beach",
+    "Picnic Blanket Music",
+    "Picnic Blanket Tea",
+    "Picnic Table",
+    "Picnic Table Empty",
+    "Picnic Table Feast",
+    "Picnic Table Fruit",
+    "Picnic Table Tea",
+    "Popcorn Cart",
+    "Roundabout",
+    "Sandbox",
+    "Seesaw",
+    "Slide",
+    "Stepping Stones",
+    "Swing Bench",
+    "Swing Set",
+    "Ticket Booth"
+   ]
+  },
+  {
+   "name": "Market, Harbor, Rail & Works",
+   "count": 35,
+   "blurb": "Market stalls and carts, boats, docks and cargo, a locomotive and coach with lit windows, platform, rail, level crossing and tunnel, and a building site.",
+   "items": [
+    "Cart",
+    "Ice Cream Cart",
+    "Market Stall Bread",
+    "Market Stall Fish",
+    "Market Stall Flowers",
+    "Market Stall Fruit",
+    "Produce Crates",
+    "Barrel",
+    "Boat Fishing",
+    "Boat Row",
+    "Boat Sail",
+    "Bollard",
+    "Buoy",
+    "Crate",
+    "Crate Stack",
+    "Dock End",
+    "Dock Straight",
+    "Lobster Traps",
+    "Net Rack",
+    "Rail Crossing",
+    "Rail Straight",
+    "Station Platform",
+    "Train Coach",
+    "Train Loco",
+    "Tunnel Portal",
+    "Brick Pile",
+    "Crane",
+    "Ladder",
+    "Road Barrier",
+    "Sand Pile",
+    "Scaffold",
+    "Timber Stack",
+    "Wheelbarrow",
+    "Workbench",
+    "Haystack"
+   ]
+  },
+  {
+   "name": "Modular Ground Tiles",
    "count": 26,
-   "blurb": "Lamps that switch on at dusk, benches, fences, bridges, fountains, a gazebo, a pergola and a whole hedge maze.",
+   "blurb": "4 × 4 m tiles, each with its own detailed material: roads, crossings, curved dirt and cobble paths, plazas, grass, fields with waving crops, beach, seabed, water and quay.",
    "items": [
-    "Street Lamp", "Double Street Lamp", "Garden Lamp", "Wall Lantern", "Bench", "Park Bench", "Stone Bench", "Picket Fence", "Wooden Fence",
-    "Signpost", "Flag Pole", "Arch Bridge", "Stone Bridge", "Animated Fountain", "Fountain", "Wall Fountain", "Birdbath", "Well", "Gazebo",
-    "Pergola", "Hedge Maze", "Planter Box", "Planter Pot", "Cafe Table", "Canal", "Canal End"
+    "Cobble",
+    "Dirt",
+    "Gravel",
+    "Path Cobble",
+    "Path Cobble Corner",
+    "Path Dirt",
+    "Path Dirt Corner",
+    "Paving",
+    "Road Corner",
+    "Road Cross",
+    "Road Crosswalk",
+    "Road End",
+    "Road Straight",
+    "Road T",
+    "Grass",
+    "Grass Flowers",
+    "Plaza",
+    "Plaza Center",
+    "Field Veg",
+    "Field Wheat",
+    "Lavender",
+    "Vineyard",
+    "Beach",
+    "Seabed",
+    "Water",
+    "Quay"
    ]
   },
   {
-   "name": "Market, Harbor & Rail",
-   "count": 20,
-   "blurb": "Market stalls with flapping awnings, floating boats with sails, docks and cargo, and a steam train with turning wheels.",
+   "name": "Facade Decorations",
+   "count": 264,
+   "blurb": "Fifteen families with one model for every spot they fit (window sills, window tops, doors, walls, ledges, roof edges and the ground) and several looks each.",
    "items": [
-    "Bread Stall", "Fish Stall", "Flower Stall", "Fruit Stall", "Cart", "Sailboat", "Fishing Boat", "Rowboat", "Dock", "Dock End",
-    "Barrel", "Crate", "Crate Stack", "Bollard", "Locomotive", "Coach", "Station Platform", "Rail", "Tunnel Portal", "Haystack"
-   ]
-  },
-  {
-   "name": "Modular Tiles",
-   "count": 26,
-   "blurb": "4 × 4 m ground tiles that snap together: roads, crossings, paths, plazas, fields with waving crops, beach, seabed, water and quay.",
-   "items": [
-    "Road Straight", "Road Corner", "Road T", "Road Cross", "Crosswalk", "Road End", "Cobble", "Paving", "Gravel", "Dirt",
-    "Cobble Path", "Cobble Path Corner", "Dirt Path", "Dirt Path Corner", "Grass", "Grass with Flowers", "Plaza", "Plaza Center",
-    "Wheat Field", "Vegetable Field", "Lavender Field", "Vineyard", "Beach", "Seabed", "Water", "Quay"
+    "Window boxes (32)",
+    "Climbing flowers (30)",
+    "Hanging baskets (27)",
+    "Lavender (22)",
+    "Bunting (18)",
+    "Pumpkins (18)",
+    "Wreaths and garlands (18)",
+    "Shop signs (15)",
+    "Sunflowers (14)",
+    "Awnings (12)",
+    "Birdhouses (12)",
+    "Candles (12)",
+    "Lanterns (12)",
+    "String lights (12)",
+    "Ivy (10)"
    ]
   },
   {
    "name": "World Terrain & Water",
    "count": 55,
-   "blurb": "The pieces the demo world is built from, ready to reuse: the city base, hilly terrain chunks around the town, a wider ring of far chunks, the ocean floor and two water surfaces.",
+   "blurb": "The terrain of the demo world: the city base, terrain chunks, far terrain, ocean floor and two water surfaces.",
    "items": [
-    "City Base", "26 terrain chunks (up to 64 × 64 m)", "25 far terrain chunks", "Ocean Seabed", "Ocean Water", "Pond Water"
+    "City base",
+    "25 terrain chunks",
+    "24 far terrain chunks",
+    "2 river fills",
+    "Ocean seabed",
+    "Ocean and pond water"
    ]
   }
  ],
  "specs": [
   [
    "Prefabs",
-   "214, sorted by category; 41 with separate moving parts, 5 with real lights"
+   "560, sorted by family: 505 town prefabs plus 55 world terrain and water pieces; 58 with separate moving parts, 76 with real lights"
   ],
   [
    "Meshes",
-   "359 FBX files, 1 unit = 1 m, Y up, no embedded materials"
+   "957 FBX files, 1 unit = 1 m, Y up, no embedded materials"
   ],
   [
    "Triangles",
-   "52 to 62,380 per prefab outside the world pieces, 2,859 on average (houses 2,010 to 5,230); the 55 terrain and water pieces add about 2.9 million"
+   "12 to 110,190 per prefab outside the world pieces (the cathedral is the largest), about 3,200 on average"
   ],
   [
    "Shaders",
@@ -243,31 +513,31 @@
   ],
   [
    "Materials",
-   "28: 25 on the included shaders, 2 URP Lit and the demo skybox"
+   "45 on the included shaders, plus the demo skybox"
   ],
   [
    "Textures",
-   "5 PNG files: the 16 &times; 16 color palette and its emissive twin, a 512 &times; 512 water normal, waterfall streaks and foam"
+   "Hand-shaded 4096 color atlases with baked AO and emissive twins, a 4096 &times; 1024 decoration atlas, the 16 &times; 16 palette for terrain and tiles, a ground detail atlas, water normal, water streaks and foam (PNG)"
   ],
   [
    "Animation",
-   "Vertex animation in the shader in 9 modes (wind, foliage, crops, swing, rotate, cloth, flag, float, grass), driven by 10 global channels. No Animator, no AnimationClips"
+   "Vertex animation in the shader in 9 modes (wind, foliage, crops, swing, rotate, cloth, flag, float, grass), driven by 10 global channels, plus scripted Ferris wheel and well. No AnimationClips"
   ],
   [
    "Scripts",
-   "10 C# files in the <code>VoxelCityKit</code> namespace: the <code>VoxelCity</code> API, 8 components and the editor preview"
+   "15 C# files in the <code>VoxelCityKit</code> namespace: the <code>VoxelCity</code> API, components, the <code>VoxelLine</code> tool and the editor preview"
   ],
   [
    "Colliders",
-   "Box or mesh colliders on 204 of the 214 prefabs"
+   "Box or mesh colliders on 286 prefabs; decorations have none"
   ],
   [
    "Demo scene",
-   "8,579 placed prefabs, about 225,000 instanced grass tufts, 193 point lights and 2 spot lights"
+   "About 10,000 placed prefabs, instanced grass and 393 point lights"
   ],
   [
    "LODs, rig, character animation",
-   "5 separate low-detail trees for distant hills; no LOD Groups, rigs or characters"
+   "21 trees with a 2-level LOD Group and 5 light trees for distant hills; no rigs or characters"
   ],
   [
    "Made with",
@@ -278,7 +548,7 @@
   "eyebrow_html": "Compatibility",
   "title_html": "Render pipelines",
   "paragraphs_html": [
-   "<strong>Universal Render Pipeline:</strong> required. The materials use the six included URP shaders, which is where the animation lives. Turn on the Depth Texture (in the URP Asset or on the camera) for the water, waterfalls, fountains and light beams; the demo camera does it for you. The Forward+ renderer is recommended for scenes with many lamps.",
+   "<strong>Universal Render Pipeline:</strong> required. The materials use the six included URP shaders, which is where the animation lives. Turn on the Depth Texture (in the URP Asset or on the camera) for the water, fountains and lighthouse beams; the demo camera does it for you. The Forward+ renderer is recommended for scenes with many lamps.",
    "<strong>Built-in and HDRP:</strong> not supported. The shaders are written for URP, so in another pipeline the materials render pink and nothing moves.",
    "<strong>Performance:</strong> the animation costs no CPU per object. In big scenes the cost is in real lights and grass: lower the grass density or draw distance, switch off lamp lights you do not need and set the shadow distance in the URP Asset.",
    "<strong>Not included:</strong> characters, NPCs, traffic or gameplay scripts, audio, and the presentation sky and effects of the store images."
@@ -298,8 +568,16 @@
    "<p>The pivot of each moving part is its axis, and static batching merges meshes and loses it. Do not mark animated objects as Batching Static; the prefabs ship without static flags.</p>"
   ],
   [
+   "How do I draw a curved fence or a string of bunting?",
+   "<p>Use <code>GameObject &gt; VoxelCity &gt; Line</code> and pick Wood Fence, Picket Fence or Bunting, then click in the Scene view to add points. The posts, rails, pickets or pennants follow the curve, and marks turn a bay into a gate or an opening. The result is one merged mesh with a collider per bay; <strong>Bake To Mesh Asset</strong> in the inspector saves it as a normal mesh.</p>"
+  ],
+  [
+   "Do the decorations snap to the buildings?",
+   "<p>The 264 decorations are ordinary prefabs: drag them onto windows, doors, walls and roofs. Each family has its own model for every spot, and the buildings carry empty <code>VXS_</code> attach points that mark where each kind fits.</p>"
+  ],
+  [
    "The water or the fountain looks wrong. What is missing?",
-   "<p>Usually the Depth Texture. Water, waterfalls, fountains and the lighthouse beams read the scene depth, so turn it on in the URP Asset or on the camera.</p>"
+   "<p>Usually the Depth Texture. Water, fountains and the lighthouse beams read the scene depth, so turn it on in the URP Asset or on the camera.</p>"
   ],
   [
    "Does it work with the Built-in pipeline or HDRP?",
@@ -320,25 +598,25 @@
  ],
  "card": {
   "eyebrow_html": "3D &middot; Environments &middot; Urban",
-  "blurb_html": "A whole voxel town in 214 prefabs: row houses, shops, landmarks, trees, a harbor and a steam train. Wind, water, smoke and machinery move in the shader, and one line of C# turns day into night.",
+  "blurb_html": "A whole voxel town in 560 prefabs: row houses, shops, landmarks, a fairground, a harbor, a steam train and 264 facade decorations. Wind, water, smoke and machinery move in the shader, and one line of C# turns day into night.",
   "facts": [
    [
-    "214",
+    "560",
     "Prefabs"
    ],
    [
-    "8",
-    "Categories"
+    "264",
+    "Decorations"
    ],
    [
-    "115",
+    "132",
     "Animated"
    ],
    [
-    "16&sup2;",
-    "Palette texture"
+    "8",
+    "Families"
    ]
   ],
-  "image_alt": "Key art of the Voxel City pack: a colorful voxel town of row houses and red roofs with a clock tower, windmills and a cathedral on the hill behind, at golden hour."
+  "image_alt": "Voxel City site card: a colorful voxel town of row houses and red roofs at golden hour, with windmills, a cathedral and forested hills behind."
  }
 }

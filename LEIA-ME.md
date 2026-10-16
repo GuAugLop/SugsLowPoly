@@ -47,7 +47,7 @@ python build.py
 |---|---|---|---|
 | Low Poly Enemy Melee Weapons (pacote 409356) | `low-poly-enemy-melee-weapons.html` | `store_urls` → `low-poly-enemy-melee-weapons` (ou `pack_store_url`) | https://assetstore.unity.com/packages/slug/409356 (curto: https://u3d.as/4bsg) |
 | Low Poly Enemy Encampment Props (pacote 410366) | `low-poly-enemy-encampment-props.html` | `store_urls` → `low-poly-enemy-encampment-props` | https://assetstore.unity.com/packages/slug/410366 (curto: https://u3d.as/4bTo) |
-| Voxel City: Animated Town (ainda não enviado) | `voxel-city-animated-town.html` | `store_urls` → `voxel-city-animated-town` | — |
+| Voxel City: Animated Town (pacote 417282, em revisão) | `voxel-city-animated-town.html` | `store_urls` → `voxel-city-animated-town` | — |
 
 Cole o link só depois que o pack estiver publicado; antes disso ele não abre para o público. Depois de publicar os dois, também vale preencher `publisher_store_url` com a página do publisher na loja.
 
