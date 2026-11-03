@@ -1,0 +1,386 @@
+{
+ "_about": "Content of the pack page. Fields ending in _html, and every list of paragraphs, answers and spec values, are HTML written by hand; plain fields are escaped by build.py. The optional videos list (or the older single video block) adds the videos above the gallery; pairs_with lists the packs shown under \"Pairs well with\".",
+ "order": 4,
+ "slug": "voxel-city-characters",
+ "name": "Voxel City: Characters",
+ "short_name": "Characters",
+ "nav_label": "Characters",
+ "faq_label": "Characters FAQ",
+ "title": "Voxel City: Characters | Sug's LowPoly",
+ "description": "Voxel townsfolk for Unity URP and the Character Creator that makes them: 7 ready-made Humanoid characters, 232 pieces in 27 categories, 24 bodies and 91 color ramps. One click writes a game-ready prefab with one mesh, one material and one draw call, and the creator runs in your game too.",
+ "store_url": "",
+ "uses_pack_store_url": false,
+ "images": {
+  "gallery_dir": "assets/img/characters/gallery",
+  "card": "assets/img/characters/pack-card-1200.webp",
+  "og": "assets/img/characters/og-image.jpg",
+  "banner_class": "art-characters"
+ },
+ "videos": [
+  {
+   "src": "assets/video/characters/character-creator-editor-1080p.mp4",
+   "poster": "assets/img/characters/editor-poster.webp",
+   "width": 1920,
+   "height": 1080,
+   "caption_html": "In the Unity Editor, 0:51, with sound: bodies, hair, outfits and colors in the Character Creator window, the validator and one click to a prefab."
+  },
+  {
+   "src": "assets/video/characters/character-creator-in-game-1080p.mp4",
+   "poster": "assets/img/characters/in-game-poster.webp",
+   "width": 1920,
+   "height": 1080,
+   "caption_html": "In your game, 1:04, with sound: the in-game creator demo scene that ships with the pack. Both videos are rendered in Unity 6 with URP; the music is original and not part of the pack."
+  }
+ ],
+ "hero": {
+  "name_html": "Voxel City: <span class=\"accent\">Characters</span>",
+  "lead_html": "Voxel townsfolk and the Character Creator that makes them. Start from one of 25 presets, pick from 232 pieces in 27 categories, shape one of 24 bodies, color it with hand-shaded ramps and generate a game-ready prefab in one click: one skinned mesh, one material and one draw call on a 21-bone Humanoid rig. The same creator runs in your game, so your players can make their own.",
+  "note_html": "No animation clips are included: the characters play Humanoid clips, from Mixamo or your own, through your Animator Controller. The seven ready-made townsfolk come as one FBX each."
+ },
+ "facts": [
+  [
+   "7",
+   "Townsfolk"
+  ],
+  [
+   "232",
+   "Creator pieces"
+  ],
+  [
+   "24",
+   "Bodies"
+  ],
+  [
+   "1",
+   "Draw call"
+  ]
+ ],
+ "overview_html": [
+  "Voxel City: Characters is two things in one pack: <strong>seven ready-made voxel townsfolk</strong> (Townsman, Baker, Fisher, Gardener, Clerk, Elder and Youth), each one Humanoid FBX with its prefab, and the <strong>Character Creator</strong>, a Unity Editor window (<code>Tools &gt; Voxel Characters &gt; Character Creator</code>) that dresses, shapes and colors new townsfolk and writes each one out as a game-ready prefab.",
+  "Every piece fits every body. Pick eyes, brows, hair, hats, shirts, jackets, trousers, dresses, shoes, jewellery, bags and props from 232 pieces in 27 categories; choose female or male, one of four builds and three heights, then fine-tune the bust, waist, posture, shoulders and more. Colors are hand-shaded ramps (12 skin tones, 18 hair colors, 31 cloth colors and more) with 8 themes and 4 fabric patterns, and Randomise rolls a whole townsperson or one part, from a seed you can keep.",
+  "Generate writes a prefab, a mesh with its Humanoid Avatar, a material, a texture and a recipe of every choice, so you can reopen a character later and regenerate it in place. Each character is one skinned mesh with one material and one draw call, within a 950-quad budget, checked in 12 poses before it is written. The included in-game creator, a playable demo scene called the Fitting Room, runs the same catalog in a player with mouse, keyboard, touch or gamepad, and saves plain JSON."
+ ],
+ "checks_html": [
+  "<strong>Character Creator in the Editor:</strong> 27 categories, a live preview from four angles and three distances, undo and redo on every edit, presets and JSON export",
+  "<strong>One click, one prefab:</strong> prefab, mesh with a Humanoid Avatar, material, texture and recipe; regenerating keeps the GUIDs and your scene overrides",
+  "<strong>Game-ready:</strong> 1 skinned mesh, 1 material, 1 draw call, a 950-quad budget with a Fit button and a 12-pose validator",
+  "<strong>21-bone Humanoid rig</strong> with <code>Grip_R</code>, <code>Grip_L</code> and <code>HeadTop</code> sockets; plays Humanoid clips such as Mixamo's through your Animator Controller",
+  "<strong>Randomise and crowds:</strong> roll everything or one part, keep the seed, set the variety and the theme, or generate a whole crowd at once",
+  "<strong>Your own items:</strong> add your own pieces, color variants and attachments to the catalog",
+  "<strong>In-game creator:</strong> the Fitting Room demo scene with photo mode, a register card and save slots, built on the <code>VoxelCreatorSession</code> API and UI Toolkit",
+  "<strong>A full manual</strong> in Markdown and PDF, with Mixamo recipes and an FAQ"
+ ],
+ "gallery": {
+  "title_html": "From a preset to a prefab",
+  "lead_html": "All images are renders of the pack's own characters in Unity 6 with URP: the Character Creator window in the Editor, and the in-game creator demo scene that ships with the pack.",
+  "note_html": "The page layouts, backgrounds and lettering are a presentation setup for the gallery. The timings on the In your game page were measured in the Editor on a development PC.",
+  "images": [
+   [
+    "01-cover",
+    "Voxel City: Characters, a character creator for the Editor and for your game"
+   ],
+   [
+    "02-25-townsfolk",
+    "25 townsfolk: the 7 pack characters, 14 showcase looks and 4 starters"
+   ],
+   [
+    "03-character-creator",
+    "The Character Creator window in the Unity Editor"
+   ],
+   [
+    "04-24-bodies",
+    "24 bodies: female and male, 4 builds, 3 heights"
+   ],
+   [
+    "05-hair-hats-and-shoes",
+    "Hair, hats and shoes: 33 hairstyles, 18 hats and 12 shoes"
+   ],
+   [
+    "06-232-pieces",
+    "232 pieces in 27 categories"
+   ],
+   [
+    "07-color-themes",
+    "Color themes: 91 ramps and 8 themes"
+   ],
+   [
+    "08-roll-a-townsperson",
+    "Roll a townsperson: randomise from a seed, or a whole crowd"
+   ],
+   [
+    "09-one-click-one-prefab",
+    "Validate, then generate: one click, one prefab"
+   ],
+   [
+    "10-in-game-creator",
+    "The in-game creator: the Fitting Room demo scene"
+   ],
+   [
+    "11-photo-mode",
+    "Photo mode in the in-game creator"
+   ],
+   [
+    "12-register-and-save",
+    "Register and save: name the townsperson, saves are plain JSON"
+   ],
+   [
+    "13-in-your-game",
+    "In your game: build your own menus on the VoxelCreatorSession API"
+   ],
+   [
+    "14-whats-inside",
+    "What is inside the pack"
+   ]
+  ]
+ },
+ "contents_title_html": "7 townsfolk and a 232-piece creator",
+ "categories": [
+  {
+   "name": "Ready-made townsfolk",
+   "count": 7,
+   "blurb": "One Humanoid FBX each, with its prefab, Avatar and material, ready for your Animator Controller.",
+   "items": [
+    "Townsman",
+    "Baker",
+    "Fisher",
+    "Gardener",
+    "Clerk",
+    "Elder",
+    "Youth"
+   ]
+  },
+  {
+   "name": "Creator pieces",
+   "count": 232,
+   "blurb": "Pieces in 27 categories for the face, head, body, hands and accessories. Every piece fits every body and takes the colors you pick.",
+   "items": [
+    "Eyes (7)",
+    "Brows (8)",
+    "Nose (8)",
+    "Mouth (7)",
+    "Ears (4)",
+    "Face details (11)",
+    "Hair (33)",
+    "Beard and moustache (11)",
+    "Hats (18)",
+    "Glasses (7)",
+    "Shirts (17)",
+    "Sleeves (7)",
+    "Waistcoats and cardigans (4)",
+    "Jackets and aprons (7)",
+    "Neckwear (6)",
+    "Trousers and skirts (14)",
+    "Dresses (3)",
+    "Socks (5)",
+    "Shoes (12)",
+    "Hands (4)",
+    "Hand poses (2)",
+    "Jewellery (8)",
+    "Belts (7)",
+    "Back and bags (3)",
+    "Pinned (9)",
+    "Right-hand props (6)",
+    "Left-hand props (4)"
+   ]
+  },
+  {
+   "name": "Bodies",
+   "count": 24,
+   "blurb": "Female and male bodies in four builds and three heights (short, average and tall), with ten relief sliders on top: bust, belly, waist, hip flare, posture, shoulder slope, arm mass, leg mass, slim neck and soft jaw.",
+   "items": [
+    "Slim",
+    "Average",
+    "Broad",
+    "Heavy"
+   ]
+  },
+  {
+   "name": "Hairstyles",
+   "count": 33,
+   "blurb": "Part of the 232 pieces: 23 short styles and 10 long ones that flow over the back and shoulders. Every hat sits on every hairstyle.",
+   "items": [
+    "Shoulder length",
+    "Long straight",
+    "Wavy",
+    "Curly",
+    "Ponytail",
+    "Braid",
+    "Two braids",
+    "Half up",
+    "Long with bangs",
+    "Long locs"
+   ]
+  },
+  {
+   "name": "Color ramps",
+   "count": 91,
+   "blurb": "Hand-shaded ramps for each channel. Harmonise re-dresses a whole outfit in one of 8 themes (Classic town, Pastel spring, Seaside, Autumn, Bakery, Workwear, Uniforms and Night), and cloth takes 4 patterns: stripes, pinstripes, check and dots.",
+   "items": [
+    "Skin (12)",
+    "Hair (18)",
+    "Eyes (10)",
+    "Lips (7)",
+    "Cloth (31)",
+    "Materials (13)"
+   ]
+  },
+  {
+   "name": "Presets",
+   "count": 25,
+   "blurb": "Ready-made looks to start from: open any of them, change everything and keep it as your own.",
+   "items": [
+    "7 pack characters",
+    "14 showcase looks",
+    "4 starters"
+   ]
+  },
+  {
+   "name": "Sample scenes",
+   "count": 3,
+   "blurb": "The seven townsfolk, a showcase of 20 generated characters, and the in-game creator.",
+   "items": [
+    "Demo_Characters",
+    "CreatorShowcase",
+    "Demo_InGameCreator (the Fitting Room)"
+   ]
+  }
+ ],
+ "specs": [
+  [
+   "Characters",
+   "7 ready-made townsfolk, one Humanoid FBX each with its prefab; the Character Creator makes as many more as you need"
+  ],
+  [
+   "Rig",
+   "21-bone Humanoid with an Avatar, plus <code>Grip_R</code>, <code>Grip_L</code> and <code>HeadTop</code> sockets"
+  ],
+  [
+   "Mesh",
+   "1 skinned mesh, 1 material and 1 draw call per character, rigid weights (one bone per vertex)"
+  ],
+  [
+   "Triangles",
+   "1,670 to 1,882 per pack character; the creator keeps every character within a 950-quad budget, 340 of them for the head"
+  ],
+  [
+   "Scale",
+   "6.25 cm voxels; an average adult is 27 voxels, about 1.69 m tall; 1 unit = 1 m"
+  ],
+  [
+   "Shader",
+   "<code>VoxelCharacters/Lit</code> (URP)"
+  ],
+  [
+   "Textures",
+   "A 1024 &times; 1024 atlas for the pack characters; each generated character gets its own 256 &times; 256 or 512 &times; 256 point-filtered texture"
+  ],
+  [
+   "Animation",
+   "No AnimationClips: the characters play Humanoid clips (Mixamo or your own) through your Animator Controller. <code>VoxelCharacter</code> sets Speed, WalkRate and IdleOffset, corrects the arms for foreign Humanoid clips and blinks the eyes"
+  ],
+  [
+   "Scripts",
+   "C# source in the <code>VoxelCharactersKit</code> namespace: the runtime, the Character Creator and its validator, the in-game creator and the <code>VoxelCreatorSession</code> API"
+  ],
+  [
+   "In-game creator",
+   "UI Toolkit; mouse, keyboard, touch and, with the Input System package, a gamepad; wide and portrait layouts; saves plain JSON"
+  ],
+  [
+   "FBX export",
+   "Optional, with Unity's FBX Exporter package (com.unity.formats.fbx 5.1.0 or newer), which the pack never installs"
+  ],
+  [
+   "Documentation",
+   "Manual in Markdown and PDF, with Mixamo recipes and an FAQ"
+  ],
+  [
+   "Made with",
+   "Unity 6000.4.5f1 and URP 17.4.0"
+  ]
+ ],
+ "compat": {
+  "eyebrow_html": "Compatibility",
+  "title_html": "Render pipelines and animation",
+  "paragraphs_html": [
+   "<strong>Universal Render Pipeline:</strong> required. The characters use the included <code>VoxelCharacters/Lit</code> shader.",
+   "<strong>Built-in and HDRP:</strong> not supported. The shader is written for URP, so in another pipeline the materials render pink.",
+   "<strong>Animation:</strong> no clips are included. The characters are standard Humanoids, so they play Mixamo clips or your own through an Animator Controller you make. Mixamo files are not part of the pack; you download them yourself under Adobe's terms.",
+   "<strong>Voxel City:</strong> not required. The townsfolk are made at the same scale as its streets, but the pack works on its own.",
+   "<strong>Limits:</strong> the voxel parts are rigid blocks, so hands, feet and jaws are solid, long hair does not swing, skirts stay short and there are no capes."
+  ]
+ },
+ "faq": [
+  [
+   "Are animations included?",
+   "<p>No. The characters are standard Unity Humanoids with a 21-bone rig and an Avatar, so they play Humanoid clips through an Animator Controller you set up: Mixamo clips, clips from other packs or your own. <code>VoxelCharacter</code> feeds Speed, WalkRate and IdleOffset to the Animator and blinks the eyes in code.</p>"
+  ],
+  [
+   "How do I use Mixamo clips?",
+   "<p>Download the clips from Mixamo yourself (they are not part of the pack and come under Adobe's terms), set them to Humanoid in the import settings and add them to your Animator Controller. The manual walks through it step by step, with the import settings that keep the feet and arms right.</p>"
+  ],
+  [
+   "Can I make my own characters?",
+   "<p>Yes, that is what the Character Creator is for. Open <code>Tools &gt; Voxel Characters &gt; Character Creator</code>, start from a preset or roll one, change anything and press Generate (Ctrl+G). The result is a normal prefab with its own mesh, Avatar, material and texture, plus a recipe you can reopen and regenerate.</p>"
+  ],
+  [
+   "Can players make characters in my game?",
+   "<p>Yes. The in-game creator demo scene, the Fitting Room, runs the same catalog, rules and build in a player, with mouse, keyboard, touch and gamepad, and saves each character as plain JSON. Use it as it is, restyle it, or build your own menus on the <code>VoxelCreatorSession</code> API.</p>"
+  ],
+  [
+   "How heavy is a character?",
+   "<p>One skinned mesh, one material and one draw call. The creator keeps every character within a 950-quad budget, and the seven pack characters are 1,670 to 1,882 triangles each.</p>"
+  ],
+  [
+   "Do I need Voxel City?",
+   "<p>No. The pack stands alone and works in any URP project. The townsfolk are made at the same scale as Voxel City, so they fit its streets.</p>"
+  ],
+  [
+   "Can I add my own items?",
+   "<p>Yes. Add your own pieces, color variants and attachments to the catalog. <strong>My items &gt; Package my items</strong> writes them out as a <code>.unitypackage</code> or as one <code>.vcitem.json</code> file per item; the pack's own files are never included.</p>"
+  ],
+  [
+   "Does it work with the Built-in pipeline or HDRP?",
+   "<p>No. The characters need the Universal Render Pipeline and the included <code>VoxelCharacters/Lit</code> shader.</p>"
+  ],
+  [
+   "Can I use the characters in a commercial game?",
+   "<p>Yes. The pack is sold under the standard Unity Asset Store EULA, which allows use in commercial games, including the characters you make with the creator. It does not allow reselling or redistributing the assets themselves.</p>"
+  ],
+  [
+   "Was AI used to make this pack?",
+   "<p>Yes, and the store listing will say so too. The voxel pieces and characters were built by an AI model (Anthropic Claude) that wrote modelling scripts for Blender; no text-to-3D or image-to-3D generator was used. The shader, the C# tools, the Character Creator, the in-game creator, the Unity prefabs and the manual were made by the same process. The publisher defined the characters and the catalog, made the production decisions and decides what is published. The images and videos on this page are renders of the pack in Unity; none was made with an AI image or video generator.</p>"
+  ]
+ ],
+ "card": {
+  "eyebrow_html": "3D &middot; Characters &middot; Humanoids",
+  "blurb_html": "Voxel townsfolk and the Character Creator that makes them: 7 ready-made Humanoid characters, 232 pieces in 27 categories, 24 bodies and 91 color ramps. One click writes a game-ready prefab, and the creator runs in your game too.",
+  "facts": [
+   [
+    "7",
+    "Townsfolk"
+   ],
+   [
+    "232",
+    "Pieces"
+   ],
+   [
+    "24",
+    "Bodies"
+   ],
+   [
+    "1",
+    "Draw call"
+   ]
+  ],
+  "image_alt": "Voxel City: Characters site card: four voxel townsfolk in a furnished hall with wood floors, green wallpaper and a tall yellow lamp."
+ },
+ "pairs_with": {
+  "slugs": [
+   "voxel-city-animated-town",
+   "voxel-city-interiors"
+  ],
+  "title_html": "Give them a town to live in",
+  "lead_html": "The townsfolk are made at the scale of Voxel City's streets and the Interiors' rooms. Each pack works on its own and is sold separately."
+ }
+}

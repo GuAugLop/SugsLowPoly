@@ -1,0 +1,376 @@
+{
+ "_about": "Content of the pack page. Fields ending in _html, and every list of paragraphs, answers and spec values, are HTML written by hand; plain fields are escaped by build.py. The optional videos list (or the older single video block) adds the videos above the gallery; pairs_with lists the packs shown under \"Pairs well with\".",
+ "order": 5,
+ "slug": "voxel-city-interiors",
+ "name": "Voxel City: Interiors",
+ "short_name": "Interiors",
+ "nav_label": "Interiors",
+ "faq_label": "Interiors FAQ",
+ "title": "Voxel City: Interiors | Sug's LowPoly",
+ "description": "Furnished voxel interiors for Unity URP and Build Mode, the Editor tool that makes them: 751 prefabs, 33 ready houses and shops, 465 pieces of furniture and small items, stairs, doors and windows. Build in the Editor, then walk through in first person, where doors, drawers, taps, fires and clocks work.",
+ "store_url": "",
+ "uses_pack_store_url": false,
+ "images": {
+  "gallery_dir": "assets/img/interiors/gallery",
+  "card": "assets/img/interiors/pack-card-1200.webp",
+  "og": "assets/img/interiors/og-image.jpg",
+  "banner_class": "art-interiors"
+ },
+ "videos": [
+  {
+   "src": "assets/video/interiors/voxel-interiors-trailer-1080p.mp4",
+   "poster": "assets/img/interiors/trailer-poster.webp",
+   "width": 1920,
+   "height": 1080,
+   "caption_html": "Trailer, 1:28, with sound: Build Mode in the Editor, a walk through the Villa in first person by day and at night, and the free camera in third person. Rendered in Unity 6 with URP; the music is an original piece made for this trailer and is not part of the pack."
+  }
+ ],
+ "hero": {
+  "name_html": "Voxel City: <span class=\"accent\">Interiors</span>",
+  "lead_html": "Furnished voxel interiors and Build Mode, the Editor tool that makes them. Draw rooms, add storeys, stairs, doors and windows, paint walls, floors and ceilings, furnish from 465 pieces, then press Walk and go inside, where doors, drawers, taps, fires and clocks all work. 33 houses and shops come ready to walk through or change.",
+  "note_html": "Ships with 33 furnished houses, each a Build Mode plan with its own scene, and 128 furnished interior prefabs, floor by floor. Works with or without Voxel City."
+ },
+ "facts": [
+  [
+   "751",
+   "Prefabs"
+  ],
+  [
+   "33",
+   "Furnished houses"
+  ],
+  [
+   "465",
+   "Pieces to place"
+  ],
+  [
+   "151",
+   "Come alive"
+  ]
+ ],
+ "overview_html": [
+  "Voxel City: Interiors is a set of <strong>751 voxel prefabs</strong> for the inside of homes and shops (289 furniture pieces, 176 small items, 92 fixtures, 10 interior doors, 56 stairs and 128 furnished interiors) and <strong>Build Mode</strong>, a Unity Editor window (<code>Tools &gt; Voxel Interiors &gt; Build Mode</code>) to lay them out. Its 13 tools draw rooms and walls, place doors, windows and stairs, furnish, paint floors and walls, set ceilings, erase, select and set the spawn point, on storeys and basements you step through. Every edit can be undone, and plans save and load as JSON.",
+  "Press <strong>Walk</strong> and you are inside, in first person: full-height walls, ceilings and lamps, stairs you can climb, WASD to move, Shift to run and the mouse to look. Look at a door, a drawer, a tap or a fire and press <strong>E</strong>. Press <strong>V</strong> for a free camera over the cut-away house, and V again to step back in where the camera looks. In your own game, <code>VoxelBuildPlay.Begin</code> starts the same walk from a script.",
+  "151 prefabs come alive, and some do more than one thing: 116 open (27 doors, 35 windows, 52 pieces of furniture and 2 stairs with a cupboard), 15 pour (taps, a pump, a barrel, the pub counter and a coffee pot), 6 burn, 3 clocks tick and 24 lamps light up at night with <code>VoxelInteriors.SetNight(true, 3f)</code>. The 33 ready houses (2 cottages, 7 town houses, 8 row houses, 14 shops, a villa and a farmhouse with a cellar) open in Build Mode, so you can move a wall, repaint, refurnish and walk in. The pack stands alone and needs only URP; Voxel City is not required."
+ ],
+ "checks_html": [
+  "<strong>Build Mode in the Editor:</strong> 13 tools for rooms, walls, floors, doors, windows, stairs, objects, paint, ceilings and the spawn point, with undo on every edit",
+  "<strong>Storeys, basements and roofs:</strong> step up and down through the storeys, give each a flat ceiling or a pitched roof, and the storey above gets its stairwell by itself",
+  "<strong>56 stairs:</strong> straight and steep flights, left and right quarter turns, spirals both ways and a loft ladder, with handrails Auto, Left, Right, Both or None",
+  "<strong>Furnish by room:</strong> 465 pieces in 12 categories with a search box; furniture snaps to walls, small items to tables and shelves",
+  "<strong>31 finishes:</strong> 13 wallpapers, 12 floors and 6 ceilings, painted one wall side, one tile or a whole room at a time",
+  "<strong>Walk and play:</strong> first person with WASD, Shift and the mouse, E to use, V for a free camera over the cutaway",
+  "<strong>Everything works:</strong> doors, drawers, taps, fires and clocks, and lamps that light up at night, in game and in the Editor",
+  "<strong>Plans as JSON:</strong> save and load any house, or start from an empty plot"
+ ],
+ "gallery": {
+  "title_html": "From an empty plot to a home",
+  "lead_html": "All images are renders of the pack's own prefabs and houses in Unity 6 with URP, in Build Mode in the Editor and in the walk-through.",
+  "note_html": "The page layouts, backgrounds and lettering are a presentation setup for the gallery.",
+  "images": [
+   [
+    "01-cover",
+    "Voxel City: Interiors, Build Mode for the Editor and for your game"
+   ],
+   [
+    "02-build-mode",
+    "Build Mode in the Unity Editor: 13 tools"
+   ],
+   [
+    "03-from-plot-to-home",
+    "From plot to home in 6 steps"
+   ],
+   [
+    "04-33-ready-houses",
+    "33 ready houses, furnished and walkable"
+   ],
+   [
+    "05-storeys-and-stairs",
+    "Storeys, basements and stairs"
+   ],
+   [
+    "06-first-person",
+    "Walk through it in first person"
+   ],
+   [
+    "07-everything-works",
+    "Everything works: press E"
+   ],
+   [
+    "08-third-person",
+    "Third person: a free camera over the cutaway"
+   ],
+   [
+    "09-289-furniture-pieces",
+    "289 furniture pieces for 10 rooms"
+   ],
+   [
+    "10-176-small-items",
+    "176 small items in 11 kinds"
+   ],
+   [
+    "11-floors-walls-ceilings",
+    "Floors, walls and ceilings: 31 finishes"
+   ],
+   [
+    "12-doors-and-windows",
+    "Doors and windows"
+   ],
+   [
+    "13-whats-inside",
+    "What is inside the pack"
+   ]
+  ]
+ },
+ "contents_title_html": "751 prefabs and 31 finishes",
+ "categories": [
+  {
+   "name": "Furniture",
+   "count": 289,
+   "blurb": "Ten rooms' worth, each piece a prefab. 100 of them also come dressed, with shelves stocked, tables laid and counters full of goods.",
+   "items": [
+    "Shop (122)",
+    "Decor (36)",
+    "Living room (27)",
+    "Kitchen (24)",
+    "Bedroom (22)",
+    "Dining room (13)",
+    "Bathroom (12)",
+    "Lighting (12)",
+    "Workshop (11)",
+    "Cellar (10)"
+   ]
+  },
+  {
+   "name": "Small items",
+   "count": 176,
+   "blurb": "Tableware, food, books, tools and shop goods to set on tables and shelves, or to place by hand.",
+   "items": [
+    "Shop goods (54)",
+    "Kitchen (29)",
+    "Food (16)",
+    "Books (14)",
+    "Desk (12)",
+    "Bedroom (11)",
+    "Bathroom (10)",
+    "Decor (10)",
+    "Workshop (9)",
+    "Dining (8)",
+    "Storage (3)"
+   ]
+  },
+  {
+   "name": "Fixtures",
+   "count": 92,
+   "blurb": "Doors and windows set in the walls, fireplace mantels and stair railings.",
+   "items": [
+    "Doors (17)",
+    "Windows (35)",
+    "Mantels (18)",
+    "Railings (22)"
+   ]
+  },
+  {
+   "name": "Interior doors",
+   "count": 10,
+   "blurb": "Eight door styles and two double doors, all opening in game.",
+   "items": [
+    "Six-panel oak",
+    "Six-panel walnut",
+    "Four-panel sage",
+    "Four-panel oxblood",
+    "Ledged pine",
+    "Glazed cream",
+    "Glazed walnut",
+    "Plain",
+    "Double walnut",
+    "Double glazed"
+   ]
+  },
+  {
+   "name": "Stairs",
+   "count": 56,
+   "blurb": "Flights, turns and spirals for every storey height, with handrails Auto, Left, Right, Both or None.",
+   "items": [
+    "Straight flights",
+    "Steep flights",
+    "Left and right quarter turns",
+    "Spirals both ways",
+    "Loft ladder"
+   ]
+  },
+  {
+   "name": "Furnished interiors",
+   "count": 128,
+   "blurb": "The 33 ready houses as furnished prefabs, one per floor.",
+   "items": [
+    "Houses (45)",
+    "Row houses (36)",
+    "Shops (47)"
+   ]
+  },
+  {
+   "name": "Build Mode finishes",
+   "count": 31,
+   "blurb": "13 wallpapers for each side of a wall, 12 floors to paint tile by tile or room by room, and 6 ceilings for every storey.",
+   "items": [
+    "Brick",
+    "Damask Red",
+    "Damask Teal",
+    "Floral Blue",
+    "Floral Cream",
+    "Floral Lilac",
+    "Limewash",
+    "Panelling Pine",
+    "Sage",
+    "Stone",
+    "Stripe Green",
+    "Stripe Ochre",
+    "Tiles Kitchen",
+    "Carpet Blue",
+    "Carpet Red",
+    "Checker",
+    "Delft",
+    "Flagstone",
+    "Oak",
+    "Painted Sage",
+    "Parquet",
+    "Pine",
+    "Rush",
+    "Terracotta",
+    "Walnut",
+    "Plaster",
+    "Beams",
+    "Coffered",
+    "Boards",
+    "Pressed Tin",
+    "Sky"
+   ]
+  }
+ ],
+ "specs": [
+  [
+   "Prefabs",
+   "751: 289 furniture pieces (100 of them dressed), 176 small items, 92 fixtures, 10 interior doors, 56 stairs and 128 furnished interiors"
+  ],
+  [
+   "Ready houses",
+   "33 Build Mode plans, each with its own scene: 2 cottages, 7 town houses, 8 row houses, 14 shops, a villa and a farmhouse with a cellar"
+  ],
+  [
+   "Triangles",
+   "12 to 19,142 per piece (median 438); 8,068 to 129,860 per furnished interior"
+  ],
+  [
+   "Grid and scale",
+   "0.5 m floor tiles, 2.75 m storeys, furniture snaps to 12.5 cm; 1 unit = 1 m, Y up"
+  ],
+  [
+   "Shaders",
+   "5 included URP shaders: <code>VoxelInteriors/Lit</code>, <code>Glass</code>, <code>Water</code>, <code>Smoke</code> and <code>WallCut</code>"
+  ],
+  [
+   "Materials",
+   "92: 55 for the pieces and 37 Build Mode paints and trims"
+  ],
+  [
+   "Textures",
+   "6 atlas pages at 4096 (one of them 4096 &times; 2048) with emissive twins, plus 37 Build Mode pattern textures (PNG)"
+  ],
+  [
+   "Animation",
+   "No AnimationClips: doors, drawers and windows move from script on their pivots; water, smoke and clock hands run in the shader"
+  ],
+  [
+   "Scripts",
+   "22 C# files in the <code>VoxelInteriorsKit</code> namespace: Build Mode, the walk-through, the working parts and the night switch"
+  ],
+  [
+   "Demo scenes",
+   "33 house scenes plus a Build Mode sample, <code>Demo_Build</code>"
+  ],
+  [
+   "Made with",
+   "Unity 6000.4.5f1 and URP 17.4.0"
+  ]
+ ],
+ "compat": {
+  "eyebrow_html": "Compatibility",
+  "title_html": "Render pipelines",
+  "paragraphs_html": [
+   "<strong>Universal Render Pipeline:</strong> required. The pieces use the five included URP shaders.",
+   "<strong>Built-in and HDRP:</strong> not supported. The shaders are written for URP, so in another pipeline the materials render pink.",
+   "<strong>In your game:</strong> Build Mode is an Editor tool, but the houses it makes are ordinary scene objects that work in a build; their meshes are rebuilt when the scene loads.",
+   "<strong>Voxel City:</strong> not required. The interiors are separate scenes, and a house inside may be larger than the outside of the matching Voxel City building."
+  ]
+ },
+ "faq": [
+  [
+   "How do I start building?",
+   "<p>Open <code>Tools &gt; Voxel Interiors &gt; Build Mode</code>, start from an empty plot or open one of the 33 houses, and drag a rectangle with the Room tool for four walls and a floor. Click a wall to add a door or a window, then paint, furnish, set the spawn point and press Walk.</p>"
+  ],
+  [
+   "How do I walk through a house?",
+   "<p>Press <strong>Walk</strong> in Build Mode to go inside in first person: WASD to move, Shift to run, the mouse to look and E to use. Press V for a free camera over the cutaway, and V again to walk in. In your own game, <code>VoxelBuildPlay.Begin</code> starts the same walk from a script.</p>"
+  ],
+  [
+   "What can the player interact with?",
+   "<p>Doors, windows, cupboards and drawers open, taps and pumps run, fires light and go out, and clocks keep time: look at it and press E. Doors open only when the player presses E, and the components are plain C#, so you can wire them to your own input or interaction system.</p>"
+  ],
+  [
+   "Do the interiors fit inside the Voxel City buildings?",
+   "<p>They are made for the same houses and shops, at the same scale, but as separate scenes: a house inside may be larger than the outside of its building, so load it as its own scene rather than inside the exterior.</p>"
+  ],
+  [
+   "Can I save and load my plans?",
+   "<p>Yes. Every house is a Build Mode plan, and plans save to and load from JSON files.</p>"
+  ],
+  [
+   "Do I need Voxel City?",
+   "<p>No. The pack stands alone and works in any URP project.</p>"
+  ],
+  [
+   "Does it work with the Built-in pipeline or HDRP?",
+   "<p>No. The pieces need the Universal Render Pipeline and the five included shaders.</p>"
+  ],
+  [
+   "Can I use the pack in a commercial game?",
+   "<p>Yes. The pack is sold under the standard Unity Asset Store EULA, which allows use in commercial games. It does not allow reselling or redistributing the assets themselves.</p>"
+  ],
+  [
+   "Was AI used to make this pack?",
+   "<p>Yes, and the store listing will say so too. The voxel pieces and houses were built by an AI model (Anthropic Claude) that wrote modelling scripts for Blender; no text-to-3D or image-to-3D generator was used. The shaders, Build Mode and the other C# tools, the Unity prefabs, the house scenes and the documentation were made by the same process. The publisher defined the houses and the catalog, made the production decisions and decides what is published. The images and videos on this page are renders of the pack in Unity; none was made with an AI image or video generator.</p>"
+  ]
+ ],
+ "card": {
+  "eyebrow_html": "3D &middot; Props &middot; Interior",
+  "blurb_html": "Furnished voxel interiors and Build Mode: 751 prefabs, 33 ready houses and shops, stairs, doors and windows. Build in the Editor, then walk through in first person, where doors, drawers, taps, fires and clocks work.",
+  "facts": [
+   [
+    "751",
+    "Prefabs"
+   ],
+   [
+    "33",
+    "Houses"
+   ],
+   [
+    "465",
+    "Pieces"
+   ],
+   [
+    "151",
+    "Come alive"
+   ]
+  ],
+  "image_alt": "Voxel City: Interiors site card: a furnished voxel house seen from above with the walls cut away: a checkered hall with stairs, a kitchen, a dining room and a living room."
+ },
+ "pairs_with": {
+  "slugs": [
+   "voxel-city-animated-town",
+   "voxel-city-characters"
+  ],
+  "title_html": "Fill the town",
+  "lead_html": "The rooms are made for Voxel City's houses and shops, at the scale of its townsfolk. Each pack works on its own and is sold separately."
+ }
+}

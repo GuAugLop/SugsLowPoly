@@ -85,14 +85,21 @@ h3.display { font-size: clamp(1.5rem, 2.6vw, 2rem); letter-spacing: .02em; }
 .nav-toggle { display: none; background: none; border: 0; color: var(--bone); padding: 10px; cursor: pointer; }
 .nav-toggle svg { width: 28px; height: 28px; display: block; }
 
-/* The full menu needs about 900 px with three packs in it; below that the header switches to the menu button. */
-@media (max-width: 900px) {
+/* With five packs the full menu needs about 1,160 px at full spacing. From 1,101 to 1,240 px it tightens its spacing,
+   and below that the header switches to the menu button. */
+@media (min-width: 1101px) and (max-width: 1240px) {
+  .nav ul { gap: 18px; }
+  .nav a { letter-spacing: .1em; }
+}
+@media (max-width: 1100px) {
   .nav-toggle { display: block; }
-  .nav { position: absolute; inset: 72px 0 auto 0; background: rgba(9, 18, 25, .98); border-bottom: 1px solid var(--line); display: none; }
+  .nav { position: absolute; inset: 72px 0 auto 0; max-height: calc(100vh - 72px); overflow-y: auto; background: rgba(9, 18, 25, .98); border-bottom: 1px solid var(--line); display: none; }
   .nav.open { display: block; }
   .nav ul { flex-direction: column; align-items: stretch; gap: 0; padding: 8px var(--gutter) 20px; }
   .nav a { display: block; padding: 16px 2px; border-bottom: 1px solid var(--line); }
   .nav .btn { display: inline-flex; margin-top: 16px; }
+}
+@media (max-width: 900px) {
   .brand-name { font-size: 1.3rem; }
 }
 
@@ -273,11 +280,17 @@ section > .wrap > h2.display { margin-bottom: 8px; }
 @media (min-width: 900px) { .page-head.with-art.art-encampment::after { background-image: url("../img/encampment/pack-banner-2000.webp"); } }
 .page-head.with-art.art-voxel-city::after { background-image: url("../img/voxel-city/pack-banner-1100.webp"); }
 @media (min-width: 900px) { .page-head.with-art.art-voxel-city::after { background-image: url("../img/voxel-city/pack-banner-2000.webp"); } }
+.page-head.with-art.art-characters::after { background-image: url("../img/characters/pack-banner-1100.webp"); }
+@media (min-width: 900px) { .page-head.with-art.art-characters::after { background-image: url("../img/characters/pack-banner-2000.webp"); } }
+.page-head.with-art.art-interiors::after { background-image: url("../img/interiors/pack-banner-1100.webp"); }
+@media (min-width: 900px) { .page-head.with-art.art-interiors::after { background-image: url("../img/interiors/pack-banner-2000.webp"); } }
 /* home page: with an odd number of packs the last card takes the whole row, image beside the text */
 @media (min-width: 901px) { .packs .pack:last-child:nth-child(odd) { grid-column: 1 / -1; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: center; } }
 /* home page: keep the "Coming soon" pill readable over bright card images */
 .pack-media .pill.soon { background: rgba(7, 13, 18, .78); }
-/* pack pages: optional trailer above the gallery (pack data "video") */
-.video { margin: 0 0 28px; }
+/* pack pages: optional videos above the gallery (pack data "videos", or the older single "video"); two or more sit side by side */
+.videos { display: grid; gap: 28px; margin: 0 0 28px; }
+@media (min-width: 901px) { .videos.multi { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.video { margin: 0; }
 .video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--ink); border: 1px solid var(--line); }
 .video figcaption { margin-top: 10px; }

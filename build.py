@@ -67,6 +67,11 @@ def esc(s):
     return html.escape(s, quote=True)
 
 
+def videos_of(p):
+    """The pack's videos: a "videos" list, or the older single "video" block."""
+    return p.get("videos") or ([p["video"]] if p.get("video") else [])
+
+
 def load_packs(cfg):
     """Reads src/data/packs/*.json, checks them and resolves each pack's store link."""
     store_urls = cfg.get("store_urls") or {}
@@ -88,8 +93,8 @@ def load_packs(cfg):
         need = [img["card"], img.get("og") or DEFAULT_OG_IMAGE]
         for slug, _ in p["gallery"]["images"]:
             need += [f"{img['gallery_dir']}/{slug}.webp", f"{img['gallery_dir']}/{slug}-thumb.webp"]
-        if p.get("video"):
-            need += [p["video"]["src"], p["video"]["poster"]]
+        for v in videos_of(p):
+            need += [v["src"], v["poster"]]
         absent = [n for n in need if not os.path.isfile(os.path.join(SRC, *n.split("/")))]
         if absent:
             sys.exit(f"src/data/packs/{fn}: image not found in src/: {absent[0]}" + (f" (and {len(absent) - 1} more)" if len(absent) > 1 else ""))
@@ -120,23 +125,30 @@ def pack_page_ctx(p, by_slug, partials):
         f'        <div class="cat"><h3>{html.escape(c["name"])} <span>{c["count"]}</span></h3><p>{html.escape(c["blurb"])} <span class="muted">{html.escape(", ".join(c["items"]))}.</span></p></div>'
         for c in p["categories"])
     video = ""
-    if p.get("video"):
-        v = p["video"]
-        video = (f'      <figure class="video">\n'
-                 f'        <video controls preload="none" playsinline poster="{v["poster"]}" width="{v.get("width", 1280)}" height="{v.get("height", 720)}">'
-                 f'<source src="{v["src"]}" type="video/mp4">Your browser cannot play this video. <a href="{v["src"]}">Download the trailer (MP4)</a>.</video>\n'
-                 + (f'        <figcaption class="small muted">{v["caption_html"]}</figcaption>\n' if v.get("caption_html") else "")
-                 + '      </figure>\n')
+    vids = videos_of(p)
+    if vids:
+        # one video spans the gallery width; two or more sit side by side on wide screens
+        video = f'      <div class="videos{" multi" if len(vids) > 1 else ""}">\n' + "".join(
+            f'        <figure class="video">\n'
+            f'          <video controls preload="none" playsinline poster="{v["poster"]}" width="{v.get("width", 1280)}" height="{v.get("height", 720)}">'
+            f'<source src="{v["src"]}" type="video/mp4">Your browser cannot play this video. <a href="{v["src"]}">Download the video (MP4)</a>.</video>\n'
+            + (f'          <figcaption class="small muted">{v["caption_html"]}</figcaption>\n' if v.get("caption_html") else "")
+            + '        </figure>\n' for v in vids) + '      </div>\n'
     pair = ""
     if p.get("pairs_with"):
-        other = by_slug.get(p["pairs_with"]["slug"])
-        if not other:
-            sys.exit(f"{p['slug']}: pairs_with points to {p['pairs_with']['slug']}, which has no data file")
+        pw = p["pairs_with"]
+        slugs = pw.get("slugs") or [pw["slug"]]
+        missing = [s for s in slugs if s not in by_slug]
+        if missing:
+            sys.exit(f"{p['slug']}: pairs_with points to {missing[0]}, which has no data file")
+        cards = "\n".join(pack_card(by_slug[s], partials) for s in slugs)
+        if len(slugs) > 1:
+            cards = f'      <div class="packs">\n{cards}\n      </div>'
         pair = ('  <section class="pair" aria-labelledby="pair-title">\n    <div class="wrap">\n      <div class="section-head">\n'
                 '        <p class="eyebrow">Pairs well with</p>\n'
-                f'        <h2 class="display" id="pair-title">{p["pairs_with"]["title_html"]}</h2>\n'
-                f'        <p class="lead">{p["pairs_with"]["lead_html"]}</p>\n      </div>\n'
-                f'{pack_card(other, partials)}\n    </div>\n  </section>\n\n')
+                f'        <h2 class="display" id="pair-title">{pw["title_html"]}</h2>\n'
+                f'        <p class="lead">{pw["lead_html"]}</p>\n      </div>\n'
+                f'{cards}\n    </div>\n  </section>\n\n')
     return dict(
         title=p["title"], description=p["description"], canonical_path=p["slug"] + ".html", nav_slug=p["slug"],
         og_image=img.get("og") or DEFAULT_OG_IMAGE,

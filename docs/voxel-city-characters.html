@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voxel City: Characters | Sug&#x27;s LowPoly</title>
+<meta name="description" content="Voxel townsfolk for Unity URP and the Character Creator that makes them: 7 ready-made Humanoid characters, 232 pieces in 27 categories, 24 bodies and 91 color ramps. One click writes a game-ready prefab with one mesh, one material and one draw call, and the creator runs in your game too.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="theme-color" content="#0b161e">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://suglowpoly.com/voxel-city-characters.html">
+<meta property="og:url" content="https://suglowpoly.com/voxel-city-characters.html">
+<meta property="og:image" content="https://suglowpoly.com/assets/img/characters/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://suglowpoly.com/assets/img/characters/og-image.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sug&#x27;s LowPoly">
+<meta property="og:title" content="Voxel City: Characters | Sug&#x27;s LowPoly">
+<meta property="og:description" content="Voxel townsfolk for Unity URP and the Character Creator that makes them: 7 ready-made Humanoid characters, 232 pieces in 27 categories, 24 bodies and 91 color ramps. One click writes a game-ready prefab with one mesh, one material and one draw call, and the creator runs in your game too.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Sug&#x27;s LowPoly home">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5NzMwN2M1ZS1iN2Q1LTQwZTEtODUwYy1iZWExMWUyZTA5ZDUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaExcunEe0mK5WV1+iVwfGboAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoyZmE1NmI4Ny1jYzRmLTRiMzQtYmViYi0yYWZmN2QwMGExYjBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNowfWQNdZeTULjVNl9eciM/AAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggoo6vVRgLgKvr/e0RtFqKIzhzky7ohCxXf8XM2bxRZ7ikZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaGBv52s2yxcYARkO8X48DkkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAVTv0TEpKd3uVlEnTUTVTuHFsujgzWxwNwVDwaVLcdLGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjk3MzA3YzVlLWI3ZDUtNDBlMS04NTBjLWJlYTExZTJlMDlkNS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjc3ZTY2OGU1LWEwZDUtNDAzOS04MGRhLTFhN2JjMmJlZDA5NnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCijq9VGAuAq+v97RG0WoojOHOTLuiELFd/xczZvFFnuKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggS9V3xRnsVH8oeGOuRynQxhuUXZj3qkyyDHsj8jSM3RqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggpIt2BOcqtvO/qD1bWjFMfgOIa3RfsLyRBag7An9fP8R0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQK4OBwgASMHvu6+ySZ1ZwsZs9i7fCKFOZsHu+LXQMMAwK/ay9P9viQqAwz6boM625A8xRcRaYuKQ33Kp2hIqToc=</c2pa:manifest></metadata><defs><clipPath id="r"><rect width="120" height="120" rx="22"/></clipPath></defs><g clip-path="url(#r)"><polygon points="0,0 70,0 56,66" fill="rgb(20,40,52)" stroke="rgb(20,40,52)" stroke-width="0.6"/><polygon points="70,0 120,0 56,66" fill="rgb(16,33,44)" stroke="rgb(16,33,44)" stroke-width="0.6"/><polygon points="120,0 120,52 56,66" fill="rgb(13,28,38)" stroke="rgb(13,28,38)" stroke-width="0.6"/><polygon points="120,52 120,120 56,66" fill="rgb(10,21,29)" stroke="rgb(10,21,29)" stroke-width="0.6"/><polygon points="120,120 44,120 56,66" fill="rgb(8,17,24)" stroke="rgb(8,17,24)" stroke-width="0.6"/><polygon points="44,120 0,120 56,66" fill="rgb(10,22,30)" stroke="rgb(10,22,30)" stroke-width="0.6"/><polygon points="0,120 0,74 56,66" fill="rgb(14,29,39)" stroke="rgb(14,29,39)" stroke-width="0.6"/><polygon points="0,74 0,0 56,66" fill="rgb(18,36,47)" stroke="rgb(18,36,47)" stroke-width="0.6"/><polygon points="98.00,14.50 39.65,14.50 48.35,35.50" fill="rgb(255,176,96)" stroke="rgb(255,176,96)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="98.00,14.50 48.35,35.50 84.00,35.50" fill="rgb(255,150,70)" stroke="rgb(255,150,70)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 17.50,36.65 38.50,45.35" fill="rgb(255,128,48)" stroke="rgb(255,128,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 38.50,45.35 48.35,35.50" fill="rgb(240,104,32)" stroke="rgb(240,104,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 17.50,51.76 38.50,42.24" fill="rgb(214,80,24)" stroke="rgb(214,80,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 38.50,42.24 38.50,45.35" fill="rgb(196,68,18)" stroke="rgb(196,68,18)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 40.05,71.50 47.95,50.50" fill="rgb(232,96,30)" stroke="rgb(232,96,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 47.95,50.50 38.50,42.24" fill="rgb(250,120,44)" stroke="rgb(250,120,44)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 71.65,71.50 80.35,50.50" fill="rgb(255,158,78)" stroke="rgb(255,158,78)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 80.35,50.50 47.95,50.50" fill="rgb(255,136,56)" stroke="rgb(255,136,56)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 81.50,81.35 102.50,72.65" fill="rgb(236,100,32)" stroke="rgb(236,100,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 102.50,72.65 80.35,50.50" fill="rgb(216,82,24)" stroke="rgb(216,82,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 81.50,76.65 102.50,85.35" fill="rgb(186,62,16)" stroke="rgb(186,62,16)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 102.50,85.35 102.50,72.65" fill="rgb(168,52,14)" stroke="rgb(168,52,14)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 71.65,86.50 80.35,107.50" fill="rgb(206,74,20)" stroke="rgb(206,74,20)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 80.35,107.50 102.50,85.35" fill="rgb(228,94,30)" stroke="rgb(228,94,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 22.00,86.50 36.00,107.50" fill="rgb(250,126,48)" stroke="rgb(250,126,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 36.00,107.50 80.35,107.50" fill="rgb(255,146,66)" stroke="rgb(255,146,66)" stroke-width="0.5" stroke-linejoin="round"/></g></svg>
+      <span class="brand-name">Sug's <span class="accent">LowPoly</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="./#packs">Packs</a></li>
+        <li><a href="low-poly-enemy-melee-weapons.html">Weapons</a></li>
+        <li><a href="low-poly-enemy-encampment-props.html">Encampment</a></li>
+        <li><a href="voxel-city-animated-town.html">Voxel City</a></li>
+        <li><a href="voxel-city-characters.html" aria-current="page">Characters</a></li>
+        <li><a href="voxel-city-interiors.html">Interiors</a></li>
+        <li><a href="./#about">About</a></li>
+        <li><a class="btn btn-primary" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head with-art art-characters" aria-labelledby="page-title">
+    <div class="wrap">
+      <p class="crumbs"><a href="./">Home</a> &nbsp;/&nbsp; <a href="./#packs">Packs</a> &nbsp;/&nbsp; Characters</p>
+      <p><span class="pill soon"><span class="dot"></span>Coming soon to the Unity Asset Store</span></p>
+      <h1 class="display" id="page-title">Voxel City: <span class="accent">Characters</span></h1>
+      <p class="lead">Voxel townsfolk and the Character Creator that makes them. Start from one of 25 presets, pick from 232 pieces in 27 categories, shape one of 24 bodies, color it with hand-shaded ramps and generate a game-ready prefab in one click: one skinned mesh, one material and one draw call on a 21-bone Humanoid rig. The same creator runs in your game, so your players can make their own.</p>
+      <p class="small muted">No animation clips are included: the characters play Humanoid clips, from Mixamo or your own, through your Animator Controller. The seven ready-made townsfolk come as one FBX each.</p>
+      <div class="actions">
+        <span class="btn" aria-disabled="true">Store link coming soon</span>
+        <a class="btn btn-ghost" href="#gallery">See the gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="facts-title">
+    <div class="wrap">
+      <h2 class="display" id="facts-title">At a glance</h2>
+      <ul class="facts" aria-label="Pack facts">
+        <li><b>7</b><span>Townsfolk</span></li>
+        <li><b>232</b><span>Creator pieces</span></li>
+        <li><b>24</b><span>Bodies</span></li>
+        <li><b>1</b><span>Draw call</span></li>
+      </ul>
+      <div class="grid-2">
+        <div class="prose">
+          <p>Voxel City: Characters is two things in one pack: <strong>seven ready-made voxel townsfolk</strong> (Townsman, Baker, Fisher, Gardener, Clerk, Elder and Youth), each one Humanoid FBX with its prefab, and the <strong>Character Creator</strong>, a Unity Editor window (<code>Tools &gt; Voxel Characters &gt; Character Creator</code>) that dresses, shapes and colors new townsfolk and writes each one out as a game-ready prefab.</p>
+          <p>Every piece fits every body. Pick eyes, brows, hair, hats, shirts, jackets, trousers, dresses, shoes, jewellery, bags and props from 232 pieces in 27 categories; choose female or male, one of four builds and three heights, then fine-tune the bust, waist, posture, shoulders and more. Colors are hand-shaded ramps (12 skin tones, 18 hair colors, 31 cloth colors and more) with 8 themes and 4 fabric patterns, and Randomise rolls a whole townsperson or one part, from a seed you can keep.</p>
+          <p>Generate writes a prefab, a mesh with its Humanoid Avatar, a material, a texture and a recipe of every choice, so you can reopen a character later and regenerate it in place. Each character is one skinned mesh with one material and one draw call, within a 950-quad budget, checked in 12 poses before it is written. The included in-game creator, a playable demo scene called the Fitting Room, runs the same catalog in a player with mouse, keyboard, touch or gamepad, and saves plain JSON.</p>
+        </div>
+        <ul class="checks">
+          <li><strong>Character Creator in the Editor:</strong> 27 categories, a live preview from four angles and three distances, undo and redo on every edit, presets and JSON export</li>
+          <li><strong>One click, one prefab:</strong> prefab, mesh with a Humanoid Avatar, material, texture and recipe; regenerating keeps the GUIDs and your scene overrides</li>
+          <li><strong>Game-ready:</strong> 1 skinned mesh, 1 material, 1 draw call, a 950-quad budget with a Fit button and a 12-pose validator</li>
+          <li><strong>21-bone Humanoid rig</strong> with <code>Grip_R</code>, <code>Grip_L</code> and <code>HeadTop</code> sockets; plays Humanoid clips such as Mixamo's through your Animator Controller</li>
+          <li><strong>Randomise and crowds:</strong> roll everything or one part, keep the seed, set the variety and the theme, or generate a whole crowd at once</li>
+          <li><strong>Your own items:</strong> add your own pieces, color variants and attachments to the catalog</li>
+          <li><strong>In-game creator:</strong> the Fitting Room demo scene with photo mode, a register card and save slots, built on the <code>VoxelCreatorSession</code> API and UI Toolkit</li>
+          <li><strong>A full manual</strong> in Markdown and PDF, with Mixamo recipes and an FAQ</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="gallery" aria-labelledby="gallery-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Gallery</p>
+        <h2 class="display" id="gallery-title">From a preset to a prefab</h2>
+        <p class="lead">All images are renders of the pack's own characters in Unity 6 with URP: the Character Creator window in the Editor, and the in-game creator demo scene that ships with the pack.</p>
+      </div>
+      <div class="videos multi">
+        <figure class="video">
+          <video controls preload="none" playsinline poster="assets/img/characters/editor-poster.webp" width="1920" height="1080"><source src="assets/video/characters/character-creator-editor-1080p.mp4" type="video/mp4">Your browser cannot play this video. <a href="assets/video/characters/character-creator-editor-1080p.mp4">Download the video (MP4)</a>.</video>
+          <figcaption class="small muted">In the Unity Editor, 0:51, with sound: bodies, hair, outfits and colors in the Character Creator window, the validator and one click to a prefab.</figcaption>
+        </figure>
+        <figure class="video">
+          <video controls preload="none" playsinline poster="assets/img/characters/in-game-poster.webp" width="1920" height="1080"><source src="assets/video/characters/character-creator-in-game-1080p.mp4" type="video/mp4">Your browser cannot play this video. <a href="assets/video/characters/character-creator-in-game-1080p.mp4">Download the video (MP4)</a>.</video>
+          <figcaption class="small muted">In your game, 1:04, with sound: the in-game creator demo scene that ships with the pack. Both videos are rendered in Unity 6 with URP; the music is original and not part of the pack.</figcaption>
+        </figure>
+      </div>
+      <ul class="gallery">
+        <li><a class="tile" href="assets/img/characters/gallery/01-cover.webp" data-full="assets/img/characters/gallery/01-cover.webp" data-caption="Voxel City: Characters, a character creator for the Editor and for your game"><img src="assets/img/characters/gallery/01-cover-thumb.webp" width="720" height="480" loading="lazy" alt="Voxel City: Characters, a character creator for the Editor and for your game"></a></li>
+        <li><a class="tile" href="assets/img/characters/gallery/02-25-townsfolk.webp" data-full="assets/img/characters/gallery/02-25-townsfolk.webp" data-caption="25 townsfolk: the 7 pack characters, 14 showcase looks and 4 starters"><img src="assets/img/characters/gallery/02-25-townsfolk-thumb.webp" width="720" height="480" loading="lazy" alt="25 townsfolk: the 7 pack characters, 14 showcase looks and 4 starters"></a></li>
+        <li><a class="tile" href="assets/img/characters/gallery/03-character-creator.webp" data-full="assets/img/characters/gallery/03-character-creator.webp" data-caption="The Character Creator window in the Unity Editor"><img src="assets/img/characters/gallery/03-character-creator-thumb.webp" width="720" height="480" loading="lazy" alt="The Character Creator window in the Unity Editor"></a></li>
+        <li><a class="tile" href="assets/img/characters/gallery/04-24-bodies.webp" data-full="assets/img/characters/gallery/04-24-bodies.webp" data-caption="24 bodies: female and male, 4 builds, 3 heights"><img src="assets/img/characters/gallery/04-24-bodies-thumb.webp" width="720" height="480" loading="lazy" alt="24 bodies: female and male, 4 builds, 3 heights"></a></li>
+        <li><a class="tile" href="assets/img/characters/gallery/05-hair-hats-and-shoes.webp" data-full="assets/img/characters/gallery/05-hair-hats-and-shoes.webp" data-caption="Hair, hats and shoes: 33 hairstyles, 18 hats and 12 shoes"><img src="assets/img/characters/gallery/05-hair-hats-and-shoes-thumb.webp" width="720" height="480" loading="lazy" alt="Hair, hats and shoes: 33 hairstyles, 18 hats and 12 shoes"></a></li>
+        <li><a class="tile" href="assets/img/characters/gallery/06-232-pieces.webp" data-full="assets/img/characters/gallery/06-232-pieces.webp" data-caption="232 pieces in 27 categories"><img src="assets/img/characters/gallery/06-232-pieces-thumb.webp" width="720" height="480" loading="lazy" alt="232 pieces in 27 categories"></a></li>
+        <li><a class="tile" href="assets/img/characters/gallery/07-color-themes.webp" data-full="assets/img/characters/gallery/07-color-themes.webp" data-caption="Color themes: 91 ramps and 8 themes"><img src="assets/img/characters/gallery/07-color-themes-thumb.webp" width="720" height="480" loading="lazy" alt="Color themes: 91 ramps and 8 themes"></a></li>
+        <li><a class="tile" href="assets/img/characters/gallery/08-roll-a-townsperson.webp" data-full="assets/img/characters/gallery/08-roll-a-townsperson.webp" data-caption="Roll a townsperson: randomise from a seed, or a whole crowd"><img src="assets/img/characters/gallery/08-roll-a-townsperson-thumb.webp" width="720" height="480" loading="lazy" alt="Roll a townsperson: randomise from a seed, or a whole crowd"></a></li>
+        <li><a class="tile" href="assets/img/characters/gallery/09-one-click-one-prefab.webp" data-full="assets/img/characters/gallery/09-one-click-one-prefab.webp" data-caption="Validate, then generate: one click, one prefab"><img src="assets/img/characters/gallery/09-one-click-one-prefab-thumb.webp" width="720" height="480" loading="lazy" alt="Validate, then generate: one click, one prefab"></a></li>
+        <li><a class="tile" href="assets/img/characters/gallery/10-in-game-creator.webp" data-full="assets/img/characters/gallery/10-in-game-creator.webp" data-caption="The in-game creator: the Fitting Room demo scene"><img src="assets/img/characters/gallery/10-in-game-creator-thumb.webp" width="720" height="480" loading="lazy" alt="The in-game creator: the Fitting Room demo scene"></a></li>
+        <li><a class="tile" href="assets/img/characters/gallery/11-photo-mode.webp" data-full="assets/img/characters/gallery/11-photo-mode.webp" data-caption="Photo mode in the in-game creator"><img src="assets/img/characters/gallery/11-photo-mode-thumb.webp" width="720" height="480" loading="lazy" alt="Photo mode in the in-game creator"></a></li>
+        <li><a class="tile" href="assets/img/characters/gallery/12-register-and-save.webp" data-full="assets/img/characters/gallery/12-register-and-save.webp" data-caption="Register and save: name the townsperson, saves are plain JSON"><img src="assets/img/characters/gallery/12-register-and-save-thumb.webp" width="720" height="480" loading="lazy" alt="Register and save: name the townsperson, saves are plain JSON"></a></li>
+        <li><a class="tile" href="assets/img/characters/gallery/13-in-your-game.webp" data-full="assets/img/characters/gallery/13-in-your-game.webp" data-caption="In your game: build your own menus on the VoxelCreatorSession API"><img src="assets/img/characters/gallery/13-in-your-game-thumb.webp" width="720" height="480" loading="lazy" alt="In your game: build your own menus on the VoxelCreatorSession API"></a></li>
+        <li><a class="tile" href="assets/img/characters/gallery/14-whats-inside.webp" data-full="assets/img/characters/gallery/14-whats-inside.webp" data-caption="What is inside the pack"><img src="assets/img/characters/gallery/14-whats-inside-thumb.webp" width="720" height="480" loading="lazy" alt="What is inside the pack"></a></li>
+      </ul>
+      <p class="small muted">The page layouts, backgrounds and lettering are a presentation setup for the gallery. The timings on the In your game page were measured in the Editor on a development PC.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="contents-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Contents</p>
+        <h2 class="display" id="contents-title">7 townsfolk and a 232-piece creator</h2>
+      </div>
+      <div class="cats">
+        <div class="cat"><h3>Ready-made townsfolk <span>7</span></h3><p>One Humanoid FBX each, with its prefab, Avatar and material, ready for your Animator Controller. <span class="muted">Townsman, Baker, Fisher, Gardener, Clerk, Elder, Youth.</span></p></div>
+        <div class="cat"><h3>Creator pieces <span>232</span></h3><p>Pieces in 27 categories for the face, head, body, hands and accessories. Every piece fits every body and takes the colors you pick. <span class="muted">Eyes (7), Brows (8), Nose (8), Mouth (7), Ears (4), Face details (11), Hair (33), Beard and moustache (11), Hats (18), Glasses (7), Shirts (17), Sleeves (7), Waistcoats and cardigans (4), Jackets and aprons (7), Neckwear (6), Trousers and skirts (14), Dresses (3), Socks (5), Shoes (12), Hands (4), Hand poses (2), Jewellery (8), Belts (7), Back and bags (3), Pinned (9), Right-hand props (6), Left-hand props (4).</span></p></div>
+        <div class="cat"><h3>Bodies <span>24</span></h3><p>Female and male bodies in four builds and three heights (short, average and tall), with ten relief sliders on top: bust, belly, waist, hip flare, posture, shoulder slope, arm mass, leg mass, slim neck and soft jaw. <span class="muted">Slim, Average, Broad, Heavy.</span></p></div>
+        <div class="cat"><h3>Hairstyles <span>33</span></h3><p>Part of the 232 pieces: 23 short styles and 10 long ones that flow over the back and shoulders. Every hat sits on every hairstyle. <span class="muted">Shoulder length, Long straight, Wavy, Curly, Ponytail, Braid, Two braids, Half up, Long with bangs, Long locs.</span></p></div>
+        <div class="cat"><h3>Color ramps <span>91</span></h3><p>Hand-shaded ramps for each channel. Harmonise re-dresses a whole outfit in one of 8 themes (Classic town, Pastel spring, Seaside, Autumn, Bakery, Workwear, Uniforms and Night), and cloth takes 4 patterns: stripes, pinstripes, check and dots. <span class="muted">Skin (12), Hair (18), Eyes (10), Lips (7), Cloth (31), Materials (13).</span></p></div>
+        <div class="cat"><h3>Presets <span>25</span></h3><p>Ready-made looks to start from: open any of them, change everything and keep it as your own. <span class="muted">7 pack characters, 14 showcase looks, 4 starters.</span></p></div>
+        <div class="cat"><h3>Sample scenes <span>3</span></h3><p>The seven townsfolk, a showcase of 20 generated characters, and the in-game creator. <span class="muted">Demo_Characters, CreatorShowcase, Demo_InGameCreator (the Fitting Room).</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="specs-title">
+    <div class="wrap grid-2">
+      <div>
+        <p class="eyebrow">Technical details</p>
+        <h2 class="display" id="specs-title">Specs</h2>
+        <table class="spec">
+          <tbody>
+            <tr><th scope="row">Characters</th><td>7 ready-made townsfolk, one Humanoid FBX each with its prefab; the Character Creator makes as many more as you need</td></tr>
+            <tr><th scope="row">Rig</th><td>21-bone Humanoid with an Avatar, plus <code>Grip_R</code>, <code>Grip_L</code> and <code>HeadTop</code> sockets</td></tr>
+            <tr><th scope="row">Mesh</th><td>1 skinned mesh, 1 material and 1 draw call per character, rigid weights (one bone per vertex)</td></tr>
+            <tr><th scope="row">Triangles</th><td>1,670 to 1,882 per pack character; the creator keeps every character within a 950-quad budget, 340 of them for the head</td></tr>
+            <tr><th scope="row">Scale</th><td>6.25 cm voxels; an average adult is 27 voxels, about 1.69 m tall; 1 unit = 1 m</td></tr>
+            <tr><th scope="row">Shader</th><td><code>VoxelCharacters/Lit</code> (URP)</td></tr>
+            <tr><th scope="row">Textures</th><td>A 1024 &times; 1024 atlas for the pack characters; each generated character gets its own 256 &times; 256 or 512 &times; 256 point-filtered texture</td></tr>
+            <tr><th scope="row">Animation</th><td>No AnimationClips: the characters play Humanoid clips (Mixamo or your own) through your Animator Controller. <code>VoxelCharacter</code> sets Speed, WalkRate and IdleOffset, corrects the arms for foreign Humanoid clips and blinks the eyes</td></tr>
+            <tr><th scope="row">Scripts</th><td>C# source in the <code>VoxelCharactersKit</code> namespace: the runtime, the Character Creator and its validator, the in-game creator and the <code>VoxelCreatorSession</code> API</td></tr>
+            <tr><th scope="row">In-game creator</th><td>UI Toolkit; mouse, keyboard, touch and, with the Input System package, a gamepad; wide and portrait layouts; saves plain JSON</td></tr>
+            <tr><th scope="row">FBX export</th><td>Optional, with Unity's FBX Exporter package (com.unity.formats.fbx 5.1.0 or newer), which the pack never installs</td></tr>
+            <tr><th scope="row">Documentation</th><td>Manual in Markdown and PDF, with Mixamo recipes and an FAQ</td></tr>
+            <tr><th scope="row">Made with</th><td>Unity 6000.4.5f1 and URP 17.4.0</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose">
+        <p class="eyebrow">Compatibility</p>
+        <h2 class="display">Render pipelines and animation</h2>
+        <p><strong>Universal Render Pipeline:</strong> required. The characters use the included <code>VoxelCharacters/Lit</code> shader.</p>
+        <p><strong>Built-in and HDRP:</strong> not supported. The shader is written for URP, so in another pipeline the materials render pink.</p>
+        <p><strong>Animation:</strong> no clips are included. The characters are standard Humanoids, so they play Mixamo clips or your own through an Animator Controller you make. Mixamo files are not part of the pack; you download them yourself under Adobe's terms.</p>
+        <p><strong>Voxel City:</strong> not required. The townsfolk are made at the same scale as its streets, but the pack works on its own.</p>
+        <p><strong>Limits:</strong> the voxel parts are rigid blocks, so hands, feet and jaws are solid, long hair does not swing, skirts stay short and there are no capes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="display" id="faq-title">Before you ask</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Are animations included?</summary>
+          <div class="answer"><p>No. The characters are standard Unity Humanoids with a 21-bone rig and an Avatar, so they play Humanoid clips through an Animator Controller you set up: Mixamo clips, clips from other packs or your own. <code>VoxelCharacter</code> feeds Speed, WalkRate and IdleOffset to the Animator and blinks the eyes in code.</p></div>
+        </details>
+        <details>
+          <summary>How do I use Mixamo clips?</summary>
+          <div class="answer"><p>Download the clips from Mixamo yourself (they are not part of the pack and come under Adobe's terms), set them to Humanoid in the import settings and add them to your Animator Controller. The manual walks through it step by step, with the import settings that keep the feet and arms right.</p></div>
+        </details>
+        <details>
+          <summary>Can I make my own characters?</summary>
+          <div class="answer"><p>Yes, that is what the Character Creator is for. Open <code>Tools &gt; Voxel Characters &gt; Character Creator</code>, start from a preset or roll one, change anything and press Generate (Ctrl+G). The result is a normal prefab with its own mesh, Avatar, material and texture, plus a recipe you can reopen and regenerate.</p></div>
+        </details>
+        <details>
+          <summary>Can players make characters in my game?</summary>
+          <div class="answer"><p>Yes. The in-game creator demo scene, the Fitting Room, runs the same catalog, rules and build in a player, with mouse, keyboard, touch and gamepad, and saves each character as plain JSON. Use it as it is, restyle it, or build your own menus on the <code>VoxelCreatorSession</code> API.</p></div>
+        </details>
+        <details>
+          <summary>How heavy is a character?</summary>
+          <div class="answer"><p>One skinned mesh, one material and one draw call. The creator keeps every character within a 950-quad budget, and the seven pack characters are 1,670 to 1,882 triangles each.</p></div>
+        </details>
+        <details>
+          <summary>Do I need Voxel City?</summary>
+          <div class="answer"><p>No. The pack stands alone and works in any URP project. The townsfolk are made at the same scale as Voxel City, so they fit its streets.</p></div>
+        </details>
+        <details>
+          <summary>Can I add my own items?</summary>
+          <div class="answer"><p>Yes. Add your own pieces, color variants and attachments to the catalog. <strong>My items &gt; Package my items</strong> writes them out as a <code>.unitypackage</code> or as one <code>.vcitem.json</code> file per item; the pack's own files are never included.</p></div>
+        </details>
+        <details>
+          <summary>Does it work with the Built-in pipeline or HDRP?</summary>
+          <div class="answer"><p>No. The characters need the Universal Render Pipeline and the included <code>VoxelCharacters/Lit</code> shader.</p></div>
+        </details>
+        <details>
+          <summary>Can I use the characters in a commercial game?</summary>
+          <div class="answer"><p>Yes. The pack is sold under the standard Unity Asset Store EULA, which allows use in commercial games, including the characters you make with the creator. It does not allow reselling or redistributing the assets themselves.</p></div>
+        </details>
+        <details>
+          <summary>Was AI used to make this pack?</summary>
+          <div class="answer"><p>Yes, and the store listing will say so too. The voxel pieces and characters were built by an AI model (Anthropic Claude) that wrote modelling scripts for Blender; no text-to-3D or image-to-3D generator was used. The shader, the C# tools, the Character Creator, the in-game creator, the Unity prefabs and the manual were made by the same process. The publisher defined the characters and the catalog, made the production decisions and decides what is published. The images and videos on this page are renders of the pack in Unity; none was made with an AI image or video generator.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="pair" aria-labelledby="pair-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Pairs well with</p>
+        <h2 class="display" id="pair-title">Give them a town to live in</h2>
+        <p class="lead">The townsfolk are made at the scale of Voxel City's streets and the Interiors' rooms. Each pack works on its own and is sold separately.</p>
+      </div>
+      <div class="packs">
+      <article class="pack reveal">
+        <a class="pack-media" href="voxel-city-animated-town.html" aria-label="Voxel City: Animated Town, pack page">
+          <img src="assets/img/voxel-city/pack-card-1200.webp" width="1200" height="800" loading="lazy" alt="Voxel City site card: a voxel town at golden hour seen from above, with red roofs along a canal with sailing boats, a cathedral and forested hills behind.">
+          <span class="pill soon"><span class="dot"></span>Coming soon</span>
+        </a>
+        <div>
+          <p class="eyebrow">3D &middot; Environments &middot; Urban</p>
+          <h3 class="display">Voxel City: Animated Town</h3>
+          <p class="muted">A whole voxel town in 560 prefabs: row houses, shops, landmarks, a fairground, a harbor, a steam train and 264 facade decorations, with stylized water for seas, lakes and rivers. Wind, water, smoke and machinery move in the shader, and one line of C# turns day into night.</p>
+          <ul class="facts" aria-label="Pack facts">
+            <li><b>560</b><span>Prefabs</span></li>
+            <li><b>264</b><span>Decorations</span></li>
+            <li><b>132</b><span>Animated</span></li>
+            <li><b>8</b><span>Families</span></li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary" href="voxel-city-animated-town.html">View pack</a>
+            
+          </div>
+        </div>
+      </article>
+      <article class="pack reveal">
+        <a class="pack-media" href="voxel-city-interiors.html" aria-label="Voxel City: Interiors, pack page">
+          <img src="assets/img/interiors/pack-card-1200.webp" width="1200" height="800" loading="lazy" alt="Voxel City: Interiors site card: a furnished voxel house seen from above with the walls cut away: a checkered hall with stairs, a kitchen, a dining room and a living room.">
+          <span class="pill soon"><span class="dot"></span>Coming soon</span>
+        </a>
+        <div>
+          <p class="eyebrow">3D &middot; Props &middot; Interior</p>
+          <h3 class="display">Voxel City: Interiors</h3>
+          <p class="muted">Furnished voxel interiors and Build Mode: 751 prefabs, 33 ready houses and shops, stairs, doors and windows. Build in the Editor, then walk through in first person, where doors, drawers, taps, fires and clocks work.</p>
+          <ul class="facts" aria-label="Pack facts">
+            <li><b>751</b><span>Prefabs</span></li>
+            <li><b>33</b><span>Houses</span></li>
+            <li><b>465</b><span>Pieces</span></li>
+            <li><b>151</b><span>Come alive</span></li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary" href="voxel-city-interiors.html">View pack</a>
+            
+          </div>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <p class="eyebrow">Support</p>
+      <h2 class="display" id="cta-title">Something not working?</h2>
+      <p class="lead">Tell us your Unity version, your render pipeline and what you see. We will help you sort it out.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="contact.html">Contact support</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="./" aria-label="Sug&#x27;s LowPoly home">
+          <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5NzMwN2M1ZS1iN2Q1LTQwZTEtODUwYy1iZWExMWUyZTA5ZDUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaExcunEe0mK5WV1+iVwfGboAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoyZmE1NmI4Ny1jYzRmLTRiMzQtYmViYi0yYWZmN2QwMGExYjBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNowfWQNdZeTULjVNl9eciM/AAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggoo6vVRgLgKvr/e0RtFqKIzhzky7ohCxXf8XM2bxRZ7ikZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaGBv52s2yxcYARkO8X48DkkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAVTv0TEpKd3uVlEnTUTVTuHFsujgzWxwNwVDwaVLcdLGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjk3MzA3YzVlLWI3ZDUtNDBlMS04NTBjLWJlYTExZTJlMDlkNS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjc3ZTY2OGU1LWEwZDUtNDAzOS04MGRhLTFhN2JjMmJlZDA5NnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCijq9VGAuAq+v97RG0WoojOHOTLuiELFd/xczZvFFnuKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggS9V3xRnsVH8oeGOuRynQxhuUXZj3qkyyDHsj8jSM3RqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggpIt2BOcqtvO/qD1bWjFMfgOIa3RfsLyRBag7An9fP8R0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQK4OBwgASMHvu6+ySZ1ZwsZs9i7fCKFOZsHu+LXQMMAwK/ay9P9viQqAwz6boM625A8xRcRaYuKQ33Kp2hIqToc=</c2pa:manifest></metadata><defs><clipPath id="r"><rect width="120" height="120" rx="22"/></clipPath></defs><g clip-path="url(#r)"><polygon points="0,0 70,0 56,66" fill="rgb(20,40,52)" stroke="rgb(20,40,52)" stroke-width="0.6"/><polygon points="70,0 120,0 56,66" fill="rgb(16,33,44)" stroke="rgb(16,33,44)" stroke-width="0.6"/><polygon points="120,0 120,52 56,66" fill="rgb(13,28,38)" stroke="rgb(13,28,38)" stroke-width="0.6"/><polygon points="120,52 120,120 56,66" fill="rgb(10,21,29)" stroke="rgb(10,21,29)" stroke-width="0.6"/><polygon points="120,120 44,120 56,66" fill="rgb(8,17,24)" stroke="rgb(8,17,24)" stroke-width="0.6"/><polygon points="44,120 0,120 56,66" fill="rgb(10,22,30)" stroke="rgb(10,22,30)" stroke-width="0.6"/><polygon points="0,120 0,74 56,66" fill="rgb(14,29,39)" stroke="rgb(14,29,39)" stroke-width="0.6"/><polygon points="0,74 0,0 56,66" fill="rgb(18,36,47)" stroke="rgb(18,36,47)" stroke-width="0.6"/><polygon points="98.00,14.50 39.65,14.50 48.35,35.50" fill="rgb(255,176,96)" stroke="rgb(255,176,96)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="98.00,14.50 48.35,35.50 84.00,35.50" fill="rgb(255,150,70)" stroke="rgb(255,150,70)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 17.50,36.65 38.50,45.35" fill="rgb(255,128,48)" stroke="rgb(255,128,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 38.50,45.35 48.35,35.50" fill="rgb(240,104,32)" stroke="rgb(240,104,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 17.50,51.76 38.50,42.24" fill="rgb(214,80,24)" stroke="rgb(214,80,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 38.50,42.24 38.50,45.35" fill="rgb(196,68,18)" stroke="rgb(196,68,18)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 40.05,71.50 47.95,50.50" fill="rgb(232,96,30)" stroke="rgb(232,96,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 47.95,50.50 38.50,42.24" fill="rgb(250,120,44)" stroke="rgb(250,120,44)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 71.65,71.50 80.35,50.50" fill="rgb(255,158,78)" stroke="rgb(255,158,78)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 80.35,50.50 47.95,50.50" fill="rgb(255,136,56)" stroke="rgb(255,136,56)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 81.50,81.35 102.50,72.65" fill="rgb(236,100,32)" stroke="rgb(236,100,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 102.50,72.65 80.35,50.50" fill="rgb(216,82,24)" stroke="rgb(216,82,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 81.50,76.65 102.50,85.35" fill="rgb(186,62,16)" stroke="rgb(186,62,16)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 102.50,85.35 102.50,72.65" fill="rgb(168,52,14)" stroke="rgb(168,52,14)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 71.65,86.50 80.35,107.50" fill="rgb(206,74,20)" stroke="rgb(206,74,20)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 80.35,107.50 102.50,85.35" fill="rgb(228,94,30)" stroke="rgb(228,94,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 22.00,86.50 36.00,107.50" fill="rgb(250,126,48)" stroke="rgb(250,126,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 36.00,107.50 80.35,107.50" fill="rgb(255,146,66)" stroke="rgb(255,146,66)" stroke-width="0.5" stroke-linejoin="round"/></g></svg>
+          <span class="brand-name">Sug's <span class="accent">LowPoly</span></span>
+        </a>
+        <p>Game-ready low-poly asset packs for Unity, with consistent pivots, real-world scale and specs you can check.</p>
+      </div>
+      <div>
+        <h4>Packs</h4>
+        <ul>
+          <li><a href="low-poly-enemy-melee-weapons.html">Low Poly Enemy Melee Weapons</a></li>
+          <li><a href="low-poly-enemy-encampment-props.html">Low Poly Enemy Encampment Props</a></li>
+          <li><a href="voxel-city-animated-town.html">Voxel City: Animated Town</a></li>
+          <li><a href="voxel-city-characters.html">Voxel City: Characters</a></li>
+          <li><a href="voxel-city-interiors.html">Voxel City: Interiors</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact &amp; support</a></li>
+          <li><a href="low-poly-enemy-melee-weapons.html#faq">Weapons FAQ</a></li>
+          <li><a href="low-poly-enemy-encampment-props.html#faq">Encampment FAQ</a></li>
+          <li><a href="voxel-city-animated-town.html#faq">Voxel City FAQ</a></li>
+          <li><a href="voxel-city-characters.html#faq">Characters FAQ</a></li>
+          <li><a href="voxel-city-interiors.html#faq">Interiors FAQ</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">&copy; <span id="year">2026</span> Sug&#x27;s LowPoly. All rights reserved. Unity and the Unity Asset Store are trademarks or registered trademarks of Unity Technologies or its affiliates. Sug&#x27;s LowPoly is an independent publisher and is not affiliated with, sponsored by or endorsed by Unity Technologies.</p>
+  </div>
+</footer>
+</body>
+</html>
+

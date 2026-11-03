@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voxel City: Interiors | Sug&#x27;s LowPoly</title>
+<meta name="description" content="Furnished voxel interiors for Unity URP and Build Mode, the Editor tool that makes them: 751 prefabs, 33 ready houses and shops, 465 pieces of furniture and small items, stairs, doors and windows. Build in the Editor, then walk through in first person, where doors, drawers, taps, fires and clocks work.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="theme-color" content="#0b161e">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://suglowpoly.com/voxel-city-interiors.html">
+<meta property="og:url" content="https://suglowpoly.com/voxel-city-interiors.html">
+<meta property="og:image" content="https://suglowpoly.com/assets/img/interiors/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://suglowpoly.com/assets/img/interiors/og-image.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sug&#x27;s LowPoly">
+<meta property="og:title" content="Voxel City: Interiors | Sug&#x27;s LowPoly">
+<meta property="og:description" content="Furnished voxel interiors for Unity URP and Build Mode, the Editor tool that makes them: 751 prefabs, 33 ready houses and shops, 465 pieces of furniture and small items, stairs, doors and windows. Build in the Editor, then walk through in first person, where doors, drawers, taps, fires and clocks work.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Sug&#x27;s LowPoly home">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5NzMwN2M1ZS1iN2Q1LTQwZTEtODUwYy1iZWExMWUyZTA5ZDUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaExcunEe0mK5WV1+iVwfGboAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoyZmE1NmI4Ny1jYzRmLTRiMzQtYmViYi0yYWZmN2QwMGExYjBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNowfWQNdZeTULjVNl9eciM/AAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggoo6vVRgLgKvr/e0RtFqKIzhzky7ohCxXf8XM2bxRZ7ikZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaGBv52s2yxcYARkO8X48DkkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAVTv0TEpKd3uVlEnTUTVTuHFsujgzWxwNwVDwaVLcdLGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjk3MzA3YzVlLWI3ZDUtNDBlMS04NTBjLWJlYTExZTJlMDlkNS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjc3ZTY2OGU1LWEwZDUtNDAzOS04MGRhLTFhN2JjMmJlZDA5NnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCijq9VGAuAq+v97RG0WoojOHOTLuiELFd/xczZvFFnuKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggS9V3xRnsVH8oeGOuRynQxhuUXZj3qkyyDHsj8jSM3RqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggpIt2BOcqtvO/qD1bWjFMfgOIa3RfsLyRBag7An9fP8R0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQK4OBwgASMHvu6+ySZ1ZwsZs9i7fCKFOZsHu+LXQMMAwK/ay9P9viQqAwz6boM625A8xRcRaYuKQ33Kp2hIqToc=</c2pa:manifest></metadata><defs><clipPath id="r"><rect width="120" height="120" rx="22"/></clipPath></defs><g clip-path="url(#r)"><polygon points="0,0 70,0 56,66" fill="rgb(20,40,52)" stroke="rgb(20,40,52)" stroke-width="0.6"/><polygon points="70,0 120,0 56,66" fill="rgb(16,33,44)" stroke="rgb(16,33,44)" stroke-width="0.6"/><polygon points="120,0 120,52 56,66" fill="rgb(13,28,38)" stroke="rgb(13,28,38)" stroke-width="0.6"/><polygon points="120,52 120,120 56,66" fill="rgb(10,21,29)" stroke="rgb(10,21,29)" stroke-width="0.6"/><polygon points="120,120 44,120 56,66" fill="rgb(8,17,24)" stroke="rgb(8,17,24)" stroke-width="0.6"/><polygon points="44,120 0,120 56,66" fill="rgb(10,22,30)" stroke="rgb(10,22,30)" stroke-width="0.6"/><polygon points="0,120 0,74 56,66" fill="rgb(14,29,39)" stroke="rgb(14,29,39)" stroke-width="0.6"/><polygon points="0,74 0,0 56,66" fill="rgb(18,36,47)" stroke="rgb(18,36,47)" stroke-width="0.6"/><polygon points="98.00,14.50 39.65,14.50 48.35,35.50" fill="rgb(255,176,96)" stroke="rgb(255,176,96)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="98.00,14.50 48.35,35.50 84.00,35.50" fill="rgb(255,150,70)" stroke="rgb(255,150,70)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 17.50,36.65 38.50,45.35" fill="rgb(255,128,48)" stroke="rgb(255,128,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 38.50,45.35 48.35,35.50" fill="rgb(240,104,32)" stroke="rgb(240,104,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 17.50,51.76 38.50,42.24" fill="rgb(214,80,24)" stroke="rgb(214,80,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 38.50,42.24 38.50,45.35" fill="rgb(196,68,18)" stroke="rgb(196,68,18)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 40.05,71.50 47.95,50.50" fill="rgb(232,96,30)" stroke="rgb(232,96,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 47.95,50.50 38.50,42.24" fill="rgb(250,120,44)" stroke="rgb(250,120,44)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 71.65,71.50 80.35,50.50" fill="rgb(255,158,78)" stroke="rgb(255,158,78)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 80.35,50.50 47.95,50.50" fill="rgb(255,136,56)" stroke="rgb(255,136,56)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 81.50,81.35 102.50,72.65" fill="rgb(236,100,32)" stroke="rgb(236,100,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 102.50,72.65 80.35,50.50" fill="rgb(216,82,24)" stroke="rgb(216,82,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 81.50,76.65 102.50,85.35" fill="rgb(186,62,16)" stroke="rgb(186,62,16)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 102.50,85.35 102.50,72.65" fill="rgb(168,52,14)" stroke="rgb(168,52,14)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 71.65,86.50 80.35,107.50" fill="rgb(206,74,20)" stroke="rgb(206,74,20)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 80.35,107.50 102.50,85.35" fill="rgb(228,94,30)" stroke="rgb(228,94,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 22.00,86.50 36.00,107.50" fill="rgb(250,126,48)" stroke="rgb(250,126,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 36.00,107.50 80.35,107.50" fill="rgb(255,146,66)" stroke="rgb(255,146,66)" stroke-width="0.5" stroke-linejoin="round"/></g></svg>
+      <span class="brand-name">Sug's <span class="accent">LowPoly</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="./#packs">Packs</a></li>
+        <li><a href="low-poly-enemy-melee-weapons.html">Weapons</a></li>
+        <li><a href="low-poly-enemy-encampment-props.html">Encampment</a></li>
+        <li><a href="voxel-city-animated-town.html">Voxel City</a></li>
+        <li><a href="voxel-city-characters.html">Characters</a></li>
+        <li><a href="voxel-city-interiors.html" aria-current="page">Interiors</a></li>
+        <li><a href="./#about">About</a></li>
+        <li><a class="btn btn-primary" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head with-art art-interiors" aria-labelledby="page-title">
+    <div class="wrap">
+      <p class="crumbs"><a href="./">Home</a> &nbsp;/&nbsp; <a href="./#packs">Packs</a> &nbsp;/&nbsp; Interiors</p>
+      <p><span class="pill soon"><span class="dot"></span>Coming soon to the Unity Asset Store</span></p>
+      <h1 class="display" id="page-title">Voxel City: <span class="accent">Interiors</span></h1>
+      <p class="lead">Furnished voxel interiors and Build Mode, the Editor tool that makes them. Draw rooms, add storeys, stairs, doors and windows, paint walls, floors and ceilings, furnish from 465 pieces, then press Walk and go inside, where doors, drawers, taps, fires and clocks all work. 33 houses and shops come ready to walk through or change.</p>
+      <p class="small muted">Ships with 33 furnished houses, each a Build Mode plan with its own scene, and 128 furnished interior prefabs, floor by floor. Works with or without Voxel City.</p>
+      <div class="actions">
+        <span class="btn" aria-disabled="true">Store link coming soon</span>
+        <a class="btn btn-ghost" href="#gallery">See the gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="facts-title">
+    <div class="wrap">
+      <h2 class="display" id="facts-title">At a glance</h2>
+      <ul class="facts" aria-label="Pack facts">
+        <li><b>751</b><span>Prefabs</span></li>
+        <li><b>33</b><span>Furnished houses</span></li>
+        <li><b>465</b><span>Pieces to place</span></li>
+        <li><b>151</b><span>Come alive</span></li>
+      </ul>
+      <div class="grid-2">
+        <div class="prose">
+          <p>Voxel City: Interiors is a set of <strong>751 voxel prefabs</strong> for the inside of homes and shops (289 furniture pieces, 176 small items, 92 fixtures, 10 interior doors, 56 stairs and 128 furnished interiors) and <strong>Build Mode</strong>, a Unity Editor window (<code>Tools &gt; Voxel Interiors &gt; Build Mode</code>) to lay them out. Its 13 tools draw rooms and walls, place doors, windows and stairs, furnish, paint floors and walls, set ceilings, erase, select and set the spawn point, on storeys and basements you step through. Every edit can be undone, and plans save and load as JSON.</p>
+          <p>Press <strong>Walk</strong> and you are inside, in first person: full-height walls, ceilings and lamps, stairs you can climb, WASD to move, Shift to run and the mouse to look. Look at a door, a drawer, a tap or a fire and press <strong>E</strong>. Press <strong>V</strong> for a free camera over the cut-away house, and V again to step back in where the camera looks. In your own game, <code>VoxelBuildPlay.Begin</code> starts the same walk from a script.</p>
+          <p>151 prefabs come alive, and some do more than one thing: 116 open (27 doors, 35 windows, 52 pieces of furniture and 2 stairs with a cupboard), 15 pour (taps, a pump, a barrel, the pub counter and a coffee pot), 6 burn, 3 clocks tick and 24 lamps light up at night with <code>VoxelInteriors.SetNight(true, 3f)</code>. The 33 ready houses (2 cottages, 7 town houses, 8 row houses, 14 shops, a villa and a farmhouse with a cellar) open in Build Mode, so you can move a wall, repaint, refurnish and walk in. The pack stands alone and needs only URP; Voxel City is not required.</p>
+        </div>
+        <ul class="checks">
+          <li><strong>Build Mode in the Editor:</strong> 13 tools for rooms, walls, floors, doors, windows, stairs, objects, paint, ceilings and the spawn point, with undo on every edit</li>
+          <li><strong>Storeys, basements and roofs:</strong> step up and down through the storeys, give each a flat ceiling or a pitched roof, and the storey above gets its stairwell by itself</li>
+          <li><strong>56 stairs:</strong> straight and steep flights, left and right quarter turns, spirals both ways and a loft ladder, with handrails Auto, Left, Right, Both or None</li>
+          <li><strong>Furnish by room:</strong> 465 pieces in 12 categories with a search box; furniture snaps to walls, small items to tables and shelves</li>
+          <li><strong>31 finishes:</strong> 13 wallpapers, 12 floors and 6 ceilings, painted one wall side, one tile or a whole room at a time</li>
+          <li><strong>Walk and play:</strong> first person with WASD, Shift and the mouse, E to use, V for a free camera over the cutaway</li>
+          <li><strong>Everything works:</strong> doors, drawers, taps, fires and clocks, and lamps that light up at night, in game and in the Editor</li>
+          <li><strong>Plans as JSON:</strong> save and load any house, or start from an empty plot</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="gallery" aria-labelledby="gallery-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Gallery</p>
+        <h2 class="display" id="gallery-title">From an empty plot to a home</h2>
+        <p class="lead">All images are renders of the pack's own prefabs and houses in Unity 6 with URP, in Build Mode in the Editor and in the walk-through.</p>
+      </div>
+      <div class="videos">
+        <figure class="video">
+          <video controls preload="none" playsinline poster="assets/img/interiors/trailer-poster.webp" width="1920" height="1080"><source src="assets/video/interiors/voxel-interiors-trailer-1080p.mp4" type="video/mp4">Your browser cannot play this video. <a href="assets/video/interiors/voxel-interiors-trailer-1080p.mp4">Download the video (MP4)</a>.</video>
+          <figcaption class="small muted">Trailer, 1:28, with sound: Build Mode in the Editor, a walk through the Villa in first person by day and at night, and the free camera in third person. Rendered in Unity 6 with URP; the music is an original piece made for this trailer and is not part of the pack.</figcaption>
+        </figure>
+      </div>
+      <ul class="gallery">
+        <li><a class="tile" href="assets/img/interiors/gallery/01-cover.webp" data-full="assets/img/interiors/gallery/01-cover.webp" data-caption="Voxel City: Interiors, Build Mode for the Editor and for your game"><img src="assets/img/interiors/gallery/01-cover-thumb.webp" width="720" height="480" loading="lazy" alt="Voxel City: Interiors, Build Mode for the Editor and for your game"></a></li>
+        <li><a class="tile" href="assets/img/interiors/gallery/02-build-mode.webp" data-full="assets/img/interiors/gallery/02-build-mode.webp" data-caption="Build Mode in the Unity Editor: 13 tools"><img src="assets/img/interiors/gallery/02-build-mode-thumb.webp" width="720" height="480" loading="lazy" alt="Build Mode in the Unity Editor: 13 tools"></a></li>
+        <li><a class="tile" href="assets/img/interiors/gallery/03-from-plot-to-home.webp" data-full="assets/img/interiors/gallery/03-from-plot-to-home.webp" data-caption="From plot to home in 6 steps"><img src="assets/img/interiors/gallery/03-from-plot-to-home-thumb.webp" width="720" height="480" loading="lazy" alt="From plot to home in 6 steps"></a></li>
+        <li><a class="tile" href="assets/img/interiors/gallery/04-33-ready-houses.webp" data-full="assets/img/interiors/gallery/04-33-ready-houses.webp" data-caption="33 ready houses, furnished and walkable"><img src="assets/img/interiors/gallery/04-33-ready-houses-thumb.webp" width="720" height="480" loading="lazy" alt="33 ready houses, furnished and walkable"></a></li>
+        <li><a class="tile" href="assets/img/interiors/gallery/05-storeys-and-stairs.webp" data-full="assets/img/interiors/gallery/05-storeys-and-stairs.webp" data-caption="Storeys, basements and stairs"><img src="assets/img/interiors/gallery/05-storeys-and-stairs-thumb.webp" width="720" height="480" loading="lazy" alt="Storeys, basements and stairs"></a></li>
+        <li><a class="tile" href="assets/img/interiors/gallery/06-first-person.webp" data-full="assets/img/interiors/gallery/06-first-person.webp" data-caption="Walk through it in first person"><img src="assets/img/interiors/gallery/06-first-person-thumb.webp" width="720" height="480" loading="lazy" alt="Walk through it in first person"></a></li>
+        <li><a class="tile" href="assets/img/interiors/gallery/07-everything-works.webp" data-full="assets/img/interiors/gallery/07-everything-works.webp" data-caption="Everything works: press E"><img src="assets/img/interiors/gallery/07-everything-works-thumb.webp" width="720" height="480" loading="lazy" alt="Everything works: press E"></a></li>
+        <li><a class="tile" href="assets/img/interiors/gallery/08-third-person.webp" data-full="assets/img/interiors/gallery/08-third-person.webp" data-caption="Third person: a free camera over the cutaway"><img src="assets/img/interiors/gallery/08-third-person-thumb.webp" width="720" height="480" loading="lazy" alt="Third person: a free camera over the cutaway"></a></li>
+        <li><a class="tile" href="assets/img/interiors/gallery/09-289-furniture-pieces.webp" data-full="assets/img/interiors/gallery/09-289-furniture-pieces.webp" data-caption="289 furniture pieces for 10 rooms"><img src="assets/img/interiors/gallery/09-289-furniture-pieces-thumb.webp" width="720" height="480" loading="lazy" alt="289 furniture pieces for 10 rooms"></a></li>
+        <li><a class="tile" href="assets/img/interiors/gallery/10-176-small-items.webp" data-full="assets/img/interiors/gallery/10-176-small-items.webp" data-caption="176 small items in 11 kinds"><img src="assets/img/interiors/gallery/10-176-small-items-thumb.webp" width="720" height="480" loading="lazy" alt="176 small items in 11 kinds"></a></li>
+        <li><a class="tile" href="assets/img/interiors/gallery/11-floors-walls-ceilings.webp" data-full="assets/img/interiors/gallery/11-floors-walls-ceilings.webp" data-caption="Floors, walls and ceilings: 31 finishes"><img src="assets/img/interiors/gallery/11-floors-walls-ceilings-thumb.webp" width="720" height="480" loading="lazy" alt="Floors, walls and ceilings: 31 finishes"></a></li>
+        <li><a class="tile" href="assets/img/interiors/gallery/12-doors-and-windows.webp" data-full="assets/img/interiors/gallery/12-doors-and-windows.webp" data-caption="Doors and windows"><img src="assets/img/interiors/gallery/12-doors-and-windows-thumb.webp" width="720" height="480" loading="lazy" alt="Doors and windows"></a></li>
+        <li><a class="tile" href="assets/img/interiors/gallery/13-whats-inside.webp" data-full="assets/img/interiors/gallery/13-whats-inside.webp" data-caption="What is inside the pack"><img src="assets/img/interiors/gallery/13-whats-inside-thumb.webp" width="720" height="480" loading="lazy" alt="What is inside the pack"></a></li>
+      </ul>
+      <p class="small muted">The page layouts, backgrounds and lettering are a presentation setup for the gallery.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="contents-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Contents</p>
+        <h2 class="display" id="contents-title">751 prefabs and 31 finishes</h2>
+      </div>
+      <div class="cats">
+        <div class="cat"><h3>Furniture <span>289</span></h3><p>Ten rooms&#x27; worth, each piece a prefab. 100 of them also come dressed, with shelves stocked, tables laid and counters full of goods. <span class="muted">Shop (122), Decor (36), Living room (27), Kitchen (24), Bedroom (22), Dining room (13), Bathroom (12), Lighting (12), Workshop (11), Cellar (10).</span></p></div>
+        <div class="cat"><h3>Small items <span>176</span></h3><p>Tableware, food, books, tools and shop goods to set on tables and shelves, or to place by hand. <span class="muted">Shop goods (54), Kitchen (29), Food (16), Books (14), Desk (12), Bedroom (11), Bathroom (10), Decor (10), Workshop (9), Dining (8), Storage (3).</span></p></div>
+        <div class="cat"><h3>Fixtures <span>92</span></h3><p>Doors and windows set in the walls, fireplace mantels and stair railings. <span class="muted">Doors (17), Windows (35), Mantels (18), Railings (22).</span></p></div>
+        <div class="cat"><h3>Interior doors <span>10</span></h3><p>Eight door styles and two double doors, all opening in game. <span class="muted">Six-panel oak, Six-panel walnut, Four-panel sage, Four-panel oxblood, Ledged pine, Glazed cream, Glazed walnut, Plain, Double walnut, Double glazed.</span></p></div>
+        <div class="cat"><h3>Stairs <span>56</span></h3><p>Flights, turns and spirals for every storey height, with handrails Auto, Left, Right, Both or None. <span class="muted">Straight flights, Steep flights, Left and right quarter turns, Spirals both ways, Loft ladder.</span></p></div>
+        <div class="cat"><h3>Furnished interiors <span>128</span></h3><p>The 33 ready houses as furnished prefabs, one per floor. <span class="muted">Houses (45), Row houses (36), Shops (47).</span></p></div>
+        <div class="cat"><h3>Build Mode finishes <span>31</span></h3><p>13 wallpapers for each side of a wall, 12 floors to paint tile by tile or room by room, and 6 ceilings for every storey. <span class="muted">Brick, Damask Red, Damask Teal, Floral Blue, Floral Cream, Floral Lilac, Limewash, Panelling Pine, Sage, Stone, Stripe Green, Stripe Ochre, Tiles Kitchen, Carpet Blue, Carpet Red, Checker, Delft, Flagstone, Oak, Painted Sage, Parquet, Pine, Rush, Terracotta, Walnut, Plaster, Beams, Coffered, Boards, Pressed Tin, Sky.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="specs-title">
+    <div class="wrap grid-2">
+      <div>
+        <p class="eyebrow">Technical details</p>
+        <h2 class="display" id="specs-title">Specs</h2>
+        <table class="spec">
+          <tbody>
+            <tr><th scope="row">Prefabs</th><td>751: 289 furniture pieces (100 of them dressed), 176 small items, 92 fixtures, 10 interior doors, 56 stairs and 128 furnished interiors</td></tr>
+            <tr><th scope="row">Ready houses</th><td>33 Build Mode plans, each with its own scene: 2 cottages, 7 town houses, 8 row houses, 14 shops, a villa and a farmhouse with a cellar</td></tr>
+            <tr><th scope="row">Triangles</th><td>12 to 19,142 per piece (median 438); 8,068 to 129,860 per furnished interior</td></tr>
+            <tr><th scope="row">Grid and scale</th><td>0.5 m floor tiles, 2.75 m storeys, furniture snaps to 12.5 cm; 1 unit = 1 m, Y up</td></tr>
+            <tr><th scope="row">Shaders</th><td>5 included URP shaders: <code>VoxelInteriors/Lit</code>, <code>Glass</code>, <code>Water</code>, <code>Smoke</code> and <code>WallCut</code></td></tr>
+            <tr><th scope="row">Materials</th><td>92: 55 for the pieces and 37 Build Mode paints and trims</td></tr>
+            <tr><th scope="row">Textures</th><td>6 atlas pages at 4096 (one of them 4096 &times; 2048) with emissive twins, plus 37 Build Mode pattern textures (PNG)</td></tr>
+            <tr><th scope="row">Animation</th><td>No AnimationClips: doors, drawers and windows move from script on their pivots; water, smoke and clock hands run in the shader</td></tr>
+            <tr><th scope="row">Scripts</th><td>22 C# files in the <code>VoxelInteriorsKit</code> namespace: Build Mode, the walk-through, the working parts and the night switch</td></tr>
+            <tr><th scope="row">Demo scenes</th><td>33 house scenes plus a Build Mode sample, <code>Demo_Build</code></td></tr>
+            <tr><th scope="row">Made with</th><td>Unity 6000.4.5f1 and URP 17.4.0</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose">
+        <p class="eyebrow">Compatibility</p>
+        <h2 class="display">Render pipelines</h2>
+        <p><strong>Universal Render Pipeline:</strong> required. The pieces use the five included URP shaders.</p>
+        <p><strong>Built-in and HDRP:</strong> not supported. The shaders are written for URP, so in another pipeline the materials render pink.</p>
+        <p><strong>In your game:</strong> Build Mode is an Editor tool, but the houses it makes are ordinary scene objects that work in a build; their meshes are rebuilt when the scene loads.</p>
+        <p><strong>Voxel City:</strong> not required. The interiors are separate scenes, and a house inside may be larger than the outside of the matching Voxel City building.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="display" id="faq-title">Before you ask</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>How do I start building?</summary>
+          <div class="answer"><p>Open <code>Tools &gt; Voxel Interiors &gt; Build Mode</code>, start from an empty plot or open one of the 33 houses, and drag a rectangle with the Room tool for four walls and a floor. Click a wall to add a door or a window, then paint, furnish, set the spawn point and press Walk.</p></div>
+        </details>
+        <details>
+          <summary>How do I walk through a house?</summary>
+          <div class="answer"><p>Press <strong>Walk</strong> in Build Mode to go inside in first person: WASD to move, Shift to run, the mouse to look and E to use. Press V for a free camera over the cutaway, and V again to walk in. In your own game, <code>VoxelBuildPlay.Begin</code> starts the same walk from a script.</p></div>
+        </details>
+        <details>
+          <summary>What can the player interact with?</summary>
+          <div class="answer"><p>Doors, windows, cupboards and drawers open, taps and pumps run, fires light and go out, and clocks keep time: look at it and press E. Doors open only when the player presses E, and the components are plain C#, so you can wire them to your own input or interaction system.</p></div>
+        </details>
+        <details>
+          <summary>Do the interiors fit inside the Voxel City buildings?</summary>
+          <div class="answer"><p>They are made for the same houses and shops, at the same scale, but as separate scenes: a house inside may be larger than the outside of its building, so load it as its own scene rather than inside the exterior.</p></div>
+        </details>
+        <details>
+          <summary>Can I save and load my plans?</summary>
+          <div class="answer"><p>Yes. Every house is a Build Mode plan, and plans save to and load from JSON files.</p></div>
+        </details>
+        <details>
+          <summary>Do I need Voxel City?</summary>
+          <div class="answer"><p>No. The pack stands alone and works in any URP project.</p></div>
+        </details>
+        <details>
+          <summary>Does it work with the Built-in pipeline or HDRP?</summary>
+          <div class="answer"><p>No. The pieces need the Universal Render Pipeline and the five included shaders.</p></div>
+        </details>
+        <details>
+          <summary>Can I use the pack in a commercial game?</summary>
+          <div class="answer"><p>Yes. The pack is sold under the standard Unity Asset Store EULA, which allows use in commercial games. It does not allow reselling or redistributing the assets themselves.</p></div>
+        </details>
+        <details>
+          <summary>Was AI used to make this pack?</summary>
+          <div class="answer"><p>Yes, and the store listing will say so too. The voxel pieces and houses were built by an AI model (Anthropic Claude) that wrote modelling scripts for Blender; no text-to-3D or image-to-3D generator was used. The shaders, Build Mode and the other C# tools, the Unity prefabs, the house scenes and the documentation were made by the same process. The publisher defined the houses and the catalog, made the production decisions and decides what is published. The images and videos on this page are renders of the pack in Unity; none was made with an AI image or video generator.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="pair" aria-labelledby="pair-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Pairs well with</p>
+        <h2 class="display" id="pair-title">Fill the town</h2>
+        <p class="lead">The rooms are made for Voxel City's houses and shops, at the scale of its townsfolk. Each pack works on its own and is sold separately.</p>
+      </div>
+      <div class="packs">
+      <article class="pack reveal">
+        <a class="pack-media" href="voxel-city-animated-town.html" aria-label="Voxel City: Animated Town, pack page">
+          <img src="assets/img/voxel-city/pack-card-1200.webp" width="1200" height="800" loading="lazy" alt="Voxel City site card: a voxel town at golden hour seen from above, with red roofs along a canal with sailing boats, a cathedral and forested hills behind.">
+          <span class="pill soon"><span class="dot"></span>Coming soon</span>
+        </a>
+        <div>
+          <p class="eyebrow">3D &middot; Environments &middot; Urban</p>
+          <h3 class="display">Voxel City: Animated Town</h3>
+          <p class="muted">A whole voxel town in 560 prefabs: row houses, shops, landmarks, a fairground, a harbor, a steam train and 264 facade decorations, with stylized water for seas, lakes and rivers. Wind, water, smoke and machinery move in the shader, and one line of C# turns day into night.</p>
+          <ul class="facts" aria-label="Pack facts">
+            <li><b>560</b><span>Prefabs</span></li>
+            <li><b>264</b><span>Decorations</span></li>
+            <li><b>132</b><span>Animated</span></li>
+            <li><b>8</b><span>Families</span></li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary" href="voxel-city-animated-town.html">View pack</a>
+            
+          </div>
+        </div>
+      </article>
+      <article class="pack reveal">
+        <a class="pack-media" href="voxel-city-characters.html" aria-label="Voxel City: Characters, pack page">
+          <img src="assets/img/characters/pack-card-1200.webp" width="1200" height="800" loading="lazy" alt="Voxel City: Characters site card: four voxel townsfolk in a furnished hall with wood floors, green wallpaper and a tall yellow lamp.">
+          <span class="pill soon"><span class="dot"></span>Coming soon</span>
+        </a>
+        <div>
+          <p class="eyebrow">3D &middot; Characters &middot; Humanoids</p>
+          <h3 class="display">Voxel City: Characters</h3>
+          <p class="muted">Voxel townsfolk and the Character Creator that makes them: 7 ready-made Humanoid characters, 232 pieces in 27 categories, 24 bodies and 91 color ramps. One click writes a game-ready prefab, and the creator runs in your game too.</p>
+          <ul class="facts" aria-label="Pack facts">
+            <li><b>7</b><span>Townsfolk</span></li>
+            <li><b>232</b><span>Pieces</span></li>
+            <li><b>24</b><span>Bodies</span></li>
+            <li><b>1</b><span>Draw call</span></li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary" href="voxel-city-characters.html">View pack</a>
+            
+          </div>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <p class="eyebrow">Support</p>
+      <h2 class="display" id="cta-title">Something not working?</h2>
+      <p class="lead">Tell us your Unity version, your render pipeline and what you see. We will help you sort it out.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="contact.html">Contact support</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="./" aria-label="Sug&#x27;s LowPoly home">
+          <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5NzMwN2M1ZS1iN2Q1LTQwZTEtODUwYy1iZWExMWUyZTA5ZDUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaExcunEe0mK5WV1+iVwfGboAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoyZmE1NmI4Ny1jYzRmLTRiMzQtYmViYi0yYWZmN2QwMGExYjBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNowfWQNdZeTULjVNl9eciM/AAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggoo6vVRgLgKvr/e0RtFqKIzhzky7ohCxXf8XM2bxRZ7ikZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaGBv52s2yxcYARkO8X48DkkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAVTv0TEpKd3uVlEnTUTVTuHFsujgzWxwNwVDwaVLcdLGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjk3MzA3YzVlLWI3ZDUtNDBlMS04NTBjLWJlYTExZTJlMDlkNS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjc3ZTY2OGU1LWEwZDUtNDAzOS04MGRhLTFhN2JjMmJlZDA5NnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCijq9VGAuAq+v97RG0WoojOHOTLuiELFd/xczZvFFnuKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggS9V3xRnsVH8oeGOuRynQxhuUXZj3qkyyDHsj8jSM3RqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggpIt2BOcqtvO/qD1bWjFMfgOIa3RfsLyRBag7An9fP8R0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQK4OBwgASMHvu6+ySZ1ZwsZs9i7fCKFOZsHu+LXQMMAwK/ay9P9viQqAwz6boM625A8xRcRaYuKQ33Kp2hIqToc=</c2pa:manifest></metadata><defs><clipPath id="r"><rect width="120" height="120" rx="22"/></clipPath></defs><g clip-path="url(#r)"><polygon points="0,0 70,0 56,66" fill="rgb(20,40,52)" stroke="rgb(20,40,52)" stroke-width="0.6"/><polygon points="70,0 120,0 56,66" fill="rgb(16,33,44)" stroke="rgb(16,33,44)" stroke-width="0.6"/><polygon points="120,0 120,52 56,66" fill="rgb(13,28,38)" stroke="rgb(13,28,38)" stroke-width="0.6"/><polygon points="120,52 120,120 56,66" fill="rgb(10,21,29)" stroke="rgb(10,21,29)" stroke-width="0.6"/><polygon points="120,120 44,120 56,66" fill="rgb(8,17,24)" stroke="rgb(8,17,24)" stroke-width="0.6"/><polygon points="44,120 0,120 56,66" fill="rgb(10,22,30)" stroke="rgb(10,22,30)" stroke-width="0.6"/><polygon points="0,120 0,74 56,66" fill="rgb(14,29,39)" stroke="rgb(14,29,39)" stroke-width="0.6"/><polygon points="0,74 0,0 56,66" fill="rgb(18,36,47)" stroke="rgb(18,36,47)" stroke-width="0.6"/><polygon points="98.00,14.50 39.65,14.50 48.35,35.50" fill="rgb(255,176,96)" stroke="rgb(255,176,96)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="98.00,14.50 48.35,35.50 84.00,35.50" fill="rgb(255,150,70)" stroke="rgb(255,150,70)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 17.50,36.65 38.50,45.35" fill="rgb(255,128,48)" stroke="rgb(255,128,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 38.50,45.35 48.35,35.50" fill="rgb(240,104,32)" stroke="rgb(240,104,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 17.50,51.76 38.50,42.24" fill="rgb(214,80,24)" stroke="rgb(214,80,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 38.50,42.24 38.50,45.35" fill="rgb(196,68,18)" stroke="rgb(196,68,18)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 40.05,71.50 47.95,50.50" fill="rgb(232,96,30)" stroke="rgb(232,96,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 47.95,50.50 38.50,42.24" fill="rgb(250,120,44)" stroke="rgb(250,120,44)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 71.65,71.50 80.35,50.50" fill="rgb(255,158,78)" stroke="rgb(255,158,78)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 80.35,50.50 47.95,50.50" fill="rgb(255,136,56)" stroke="rgb(255,136,56)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 81.50,81.35 102.50,72.65" fill="rgb(236,100,32)" stroke="rgb(236,100,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 102.50,72.65 80.35,50.50" fill="rgb(216,82,24)" stroke="rgb(216,82,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 81.50,76.65 102.50,85.35" fill="rgb(186,62,16)" stroke="rgb(186,62,16)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 102.50,85.35 102.50,72.65" fill="rgb(168,52,14)" stroke="rgb(168,52,14)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 71.65,86.50 80.35,107.50" fill="rgb(206,74,20)" stroke="rgb(206,74,20)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 80.35,107.50 102.50,85.35" fill="rgb(228,94,30)" stroke="rgb(228,94,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 22.00,86.50 36.00,107.50" fill="rgb(250,126,48)" stroke="rgb(250,126,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 36.00,107.50 80.35,107.50" fill="rgb(255,146,66)" stroke="rgb(255,146,66)" stroke-width="0.5" stroke-linejoin="round"/></g></svg>
+          <span class="brand-name">Sug's <span class="accent">LowPoly</span></span>
+        </a>
+        <p>Game-ready low-poly asset packs for Unity, with consistent pivots, real-world scale and specs you can check.</p>
+      </div>
+      <div>
+        <h4>Packs</h4>
+        <ul>
+          <li><a href="low-poly-enemy-melee-weapons.html">Low Poly Enemy Melee Weapons</a></li>
+          <li><a href="low-poly-enemy-encampment-props.html">Low Poly Enemy Encampment Props</a></li>
+          <li><a href="voxel-city-animated-town.html">Voxel City: Animated Town</a></li>
+          <li><a href="voxel-city-characters.html">Voxel City: Characters</a></li>
+          <li><a href="voxel-city-interiors.html">Voxel City: Interiors</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact &amp; support</a></li>
+          <li><a href="low-poly-enemy-melee-weapons.html#faq">Weapons FAQ</a></li>
+          <li><a href="low-poly-enemy-encampment-props.html#faq">Encampment FAQ</a></li>
+          <li><a href="voxel-city-animated-town.html#faq">Voxel City FAQ</a></li>
+          <li><a href="voxel-city-characters.html#faq">Characters FAQ</a></li>
+          <li><a href="voxel-city-interiors.html#faq">Interiors FAQ</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">&copy; <span id="year">2026</span> Sug&#x27;s LowPoly. All rights reserved. Unity and the Unity Asset Store are trademarks or registered trademarks of Unity Technologies or its affiliates. Sug&#x27;s LowPoly is an independent publisher and is not affiliated with, sponsored by or endorsed by Unity Technologies.</p>
+  </div>
+</footer>
+</body>
+</html>
+
