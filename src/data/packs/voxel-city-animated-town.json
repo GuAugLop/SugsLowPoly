@@ -7,7 +7,7 @@
  "nav_label": "Voxel City",
  "faq_label": "Voxel City FAQ",
  "title": "Voxel City: Animated Town | Sug's LowPoly",
- "description": "560 stylized voxel prefabs for a whole animated town: houses, shops, landmarks, a fairground, a harbor, a steam train, stone stairs, ground tiles and 264 facade decorations, plus stylized water for seas, lakes and rivers. URP shaders move wind, water, smoke and machinery, and one line of C# turns day into night.",
+ "description": "505 stylized voxel prefabs for a whole animated town and Voxel Terrain, a brush to sculpt your own ground in voxels: houses, shops, landmarks, a fairground, a harbor, a steam train, stone stairs, ground tiles and 264 facade decorations, plus stylized water for seas, lakes and rivers. URP shaders move wind, water, smoke and machinery, and one line of C# turns day into night.",
  "store_url": "",
  "uses_pack_store_url": false,
  "images": {
@@ -18,21 +18,28 @@
  },
  "videos": [
   {
+   "src": "assets/video/voxel-city/voxel-terrain-1080p.mp4",
+   "poster": "assets/img/voxel-city/terrain-poster.webp",
+   "width": 1920,
+   "height": 1080,
+   "caption_html": "Voxel Terrain, 1:31, with sound. The sculpting is the real brush at work in the Unity Editor. The town that follows is the demo scene that ships with the pack, shown going up in stages. The music is an original piece made for this video and is not part of the pack."
+  },
+  {
    "src": "assets/video/voxel-city/voxel-city-trailer-1080p.mp4",
    "poster": "assets/img/voxel-city/trailer-poster.webp",
    "width": 1920,
    "height": 1080,
-   "caption_html": "Trailer, 1:55, with sound. Rendered in Unity 6 with URP, in the demo town that ships with the pack. The music is an original piece made for this trailer and is not part of the pack."
+   "caption_html": "Trailer, 1:55, with sound. A tour of the demo town that ships with the pack, rendered in Unity 6 with URP. The music is an original piece made for this trailer and is not part of the pack."
   }
  ],
  "hero": {
   "name_html": "Voxel City: <span class=\"accent\">Animated</span> Town",
-  "lead_html": "560 stylized voxel prefabs for a whole town that moves: houses and shops, landmarks with working parts, a fairground with a turning Ferris wheel, a harbor and a steam train, stone stairs and lookouts, detailed ground tiles and 264 facade decorations. Wind, water, smoke and machinery animate in the shader, the stylized water sends waves up every beach, and one line of C# turns day into night.",
-  "note_html": "Ships with two demo scenes: the town from the trailer, with about 10,000 placed prefabs, a fairground reached by stairs and paths, a harbor with floating boats and about 390 lamps, and a water example on a Unity Terrain island."
+  "lead_html": "505 stylized voxel prefabs for a whole town that moves, and Voxel Terrain, a brush to sculpt the land under it: hills, beaches, painted roads and lakes, in voxels that match the town. Houses and shops, landmarks with working parts, a fairground with a turning Ferris wheel, a harbor and a steam train, stone stairs and lookouts, detailed ground tiles and 264 facade decorations. Wind, water, smoke and machinery animate in the shader, the stylized water sends waves up every beach, and one line of C# turns day into night.",
+  "note_html": "Ships with two demo scenes: the town from the videos, on an island where every hill, beach and lake was shaped with the brush, with about 2,500 placed prefabs, a fairground reached by stairs and paths, a harbor with floating boats and more than 200 lamps, and a water example on a Unity Terrain island."
  },
  "facts": [
   [
-   "560",
+   "505",
    "Prefabs"
   ],
   [
@@ -40,21 +47,23 @@
    "Decorations"
   ],
   [
-   "132",
+   "122",
    "Animated prefabs"
   ],
   [
-   "115 s",
-   "Trailer"
+   "8",
+   "Terrain brush modes"
   ]
  ],
  "overview_html": [
-  "Voxel City is a complete stylized town in one pack: <strong>cottages, town houses and eight canal-gable row houses, eleven shops, civic buildings and eight landmarks, a fairground with a Ferris wheel, carousel and circus tent, twenty-one trees with the plants, hedges and topiary around them, street lamps, a working street clock, benches, bridges and fountains, market stalls, boats, docks, a steam train with a level crossing, stone stairs and lookouts</strong>, plus 26 detailed 4 &times; 4 m ground tiles, 264 facade decorations and the 55 terrain and water pieces of the demo world. Every prefab is ready to drop in, at real-world scale, with hand-shaded voxel textures and baked ambient occlusion.",
+  "Voxel City is a complete stylized town in one pack: <strong>cottages, town houses and eight canal-gable row houses, eleven shops, civic buildings and eight landmarks, a fairground with a Ferris wheel, carousel and circus tent, twenty-one trees with the plants, hedges and topiary around them, street lamps, a working street clock, benches, bridges and fountains, market stalls, boats, docks, a steam train with a level crossing, stone stairs and lookouts</strong>, plus 26 detailed 4 &times; 4 m ground tiles and 264 facade decorations. Every prefab is ready to drop in, at real-world scale, with procedurally shaded voxel textures and baked ambient occlusion.",
+  "<strong>Voxel Terrain.</strong> Sculpt your own ground right in the Scene view, in voxels that match the town, starting flat, from an island or from hills. An eight-mode brush raises, lowers, smooths and flattens, adds and removes water and paints ten ground types, and every separate pond you paint becomes a lake with its own water. Protection zones keep a town square or the ground under a building safe from your strokes, objects follow the ground as it moves, grass tufts grow by themselves and far chunks draw coarser meshes. Import heights from a heightmap, a Unity Terrain or meshes, pick cells of 0.25, 0.5 or 1 m and save the ground as ordinary meshes when a scene will not sculpt. The same brush works while the game runs through a small API, on a copy of the terrain's data. Every hill, beach and lake of the demo island was shaped this way.",
   "Motion is the point. Trees and crops sway in the wind, flags, bunting and awnings flap, chimneys smoke, and windmill sails, clock hands, bells, wheels and the carousel turn on real pivots. The Ferris wheel turns with its gondolas hanging level, the lighthouse sweeps its beams across the harbor at night and the village well lowers its pail on command. Nearly all of it runs in the vertex shader, so nothing needs an Animator, and global channels for wind, mechanisms, water, lights and night change the whole town at once.",
-  "<strong>Stylized water.</strong> Add a sea, a lake, a river or a fountain basin from the GameObject menu and set the water level by moving it. One click on <strong>Bake The Coast</strong> reads your Unity Terrain and colliders and gives the sea waves that run up the beaches and drain back, with foam along quays and rocks; for close views, the Simulation mode simulates the surf around the camera on the GPU. Planar reflections mirror the quays, boats and lit windows, the water reflects the live sky, and boats and buoys ride the waves with <strong>Water Float</strong>, leaving a wake when they move.",
+  "<strong>Stylized water.</strong> Add a sea, a lake, a river or a fountain basin from the GameObject menu and set the water level by moving it. One click on <strong>Bake The Coast</strong> reads your Voxel Terrain or Unity Terrain and colliders and gives the sea waves that run up the beaches and drain back, with foam along quays and rocks; for close views, the Simulation mode simulates the surf around the camera on the GPU. Planar reflections mirror the quays, boats and lit windows, the water reflects the live sky, and boats and buoys ride the waves with <strong>Water Float</strong>, leaving a wake when they move.",
   "When night falls, windows, lamps, fair bulbs and stained glass light up, and the lamp prefabs carry real lights that fade in with them. The <code>VoxelLine</code> tool draws wood fences, picket fences and strings of bunting along any curve. Characters, NPCs, traffic logic and gameplay scripts are not part of this pack (townsfolk and furnished interiors come as two separate packs, below); the train and the boats in the demo follow simple paths with the included <code>VoxelMover</code> component."
  ],
  "checks_html": [
+  "<strong>Voxel Terrain:</strong> sculpt your own ground in the Scene view or while the game runs, with an eight-mode brush, ten ground types and lakes from painted water",
   "<strong>Day to night in one line:</strong> <code>VoxelCity.SetNight(true, 3f)</code> fades in lamps, windows and fair bulbs, and the included controller follows with sun, moon, ambient light and fog",
   "<strong>Shader-driven animation</strong> for wind, foliage, crops, swing, cloth, flags, floating, rotation and grass, SRP Batcher compatible",
   "<strong>Stylized water in a few clicks:</strong> a sea, lake, river or fountain basin from the GameObject menu, waves on every beach after <strong>Bake The Coast</strong>, planar reflections and boats that float",
@@ -62,12 +71,12 @@
   "<strong>Curved fences and bunting:</strong> the <code>VoxelLine</code> tool follows any curve, with gates and openings, in one merged mesh",
   "<strong>264 facade decorations</strong> in 15 families, one model per surface: window boxes, climbers, lanterns, string lights, awnings, wreaths and more",
   "<strong>26 detailed ground tiles</strong>, 4 &times; 4 m, for roads, curved paths, plazas, fields, beach and quay, plus 14 modular stone stairs and lookouts",
-  "<strong>1 unit = 1 meter</strong>, Y up, colliders on 286 prefabs (decorations have none)",
-  "<strong>Two demo scenes:</strong> the whole town with a fly camera and adjustable field of view, and a water example on a Unity Terrain island, plus a README"
+  "<strong>1 unit = 1 meter</strong>, Y up, colliders on 234 prefabs (decorations have none)",
+  "<strong>Two demo scenes:</strong> the whole town on its sculpted island, with a fly camera, adjustable field of view and a brush to sculpt it while it runs, and a water example on a Unity Terrain island, plus a README and a PDF guide"
  ],
  "gallery": {
   "title_html": "The whole town, on the record",
-  "lead_html": "All images are renders of the actual prefabs in Unity 6 with URP. The scene images show the demo town that ships with the pack; the category sheets print the name, triangle count and size of each prefab, at a compressed display scale so that small and large pieces fit side by side.",
+  "lead_html": "All images are renders of the actual prefabs in Unity 6 with URP. The scene images show the demo town that ships with the pack, and the Voxel Terrain pages show the brush at work in the Unity Editor. The category sheets print the name, triangle count and size of each prefab, at a compressed display scale so that small and large pieces fit side by side.",
   "note_html": "The gradient sky, color grading and floating light motes in the images are a presentation setup for the screenshots. The demo scene ships with its own procedural skybox and post-processing.",
   "images": [
    [
@@ -76,123 +85,135 @@
    ],
    [
     "02-overview-all-prefabs",
-    "All 560 prefabs in 8 families"
+    "All 505 prefabs in 7 families, plus Voxel Terrain"
    ],
    [
-    "03-day-to-night",
+    "03-voxel-terrain",
+    "Voxel Terrain: sculpt, paint and fill lakes with an eight-mode brush"
+   ],
+   [
+    "04-one-island-one-brush",
+    "One island, one brush: the demo scene from bare land to finished town"
+   ],
+   [
+    "05-terrain-at-runtime",
+    "Sculpt while the game runs: the same brush from a few lines of C#"
+   ],
+   [
+    "06-day-to-night",
     "Day to night with one line of C#"
    ],
    [
-    "04-light-up-the-night",
-    "Light up the night: about 390 lamps in the demo and the lighthouse beams"
+    "07-light-up-the-night",
+    "Light up the night: more than 200 lamps in the demo and the lighthouse beams"
    ],
    [
-    "05-everything-moves",
+    "08-everything-moves",
     "Everything moves: Ferris wheel, carousel, sails, clocks, fountains and crops"
    ],
    [
-    "06-the-fairground",
+    "09-the-fairground",
     "The fairground: Ferris wheel, carousel, circus tent and treat carts"
    ],
    [
-    "07-fun-after-dark",
+    "10-fun-after-dark",
     "The fair after dark"
    ],
    [
-    "08-routes-and-stairs",
+    "11-routes-and-stairs",
     "Routes and stairs: 14 modular stone pieces and a lookout"
    ],
    [
-    "09-curved-fences-and-bunting",
+    "12-curved-fences-and-bunting",
     "Curved fences and bunting with the VoxelLine tool"
    ],
    [
-    "10-264-decorations",
+    "13-264-decorations",
     "264 facade decorations in 15 families"
    ],
    [
-    "11-dressed-to-the-detail",
+    "14-dressed-to-the-detail",
     "Decorated shopfronts and facades"
    ],
    [
-    "12-streets-with-character",
+    "15-streets-with-character",
     "Streets with character: eight row houses"
    ],
    [
-    "13-built-around-landmarks",
+    "16-built-around-landmarks",
     "Built around landmarks: 8 hero buildings"
    ],
    [
-    "14-living-water",
-    "Living water: planar reflections, ponds and the harbor at night"
+    "17-living-water",
+    "Living water: planar reflections, lakes and the harbor at night"
    ],
    [
-    "15-water-in-a-few-clicks",
+    "18-water-in-a-few-clicks",
     "Water in a few clicks: add a sea, bake the coast, waves on every beach"
    ],
    [
-    "16-the-countryside",
+    "19-the-countryside",
     "The countryside: fields, a hedge maze and lavender"
    ],
    [
-    "17-sheet-houses",
+    "20-sheet-houses",
     "Houses & Row Houses: 19 prefabs"
    ],
    [
-    "18-sheet-shops-civic",
+    "21-sheet-shops-civic",
     "Shops & Civic: 16 prefabs"
    ],
    [
-    "19-sheet-landmarks",
+    "22-sheet-landmarks",
     "Landmarks: 8 prefabs"
    ],
    [
-    "20-sheet-trees",
+    "23-sheet-trees",
     "Trees: 21, plus 5 light trees"
    ],
    [
-    "21-sheet-plants-rocks",
+    "24-sheet-plants-rocks",
     "Plants & Rocks: 20 prefabs"
    ],
    [
-    "22-sheet-street-props",
+    "25-sheet-street-props",
     "Street props: 21 prefabs"
    ],
    [
-    "23-sheet-plaza-garden",
+    "26-sheet-plaza-garden",
     "Plaza & Garden: 27 prefabs"
    ],
    [
-    "24-sheet-park-fairground",
+    "27-sheet-park-fairground",
     "Park & Fairground: 29 prefabs"
    ],
    [
-    "25-sheet-market-harbor-rail-works",
+    "28-sheet-market-harbor-rail-works",
     "Market, Harbor, Rail & Works: 35 prefabs"
    ],
    [
-    "26-sheet-ground-tiles",
+    "29-sheet-ground-tiles",
     "Modular ground tiles: 26 prefabs, 4 × 4 m"
    ],
    [
-    "27-sheet-stairs-lookouts",
+    "30-sheet-stairs-lookouts",
     "Stairs & Lookouts: 14 modular pieces"
    ],
    [
-    "28-crafted-detail",
-    "Crafted detail: hand-shaded voxels with baked AO"
+    "31-crafted-detail",
+    "Crafted detail: procedurally shaded voxels with baked AO"
    ],
    [
-    "29-plug-and-play",
+    "32-plug-and-play",
     "Plug and play: a C# API and components"
    ],
    [
-    "30-whats-inside",
+    "33-whats-inside",
     "What is inside the pack"
    ]
   ]
  },
- "contents_title_html": "560 prefabs in 8 families",
+ "contents_title_html": "505 prefabs in 7 families",
  "categories": [
   {
    "name": "Buildings",
@@ -487,33 +508,20 @@
     "String lights (12)",
     "Ivy (10)"
    ]
-  },
-  {
-   "name": "World Terrain & Water",
-   "count": 55,
-   "blurb": "The terrain of the demo world: the city base, terrain chunks, far terrain, ocean floor and two water surfaces.",
-   "items": [
-    "City base",
-    "25 terrain chunks",
-    "24 far terrain chunks",
-    "2 river fills",
-    "Ocean seabed",
-    "Ocean and pond water"
-   ]
   }
  ],
  "specs": [
   [
    "Prefabs",
-   "560, sorted by family: 505 town prefabs plus 55 world terrain and water pieces; 58 with separate moving parts, 76 with real lights"
+   "505, sorted by family; 58 with separate moving parts, 76 with real lights"
   ],
   [
    "Meshes",
-   "951 FBX files, 1 unit = 1 m, Y up, no embedded materials"
+   "896 FBX files, 1 unit = 1 m, Y up, no embedded materials"
   ],
   [
    "Triangles",
-   "12 to 110,190 per prefab outside the world pieces (the cathedral is the largest), about 3,200 on average"
+   "12 to 110,190 per prefab (the cathedral is the largest), about 3,200 on average"
   ],
   [
    "Shaders",
@@ -525,7 +533,7 @@
   ],
   [
    "Textures",
-   "36: hand-shaded 4096 color atlases with baked AO and emissive twins, a 4096 &times; 1024 decoration atlas, the 16 &times; 16 palette, a ground detail atlas, water normal, streaks and foam (21 shared, PNG), plus 4 terrain layers for the water example and 11 baked coast maps for the two demo seas (PNG and EXR)"
+   "36: procedurally shaded 4096 color atlases with baked AO and emissive twins, a 4096 &times; 1024 decoration atlas, the 16 &times; 16 palette, a ground detail atlas, water normal, streaks and foam (21 shared, PNG), plus 4 terrain layers for the water example and 11 baked coast maps (PNG and EXR)"
   ],
   [
    "Animation",
@@ -533,23 +541,27 @@
   ],
   [
    "Water",
-   "<code>VoxelWater</code> for seas, lakes, rivers and fountain basins: a coast bake from Unity Terrain and colliders, beach waves in two modes (Swash, or Simulation with GPU surf around the camera), planar reflections, foam, <code>Water Float</code> and boat wakes"
+   "<code>VoxelWater</code> for seas, lakes, rivers and fountain basins: a coast bake from Voxel Terrain, Unity Terrain and colliders, beach waves in two modes (Swash, or Simulation with GPU surf around the camera), planar reflections, foam, <code>Water Float</code> and boat wakes"
+  ],
+  [
+   "Voxel Terrain",
+   "A sculptable voxel ground: an eight-mode brush (raise, lower, smooth, flatten, flatten to a level, add water, remove water, paint) in the inspector and a Scene view overlay, ten ground types, lakes from painted water (one <code>VoxelWater</code> per pond), protection zones, objects that follow the ground, grass tufts, levels of detail, imports from heightmaps, Unity Terrains and meshes, cells of 0.25, 0.5 or 1 m, saving as ordinary meshes, and a runtime API that works on a copy of the data (<code>VoxelTerrainPlayBrush</code> is an example)"
   ],
   [
    "Scripts",
-   "28 C# files in the <code>VoxelCityKit</code> namespace: the <code>VoxelCity</code> API, components, the <code>VoxelLine</code> tool, the water system and editor tools"
+   "50 C# files in the <code>VoxelCityKit</code> namespace and 2 assemblies (runtime and editor): the <code>VoxelCity</code> API, components, the <code>VoxelLine</code> tool, the water system, Voxel Terrain and editor tools"
   ],
   [
    "Colliders",
-   "Box or mesh colliders on 286 prefabs; decorations have none"
+   "Box or mesh colliders on 234 prefabs; decorations have none"
   ],
   [
    "Demo scenes",
-   "2: the demo town (about 10,000 placed prefabs, instanced grass and about 390 point lights) and the water example on a Unity Terrain island"
+   "2: the demo town on a Voxel Terrain (about 2,500 placed prefabs, 502 of the 505 in the pack, with the sea, five lakes, instanced grass and about 210 lights) and the water example on a Unity Terrain island"
   ],
   [
    "LODs, rig, character animation",
-   "21 trees with a 2-level LOD Group and 5 light trees for distant hills; no rigs or characters"
+   "21 trees with a 2-level LOD Group, 5 light trees for distant hills and coarser far chunks on Voxel Terrain; no rigs or characters"
   ],
   [
    "Made with",
@@ -563,7 +575,7 @@
    "<strong>Universal Render Pipeline:</strong> required. The materials use the seven included URP shaders, which is where the animation lives. Turn on the Depth Texture (in the URP Asset or on the camera) for the water, fountains and lighthouse beams; the demo camera does it for you. The Forward+ renderer is recommended for scenes with many lamps.",
    "<strong>Compute shaders:</strong> the water's floating objects, wakes and simulated surf use compute shaders; on WebGL the sea still draws with its beach waves.",
    "<strong>Built-in and HDRP:</strong> not supported. The shaders are written for URP, so in another pipeline the materials render pink and nothing moves.",
-   "<strong>Performance:</strong> the animation costs no CPU per object. In big scenes the cost is in real lights and grass: lower the grass density or draw distance, switch off lamp lights you do not need and set the shadow distance in the URP Asset. Planar reflections can be switched off on each water.",
+   "<strong>Performance:</strong> the animation costs no CPU per object. In big scenes the cost is in real lights and grass: lower the grass density or draw distance, switch off lamp lights you do not need and set the shadow distance in the URP Asset. Planar reflections can be switched off on each water, and on a large Voxel Terrain bigger cells carry the same land with far fewer vertices.",
    "<strong>Not included:</strong> characters, NPCs, traffic or gameplay scripts, audio, and the presentation sky and effects of the store images."
   ]
  },
@@ -589,8 +601,20 @@
    "<p>The 264 decorations are ordinary prefabs: drag them onto windows, doors, walls and roofs. Each family has its own model for every spot, and the buildings carry empty <code>VXS_</code> attach points that mark where each kind fits.</p>"
   ],
   [
+   "How do I sculpt my own ground?",
+   "<p>Use <code>GameObject &gt; VoxelCity &gt; Terrain</code> and pick <strong>Voxel Terrain (Flat)</strong>, <strong>(Island)</strong> or <strong>(Hills)</strong>, select it and paint in the Scene view. The eight brush modes are in the inspector and in a Scene view overlay, keys 1 to 8 pick them, and each stroke is one undo step. The land is saved with your scene, and an update of the pack never touches it.</p>"
+  ],
+  [
+   "Can the ground change while the game runs?",
+   "<p>Yes. While the game runs the terrain works on a copy of its data, so the asset never changes. <code>BeginStroke</code>, <code>StrokeTo</code> and <code>EndStroke</code> drive the same brush from code, the colliders catch up when the stroke ends, and <code>VoxelTerrainPlayBrush</code> is a ready example. In the demo scene, the left mouse button sculpts the ground under the pointer.</p>"
+  ],
+  [
+   "Can I start from a heightmap or a Unity Terrain?",
+   "<p>Yes. <strong>Import Heights</strong> shapes the terrain from a heightmap (PNG of 8 or 16 bits, or RAW of 16 bits), a Unity Terrain or meshes. If a scene will not sculpt, <strong>Save Meshes As Assets</strong> writes the ground to one file of ordinary meshes and a prefab.</p>"
+  ],
+  [
    "How do I add water?",
-   "<p>Use <code>GameObject &gt; VoxelCity &gt; Water</code> and pick Sea, Lake, River or Fountain Basin, then move it up or down to set the water level. For a sea, press <strong>Bake The Coast</strong> in the inspector: it reads your Unity Terrain and colliders, and the waves find every beach. Add the <strong>Water Float</strong> component to a boat or a buoy to make it ride the waves.</p>"
+   "<p>Use <code>GameObject &gt; VoxelCity &gt; Water</code> and pick Sea, Lake, River or Fountain Basin, then move it up or down to set the water level. For a sea, press <strong>Bake The Coast</strong> in the inspector: it reads your Voxel Terrain or Unity Terrain and colliders, and the waves find every beach. On a Voxel Terrain you can also paint water in with the brush: each separate pond becomes a lake of its own. Add the <strong>Water Float</strong> component to a boat or a buoy to make it ride the waves.</p>"
   ],
   [
    "The water or the fountain looks wrong. What is missing?",
@@ -610,15 +634,15 @@
   ],
   [
    "Was AI used to make this pack?",
-   "<p>Yes, and the store listing will say so too. The voxel models were built by an AI model (Anthropic Claude) that wrote modelling scripts for Blender; no text-to-3D or image-to-3D generator was used. The color palette, the URP and compute shaders, the C# components and the water system, the Unity prefabs, the demo scenes and the documentation were made by the same process. The publisher defined the town and its catalogue, made the production decisions and decides what is published. The images and videos on this page are renders of the pack in Unity; none was made with an AI image or video generator.</p>"
+   "<p>Yes, and the store listing will say so too. The voxel models were built by an AI model (Anthropic Claude) that wrote modelling scripts for Blender; no text-to-3D or image-to-3D generator was used. The color palette, the URP and compute shaders, the C# components, the water system and the terrain tool, the Unity prefabs, the demo scenes and the documentation were made by the same process. The publisher defined the town and its catalogue, made the production decisions and decides what is published. The images and videos on this page are renders of the pack in Unity; none was made with an AI image or video generator.</p>"
   ]
  ],
  "card": {
   "eyebrow_html": "3D &middot; Environments &middot; Urban",
-  "blurb_html": "A whole voxel town in 560 prefabs: row houses, shops, landmarks, a fairground, a harbor, a steam train and 264 facade decorations, with stylized water for seas, lakes and rivers. Wind, water, smoke and machinery move in the shader, and one line of C# turns day into night.",
+  "blurb_html": "A whole voxel town in 505 prefabs and a brush to sculpt the land under it: row houses, shops, landmarks, a fairground, a harbor, a steam train and 264 facade decorations, with stylized water for seas, lakes and rivers. Wind, water, smoke and machinery move in the shader, and one line of C# turns day into night.",
   "facts": [
    [
-    "560",
+    "505",
     "Prefabs"
    ],
    [
@@ -626,15 +650,15 @@
     "Decorations"
    ],
    [
-    "132",
+    "122",
     "Animated"
    ],
    [
     "8",
-    "Families"
+    "Brush modes"
    ]
   ],
-  "image_alt": "Voxel City site card: a voxel town at golden hour seen from above, with red roofs along a canal with sailing boats, a cathedral and forested hills behind."
+  "image_alt": "Voxel City site card: a voxel town at golden hour seen from above, with red roofs along a quay with sailing boats, a beach in front, a cathedral and forested hills behind."
  },
  "pairs_with": {
   "slugs": [
