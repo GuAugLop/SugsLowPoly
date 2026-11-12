@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voxel City: Seasons | Sug&#x27;s LowPoly</title>
+<meta name="description" content="Spring, summer, autumn and winter for Voxel City: Animated Town, an add-on that needs it. One component turns the whole town: leaf colors, snow on every roof, frozen ponds, 18 bare trees, 92 seasonal props and GPU weather for each season.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="theme-color" content="#0b161e">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://suglowpoly.com/voxel-city-seasons.html">
+<meta property="og:url" content="https://suglowpoly.com/voxel-city-seasons.html">
+<meta property="og:image" content="https://suglowpoly.com/assets/img/seasons/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://suglowpoly.com/assets/img/seasons/og-image.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sug&#x27;s LowPoly">
+<meta property="og:title" content="Voxel City: Seasons | Sug&#x27;s LowPoly">
+<meta property="og:description" content="Spring, summer, autumn and winter for Voxel City: Animated Town, an add-on that needs it. One component turns the whole town: leaf colors, snow on every roof, frozen ponds, 18 bare trees, 92 seasonal props and GPU weather for each season.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Sug&#x27;s LowPoly home">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5NzMwN2M1ZS1iN2Q1LTQwZTEtODUwYy1iZWExMWUyZTA5ZDUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaExcunEe0mK5WV1+iVwfGboAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoyZmE1NmI4Ny1jYzRmLTRiMzQtYmViYi0yYWZmN2QwMGExYjBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNowfWQNdZeTULjVNl9eciM/AAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggoo6vVRgLgKvr/e0RtFqKIzhzky7ohCxXf8XM2bxRZ7ikZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaGBv52s2yxcYARkO8X48DkkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAVTv0TEpKd3uVlEnTUTVTuHFsujgzWxwNwVDwaVLcdLGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjk3MzA3YzVlLWI3ZDUtNDBlMS04NTBjLWJlYTExZTJlMDlkNS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjc3ZTY2OGU1LWEwZDUtNDAzOS04MGRhLTFhN2JjMmJlZDA5NnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCijq9VGAuAq+v97RG0WoojOHOTLuiELFd/xczZvFFnuKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggS9V3xRnsVH8oeGOuRynQxhuUXZj3qkyyDHsj8jSM3RqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggpIt2BOcqtvO/qD1bWjFMfgOIa3RfsLyRBag7An9fP8R0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQK4OBwgASMHvu6+ySZ1ZwsZs9i7fCKFOZsHu+LXQMMAwK/ay9P9viQqAwz6boM625A8xRcRaYuKQ33Kp2hIqToc=</c2pa:manifest></metadata><defs><clipPath id="r"><rect width="120" height="120" rx="22"/></clipPath></defs><g clip-path="url(#r)"><polygon points="0,0 70,0 56,66" fill="rgb(20,40,52)" stroke="rgb(20,40,52)" stroke-width="0.6"/><polygon points="70,0 120,0 56,66" fill="rgb(16,33,44)" stroke="rgb(16,33,44)" stroke-width="0.6"/><polygon points="120,0 120,52 56,66" fill="rgb(13,28,38)" stroke="rgb(13,28,38)" stroke-width="0.6"/><polygon points="120,52 120,120 56,66" fill="rgb(10,21,29)" stroke="rgb(10,21,29)" stroke-width="0.6"/><polygon points="120,120 44,120 56,66" fill="rgb(8,17,24)" stroke="rgb(8,17,24)" stroke-width="0.6"/><polygon points="44,120 0,120 56,66" fill="rgb(10,22,30)" stroke="rgb(10,22,30)" stroke-width="0.6"/><polygon points="0,120 0,74 56,66" fill="rgb(14,29,39)" stroke="rgb(14,29,39)" stroke-width="0.6"/><polygon points="0,74 0,0 56,66" fill="rgb(18,36,47)" stroke="rgb(18,36,47)" stroke-width="0.6"/><polygon points="98.00,14.50 39.65,14.50 48.35,35.50" fill="rgb(255,176,96)" stroke="rgb(255,176,96)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="98.00,14.50 48.35,35.50 84.00,35.50" fill="rgb(255,150,70)" stroke="rgb(255,150,70)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 17.50,36.65 38.50,45.35" fill="rgb(255,128,48)" stroke="rgb(255,128,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 38.50,45.35 48.35,35.50" fill="rgb(240,104,32)" stroke="rgb(240,104,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 17.50,51.76 38.50,42.24" fill="rgb(214,80,24)" stroke="rgb(214,80,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 38.50,42.24 38.50,45.35" fill="rgb(196,68,18)" stroke="rgb(196,68,18)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 40.05,71.50 47.95,50.50" fill="rgb(232,96,30)" stroke="rgb(232,96,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 47.95,50.50 38.50,42.24" fill="rgb(250,120,44)" stroke="rgb(250,120,44)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 71.65,71.50 80.35,50.50" fill="rgb(255,158,78)" stroke="rgb(255,158,78)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 80.35,50.50 47.95,50.50" fill="rgb(255,136,56)" stroke="rgb(255,136,56)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 81.50,81.35 102.50,72.65" fill="rgb(236,100,32)" stroke="rgb(236,100,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 102.50,72.65 80.35,50.50" fill="rgb(216,82,24)" stroke="rgb(216,82,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 81.50,76.65 102.50,85.35" fill="rgb(186,62,16)" stroke="rgb(186,62,16)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 102.50,85.35 102.50,72.65" fill="rgb(168,52,14)" stroke="rgb(168,52,14)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 71.65,86.50 80.35,107.50" fill="rgb(206,74,20)" stroke="rgb(206,74,20)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 80.35,107.50 102.50,85.35" fill="rgb(228,94,30)" stroke="rgb(228,94,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 22.00,86.50 36.00,107.50" fill="rgb(250,126,48)" stroke="rgb(250,126,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 36.00,107.50 80.35,107.50" fill="rgb(255,146,66)" stroke="rgb(255,146,66)" stroke-width="0.5" stroke-linejoin="round"/></g></svg>
+      <span class="brand-name">Sug's <span class="accent">LowPoly</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="./#packs">Packs</a></li>
+        <li><a href="low-poly-enemy-melee-weapons.html">Weapons</a></li>
+        <li><a href="low-poly-enemy-encampment-props.html">Encampment</a></li>
+        <li><a href="voxel-city-animated-town.html">Voxel City</a></li>
+        <li><a href="voxel-city-characters.html">Characters</a></li>
+        <li><a href="voxel-city-interiors.html">Interiors</a></li>
+        <li><a href="voxel-city-seasons.html" aria-current="page">Seasons</a></li>
+        <li><a href="./#about">About</a></li>
+        <li><a class="btn btn-primary" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head with-art art-seasons" aria-labelledby="page-title">
+    <div class="wrap">
+      <p class="crumbs"><a href="./">Home</a> &nbsp;/&nbsp; <a href="./#packs">Packs</a> &nbsp;/&nbsp; Seasons</p>
+      <p><span class="pill soon"><span class="dot"></span>Coming soon to the Unity Asset Store</span></p>
+      <h1 class="display" id="page-title">Voxel City: <span class="accent">Seasons</span></h1>
+      <p class="lead">Spring, summer, autumn and winter for your Voxel City town, with one component and one click. Seasons change at once or blend over seconds: snow piles up on the roofs, leaves turn tree by tree and fall, ponds freeze, and each season brings its own weather and props.</p>
+      <p class="small muted"><strong>Requires Voxel City: Animated Town 1.1 or newer, sold separately.</strong> Get it before buying this add-on: Seasons contains no Voxel City files.</p>
+      <div class="actions">
+        <span class="btn" aria-disabled="true">Store link coming soon</span>
+        <a class="btn btn-ghost" href="#gallery">See the gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="facts-title">
+    <div class="wrap">
+      <h2 class="display" id="facts-title">At a glance</h2>
+      <ul class="facts" aria-label="Pack facts">
+        <li><b>4</b><span>Seasons</span></li>
+        <li><b>92</b><span>Seasonal props</span></li>
+        <li><b>18</b><span>Bare trees</span></li>
+        <li><b>GPU</b><span>Weather</span></li>
+      </ul>
+      <div class="grid-2">
+        <div class="prose">
+          <p><strong>Voxel City: Seasons is an add-on for Voxel City: Animated Town</strong> and needs it in the project. Add the <code>VoxelSeasons</code> component and the whole town follows the season: leaf and grass colors, blossom in spring, dry patches in summer, orange, red and yellow trees in autumn, and in winter snow on every surface open to the sky (and none under roofs, porches and canopies), bare trees and frozen lakes, rivers and fountains.</p>
+          <p>A season changes at once or blends over the seconds you give it, from a script (<code>VoxelSeasons.Set(Season.Winter, 5f)</code>), from the Editor window (<code>Tools &gt; VoxelCity &gt; Seasons</code>), which shows it in the Scene view without entering Play mode, or on a year cycle while the game runs. Hold the town part of the way between two seasons for a calendar, a cutscene or a timeline. Light, sky and fog follow the season with Voxel City's day and night.</p>
+          <p><strong>92 seasonal props</strong> (spring 23, summer 20, autumn 24, winter 25) are placed in one click on the buildings' free attach points and on free ground near what fits them, and each one shows only in its seasons. <strong>18 bare trees</strong> with LOD Groups stand in for the deciduous trees while their leaves are down. The weather is drawn on the GPU, with no particle systems: showers with wet streets and puddles, a rainbow after the rain, petals, butterflies, fireflies, falling leaves and mist, and falling snow. Nothing in your scenes, prefabs or materials is changed: turn the component off and the town is as it was.</p>
+        </div>
+        <ul class="checks">
+          <li><strong>Requires Voxel City: Animated Town 1.1 or newer:</strong> an add-on, sold separately, with no Voxel City files inside</li>
+          <li><strong>One component, one click:</strong> the whole town turns with the season, and nothing in your scenes is changed</li>
+          <li><strong>Blend over seconds:</strong> snow piles up, leaves turn tree by tree and ponds freeze, or change at once</li>
+          <li><strong>In the Editor:</strong> pick a season and see it in the Scene view without Play mode, or hold the town between two seasons</li>
+          <li><strong>A small API:</strong> <code>Set</code>, <code>SeasonChanged</code>, <code>SetRain</code>, <code>ShowRainbow</code> and UnityEvents in the Inspector</li>
+          <li><strong>92 seasonal props:</strong> snowmen, sleds, snow forts, icicles, tulips, beehives, beach umbrellas, hammocks, pumpkins, scarecrows and more</li>
+          <li><strong>18 bare trees</strong> for the deciduous trees in winter, with the same LOD levels</li>
+          <li><strong>Weather on the GPU:</strong> rain, rainbow, petals, butterflies, fireflies, falling leaves, mist and snow, in three quality levels</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="gallery" aria-labelledby="gallery-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Gallery</p>
+        <h2 class="display" id="gallery-title">One town, four seasons</h2>
+        <p class="lead">All images are renders of Voxel City: Animated Town's demo town with this pack in Unity 6 and URP.</p>
+      </div>
+      <div class="videos">
+        <figure class="video">
+          <video controls preload="none" playsinline poster="assets/img/seasons/trailer-poster.webp" width="1920" height="1080"><source src="assets/video/seasons/voxel-seasons-trailer-1080p.mp4" type="video/mp4">Your browser cannot play this video. <a href="assets/video/seasons/voxel-seasons-trailer-1080p.mp4">Download the video (MP4)</a>.</video>
+          <figcaption class="small muted">Trailer, 1:30, with sound: the town through the year, the seasons blending, rain and a rainbow, nights, and each season's props. Rendered in Unity 6 with URP; the music is an original piece made for this trailer and is not part of the pack, which has no audio.</figcaption>
+        </figure>
+      </div>
+      <ul class="gallery">
+        <li><a class="tile" href="assets/img/seasons/gallery/01-cover.webp" data-full="assets/img/seasons/gallery/01-cover.webp" data-caption="Voxel City: Seasons, one component turns the whole town through the year"><img src="assets/img/seasons/gallery/01-cover-thumb.webp" width="720" height="480" loading="lazy" alt="Voxel City: Seasons, one component turns the whole town through the year"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/02-four-seasons.webp" data-full="assets/img/seasons/gallery/02-four-seasons.webp" data-caption="The same town in four seasons"><img src="assets/img/seasons/gallery/02-four-seasons-thumb.webp" width="720" height="480" loading="lazy" alt="The same town in four seasons"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/03-spring.webp" data-full="assets/img/seasons/gallery/03-spring.webp" data-caption="Spring: blossom, flowers in the grass and petals on the wind"><img src="assets/img/seasons/gallery/03-spring-thumb.webp" width="720" height="480" loading="lazy" alt="Spring: blossom, flowers in the grass and petals on the wind"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/04-summer.webp" data-full="assets/img/seasons/gallery/04-summer.webp" data-caption="Summer: beach umbrellas, deck chairs and a beach hut"><img src="assets/img/seasons/gallery/04-summer-thumb.webp" width="720" height="480" loading="lazy" alt="Summer: beach umbrellas, deck chairs and a beach hut"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/05-autumn.webp" data-full="assets/img/seasons/gallery/05-autumn.webp" data-caption="Autumn: orange trees, hay bales and pumpkins"><img src="assets/img/seasons/gallery/05-autumn-thumb.webp" width="720" height="480" loading="lazy" alt="Autumn: orange trees, hay bales and pumpkins"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/06-winter.webp" data-full="assets/img/seasons/gallery/06-winter.webp" data-caption="Winter: snow on every surface open to the sky"><img src="assets/img/seasons/gallery/06-winter-thumb.webp" width="720" height="480" loading="lazy" alt="Winter: snow on every surface open to the sky"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/07-seasons-blend.webp" data-full="assets/img/seasons/gallery/07-seasons-blend.webp" data-caption="Seasons blend over seconds, or change at once"><img src="assets/img/seasons/gallery/07-seasons-blend-thumb.webp" width="720" height="480" loading="lazy" alt="Seasons blend over seconds, or change at once"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/08-weather.webp" data-full="assets/img/seasons/gallery/08-weather.webp" data-caption="Weather drawn on the GPU"><img src="assets/img/seasons/gallery/08-weather-thumb.webp" width="720" height="480" loading="lazy" alt="Weather drawn on the GPU"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/09-frozen-lakes.webp" data-full="assets/img/seasons/gallery/09-frozen-lakes.webp" data-caption="Frozen lakes, rivers and fountains"><img src="assets/img/seasons/gallery/09-frozen-lakes-thumb.webp" width="720" height="480" loading="lazy" alt="Frozen lakes, rivers and fountains"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/10-day-and-night.webp" data-full="assets/img/seasons/gallery/10-day-and-night.webp" data-caption="The seasons run with Voxel City&#x27;s day and night"><img src="assets/img/seasons/gallery/10-day-and-night-thumb.webp" width="720" height="480" loading="lazy" alt="The seasons run with Voxel City&#x27;s day and night"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/11-spring-props.webp" data-full="assets/img/seasons/gallery/11-spring-props.webp" data-caption="23 spring props"><img src="assets/img/seasons/gallery/11-spring-props-thumb.webp" width="720" height="480" loading="lazy" alt="23 spring props"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/12-summer-props.webp" data-full="assets/img/seasons/gallery/12-summer-props.webp" data-caption="20 summer props"><img src="assets/img/seasons/gallery/12-summer-props-thumb.webp" width="720" height="480" loading="lazy" alt="20 summer props"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/13-autumn-props.webp" data-full="assets/img/seasons/gallery/13-autumn-props.webp" data-caption="24 autumn props"><img src="assets/img/seasons/gallery/13-autumn-props-thumb.webp" width="720" height="480" loading="lazy" alt="24 autumn props"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/14-winter-props.webp" data-full="assets/img/seasons/gallery/14-winter-props.webp" data-caption="25 winter props"><img src="assets/img/seasons/gallery/14-winter-props-thumb.webp" width="720" height="480" loading="lazy" alt="25 winter props"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/15-bare-trees.webp" data-full="assets/img/seasons/gallery/15-bare-trees.webp" data-caption="18 bare trees with LOD Groups"><img src="assets/img/seasons/gallery/15-bare-trees-thumb.webp" width="720" height="480" loading="lazy" alt="18 bare trees with LOD Groups"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/16-one-corner-four-seasons.webp" data-full="assets/img/seasons/gallery/16-one-corner-four-seasons.webp" data-caption="One corner of the town, four seasons"><img src="assets/img/seasons/gallery/16-one-corner-four-seasons-thumb.webp" width="720" height="480" loading="lazy" alt="One corner of the town, four seasons"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/17-one-component.webp" data-full="assets/img/seasons/gallery/17-one-component.webp" data-caption="One component, one click"><img src="assets/img/seasons/gallery/17-one-component-thumb.webp" width="720" height="480" loading="lazy" alt="One component, one click"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/18-requires-animated-town.webp" data-full="assets/img/seasons/gallery/18-requires-animated-town.webp" data-caption="Requires Voxel City: Animated Town, sold separately"><img src="assets/img/seasons/gallery/18-requires-animated-town-thumb.webp" width="720" height="480" loading="lazy" alt="Requires Voxel City: Animated Town, sold separately"></a></li>
+        <li><a class="tile" href="assets/img/seasons/gallery/19-whats-inside.webp" data-full="assets/img/seasons/gallery/19-whats-inside.webp" data-caption="What is inside the pack"><img src="assets/img/seasons/gallery/19-whats-inside-thumb.webp" width="720" height="480" loading="lazy" alt="What is inside the pack"></a></li>
+      </ul>
+      <p class="small muted">The page layouts, backgrounds and lettering are a presentation setup for the gallery.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="contents-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Contents</p>
+        <h2 class="display" id="contents-title">92 props, 18 trees and 4 seasons</h2>
+      </div>
+      <div class="cats">
+        <div class="cat"><h3>Spring props <span>23</span></h3><p>Gardens getting ready: bulbs in boxes, seedlings, beehives and washing on the line. <span class="muted">Tulips, daffodils and pansies, Pots of tulips and hyacinths, Beehives, Seedling beds and rows, Potting bench, Cold frame, Bean canes, Clothesline, Wheelbarrow of flowers, Nest with eggs.</span></p></div>
+        <div class="cat"><h3>Summer props <span>20</span></h3><p>Days on the beach and in the garden. <span class="muted">Beach umbrellas, Deck chairs, Beach towels, Beach hut, Ice cream stand, Sandcastle, Windbreak, Hammock, Paddling pool, Sunflowers, Watering cans.</span></p></div>
+        <div class="cat"><h3>Autumn props <span>24</span></h3><p>Harvest and fallen leaves. <span class="muted">Leaf piles, Pumpkin cart and patch, Scarecrows, Hay bales, Corn shock, Cider press, Apple baskets, Firewood, Mums in boxes, Mushroom ring.</span></p></div>
+        <div class="cat"><h3>Winter props <span>25</span></h3><p>Snow, ice and lights on the eaves. <span class="muted">Snowmen, Snow fort, Snowballs, Sleds, Snow piles, Icicles, Icicle lights, Skating rink barriers and bench, Wreaths and evergreen swags, Paper lanterns.</span></p></div>
+        <div class="cat"><h3>Bare trees <span>18</span></h3><p>Stand in for Voxel City&#x27;s deciduous trees while their leaves are down. <span class="muted">14 trees, 4 far-hill trees, LOD Groups.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="specs-title">
+    <div class="wrap grid-2">
+      <div>
+        <p class="eyebrow">Technical details</p>
+        <h2 class="display" id="specs-title">Specs</h2>
+        <table class="spec">
+          <tbody>
+            <tr><th scope="row">Requires</th><td><strong>Voxel City: Animated Town 1.1 or newer</strong>, sold separately. With an older version the project still compiles and the Seasons window says what to update</td></tr>
+            <tr><th scope="row">Prefabs</th><td>92 seasonal props (spring 23, summer 20, autumn 24, winter 25), 26 of them with shader-animated parts or a night glow, and 18 bare trees (14 trees and 4 far-hill trees) with LOD Groups</td></tr>
+            <tr><th scope="row">Meshes</th><td>155 FBX, 1 unit = 1 m, Y up</td></tr>
+            <tr><th scope="row">Materials and textures</th><td>14 materials on Voxel City's shader, 3 atlas textures (props 4096 &times; 4096 with an emissive twin, trees 4096 &times; 512) and four 16 &times; 16 season palettes</td></tr>
+            <tr><th scope="row">Seasons</th><td>4 season profiles you can copy and tune: palettes, leaf colors, snow, ice, water, sun, fog, wind and weather</td></tr>
+            <tr><th scope="row">Weather</th><td>Drawn on the GPU with no particle systems, in three quality levels; no compute shaders</td></tr>
+            <tr><th scope="row">Scripts</th><td>19 C# files in their own assemblies, in the <code>VoxelSeasonsKit</code> namespace, with no compile reference to Voxel City</td></tr>
+            <tr><th scope="row">Audio</th><td>None</td></tr>
+            <tr><th scope="row">Made with</th><td>Unity 6000.4.5f1 and URP 17.4.0</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose">
+        <p class="eyebrow">Compatibility</p>
+        <h2 class="display">What you need</h2>
+        <p><strong>Voxel City: Animated Town 1.1 or newer:</strong> required, and sold separately. Seasons changes the look of its town and contains none of its files.</p>
+        <p><strong>Universal Render Pipeline:</strong> required, as for Voxel City.</p>
+        <p><strong>Built-in and HDRP:</strong> not supported.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="display" id="faq-title">Before you ask</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Do I need Voxel City: Animated Town?</summary>
+          <div class="answer"><p>Yes. Seasons is an add-on: it turns the Voxel City town through the year and contains no Voxel City files. Get Voxel City: Animated Town 1.1 or newer before buying this pack.</p></div>
+        </details>
+        <details>
+          <summary>How do I change the season?</summary>
+          <div class="answer"><p>Add the <code>VoxelSeasons</code> component, or open <code>Tools &gt; VoxelCity &gt; Seasons</code> and pick a season. From a script, <code>VoxelSeasons.Set(Season.Winter, 5f)</code> blends to winter over five seconds, and <code>VoxelSeasons.SeasonChanged</code> tells you when it changes.</p></div>
+        </details>
+        <details>
+          <summary>Does it change my scenes or prefabs?</summary>
+          <div class="answer"><p>No. Turn the component off and the town is exactly as it was.</p></div>
+        </details>
+        <details>
+          <summary>How are the seasonal props placed?</summary>
+          <div class="answer"><p>One click places them on the buildings' free attach points and on free ground near what fits them. The same town gives the same layout every time, and each prop shows only in its seasons. You can make your own objects seasonal with one component.</p></div>
+        </details>
+        <details>
+          <summary>Does it have sounds?</summary>
+          <div class="answer"><p>No. The pack has no audio; the music in the trailer was made for the video only.</p></div>
+        </details>
+        <details>
+          <summary>Can I use the pack in a commercial game?</summary>
+          <div class="answer"><p>Yes. The pack is sold under the standard Unity Asset Store EULA, which allows use in commercial games. It does not allow reselling or redistributing the assets themselves.</p></div>
+        </details>
+        <details>
+          <summary>Was AI used to make this pack?</summary>
+          <div class="answer"><p>Yes, and the store listing will say so too. The voxel props and bare trees were built by an AI model (Anthropic Claude) that wrote the modelling scripts; no text-to-3D or image-to-3D generator was used. The season profiles, the shaders, the C# components and the documentation were made by the same process. The publisher defined the seasons and the catalog, made the production decisions and decides what is published. The images and video on this page are renders of the pack in Unity; none was made with an AI image or video generator.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="pair" aria-labelledby="pair-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Pairs well with</p>
+        <h2 class="display" id="pair-title">Required: Voxel City: Animated Town</h2>
+        <p class="lead">Seasons turns the Voxel City town through the year and needs it in the project. Voxel City: Animated Town is sold separately.</p>
+      </div>
+      <article class="pack reveal">
+        <a class="pack-media" href="voxel-city-animated-town.html" aria-label="Voxel City: Animated Town, pack page">
+          <img src="assets/img/voxel-city/pack-card-1200.webp" width="1200" height="800" loading="lazy" alt="Voxel City site card: a voxel town at golden hour seen from above, with red roofs along a quay with sailing boats, a beach in front, a cathedral and forested hills behind.">
+          <span class="pill soon"><span class="dot"></span>Coming soon</span>
+        </a>
+        <div>
+          <p class="eyebrow">3D &middot; Environments &middot; Urban</p>
+          <h3 class="display">Voxel City: Animated Town</h3>
+          <p class="muted">A whole voxel town in 505 prefabs and a brush to sculpt the land under it: row houses, shops, landmarks, a fairground, a harbor, a steam train and 264 facade decorations, with stylized water for seas, lakes and rivers. Wind, water, smoke and machinery move in the shader, and one line of C# turns day into night.</p>
+          <ul class="facts" aria-label="Pack facts">
+            <li><b>505</b><span>Prefabs</span></li>
+            <li><b>264</b><span>Decorations</span></li>
+            <li><b>122</b><span>Animated</span></li>
+            <li><b>8</b><span>Brush modes</span></li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary" href="voxel-city-animated-town.html">View pack</a>
+            
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="band cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <p class="eyebrow">Support</p>
+      <h2 class="display" id="cta-title">Something not working?</h2>
+      <p class="lead">Tell us your Unity version, your render pipeline and what you see. We will help you sort it out.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="contact.html">Contact support</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="./" aria-label="Sug&#x27;s LowPoly home">
+          <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5NzMwN2M1ZS1iN2Q1LTQwZTEtODUwYy1iZWExMWUyZTA5ZDUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaExcunEe0mK5WV1+iVwfGboAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoyZmE1NmI4Ny1jYzRmLTRiMzQtYmViYi0yYWZmN2QwMGExYjBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNowfWQNdZeTULjVNl9eciM/AAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggoo6vVRgLgKvr/e0RtFqKIzhzky7ohCxXf8XM2bxRZ7ikZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaGBv52s2yxcYARkO8X48DkkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAVTv0TEpKd3uVlEnTUTVTuHFsujgzWxwNwVDwaVLcdLGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjk3MzA3YzVlLWI3ZDUtNDBlMS04NTBjLWJlYTExZTJlMDlkNS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjc3ZTY2OGU1LWEwZDUtNDAzOS04MGRhLTFhN2JjMmJlZDA5NnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCijq9VGAuAq+v97RG0WoojOHOTLuiELFd/xczZvFFnuKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggS9V3xRnsVH8oeGOuRynQxhuUXZj3qkyyDHsj8jSM3RqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggpIt2BOcqtvO/qD1bWjFMfgOIa3RfsLyRBag7An9fP8R0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQK4OBwgASMHvu6+ySZ1ZwsZs9i7fCKFOZsHu+LXQMMAwK/ay9P9viQqAwz6boM625A8xRcRaYuKQ33Kp2hIqToc=</c2pa:manifest></metadata><defs><clipPath id="r"><rect width="120" height="120" rx="22"/></clipPath></defs><g clip-path="url(#r)"><polygon points="0,0 70,0 56,66" fill="rgb(20,40,52)" stroke="rgb(20,40,52)" stroke-width="0.6"/><polygon points="70,0 120,0 56,66" fill="rgb(16,33,44)" stroke="rgb(16,33,44)" stroke-width="0.6"/><polygon points="120,0 120,52 56,66" fill="rgb(13,28,38)" stroke="rgb(13,28,38)" stroke-width="0.6"/><polygon points="120,52 120,120 56,66" fill="rgb(10,21,29)" stroke="rgb(10,21,29)" stroke-width="0.6"/><polygon points="120,120 44,120 56,66" fill="rgb(8,17,24)" stroke="rgb(8,17,24)" stroke-width="0.6"/><polygon points="44,120 0,120 56,66" fill="rgb(10,22,30)" stroke="rgb(10,22,30)" stroke-width="0.6"/><polygon points="0,120 0,74 56,66" fill="rgb(14,29,39)" stroke="rgb(14,29,39)" stroke-width="0.6"/><polygon points="0,74 0,0 56,66" fill="rgb(18,36,47)" stroke="rgb(18,36,47)" stroke-width="0.6"/><polygon points="98.00,14.50 39.65,14.50 48.35,35.50" fill="rgb(255,176,96)" stroke="rgb(255,176,96)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="98.00,14.50 48.35,35.50 84.00,35.50" fill="rgb(255,150,70)" stroke="rgb(255,150,70)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 17.50,36.65 38.50,45.35" fill="rgb(255,128,48)" stroke="rgb(255,128,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="39.65,14.50 38.50,45.35 48.35,35.50" fill="rgb(240,104,32)" stroke="rgb(240,104,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 17.50,51.76 38.50,42.24" fill="rgb(214,80,24)" stroke="rgb(214,80,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,36.65 38.50,42.24 38.50,45.35" fill="rgb(196,68,18)" stroke="rgb(196,68,18)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 40.05,71.50 47.95,50.50" fill="rgb(232,96,30)" stroke="rgb(232,96,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="17.50,51.76 47.95,50.50 38.50,42.24" fill="rgb(250,120,44)" stroke="rgb(250,120,44)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 71.65,71.50 80.35,50.50" fill="rgb(255,158,78)" stroke="rgb(255,158,78)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="40.05,71.50 80.35,50.50 47.95,50.50" fill="rgb(255,136,56)" stroke="rgb(255,136,56)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 81.50,81.35 102.50,72.65" fill="rgb(236,100,32)" stroke="rgb(236,100,32)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,71.50 102.50,72.65 80.35,50.50" fill="rgb(216,82,24)" stroke="rgb(216,82,24)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 81.50,76.65 102.50,85.35" fill="rgb(186,62,16)" stroke="rgb(186,62,16)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,81.35 102.50,85.35 102.50,72.65" fill="rgb(168,52,14)" stroke="rgb(168,52,14)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 71.65,86.50 80.35,107.50" fill="rgb(206,74,20)" stroke="rgb(206,74,20)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="81.50,76.65 80.35,107.50 102.50,85.35" fill="rgb(228,94,30)" stroke="rgb(228,94,30)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 22.00,86.50 36.00,107.50" fill="rgb(250,126,48)" stroke="rgb(250,126,48)" stroke-width="0.5" stroke-linejoin="round"/><polygon points="71.65,86.50 36.00,107.50 80.35,107.50" fill="rgb(255,146,66)" stroke="rgb(255,146,66)" stroke-width="0.5" stroke-linejoin="round"/></g></svg>
+          <span class="brand-name">Sug's <span class="accent">LowPoly</span></span>
+        </a>
+        <p>Game-ready low-poly asset packs for Unity, with consistent pivots, real-world scale and specs you can check.</p>
+      </div>
+      <div>
+        <h4>Packs</h4>
+        <ul>
+          <li><a href="low-poly-enemy-melee-weapons.html">Low Poly Enemy Melee Weapons</a></li>
+          <li><a href="low-poly-enemy-encampment-props.html">Low Poly Enemy Encampment Props</a></li>
+          <li><a href="voxel-city-animated-town.html">Voxel City: Animated Town</a></li>
+          <li><a href="voxel-city-characters.html">Voxel City: Characters</a></li>
+          <li><a href="voxel-city-interiors.html">Voxel City: Interiors</a></li>
+          <li><a href="voxel-city-seasons.html">Voxel City: Seasons</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact &amp; support</a></li>
+          <li><a href="low-poly-enemy-melee-weapons.html#faq">Weapons FAQ</a></li>
+          <li><a href="low-poly-enemy-encampment-props.html#faq">Encampment FAQ</a></li>
+          <li><a href="voxel-city-animated-town.html#faq">Voxel City FAQ</a></li>
+          <li><a href="voxel-city-characters.html#faq">Characters FAQ</a></li>
+          <li><a href="voxel-city-interiors.html#faq">Interiors FAQ</a></li>
+          <li><a href="voxel-city-seasons.html#faq">Seasons FAQ</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">&copy; <span id="year">2026</span> Sug&#x27;s LowPoly. All rights reserved. Unity and the Unity Asset Store are trademarks or registered trademarks of Unity Technologies or its affiliates. Sug&#x27;s LowPoly is an independent publisher and is not affiliated with, sponsored by or endorsed by Unity Technologies.</p>
+  </div>
+</footer>
+</body>
+</html>
+

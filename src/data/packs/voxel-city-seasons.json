@@ -1,0 +1,133 @@
+{
+ "_about": "Content of the pack page. Fields ending in _html, and every list of paragraphs, answers and spec values, are HTML written by hand; plain fields are escaped by build.py. Counts from Assets/VoxelSeasons on 2026-11-12 (see analise/Estacoes/pacote/STORE_TEXT.md, Where the numbers come from).",
+ "order": 6,
+ "slug": "voxel-city-seasons",
+ "name": "Voxel City: Seasons",
+ "short_name": "Seasons",
+ "nav_label": "Seasons",
+ "faq_label": "Seasons FAQ",
+ "title": "Voxel City: Seasons | Sug's LowPoly",
+ "description": "Spring, summer, autumn and winter for Voxel City: Animated Town, an add-on that needs it. One component turns the whole town: leaf colors, snow on every roof, frozen ponds, 18 bare trees, 92 seasonal props and GPU weather for each season.",
+ "store_url": "",
+ "uses_pack_store_url": false,
+ "images": {
+  "gallery_dir": "assets/img/seasons/gallery",
+  "card": "assets/img/seasons/pack-card-1200.webp",
+  "og": "assets/img/seasons/og-image.jpg",
+  "banner_class": "art-seasons"
+ },
+ "videos": [
+  {
+   "src": "assets/video/seasons/voxel-seasons-trailer-1080p.mp4",
+   "poster": "assets/img/seasons/trailer-poster.webp",
+   "width": 1920,
+   "height": 1080,
+   "caption_html": "Trailer, 1:30, with sound: the town through the year, the seasons blending, rain and a rainbow, nights, and each season's props. Rendered in Unity 6 with URP; the music is an original piece made for this trailer and is not part of the pack, which has no audio."
+  }
+ ],
+ "hero": {
+  "name_html": "Voxel City: <span class=\"accent\">Seasons</span>",
+  "lead_html": "Spring, summer, autumn and winter for your Voxel City town, with one component and one click. Seasons change at once or blend over seconds: snow piles up on the roofs, leaves turn tree by tree and fall, ponds freeze, and each season brings its own weather and props.",
+  "note_html": "<strong>Requires Voxel City: Animated Town 1.1 or newer, sold separately.</strong> Get it before buying this add-on: Seasons contains no Voxel City files."
+ },
+ "facts": [
+  ["4", "Seasons"],
+  ["92", "Seasonal props"],
+  ["18", "Bare trees"],
+  ["GPU", "Weather"]
+ ],
+ "overview_html": [
+  "<strong>Voxel City: Seasons is an add-on for Voxel City: Animated Town</strong> and needs it in the project. Add the <code>VoxelSeasons</code> component and the whole town follows the season: leaf and grass colors, blossom in spring, dry patches in summer, orange, red and yellow trees in autumn, and in winter snow on every surface open to the sky (and none under roofs, porches and canopies), bare trees and frozen lakes, rivers and fountains.",
+  "A season changes at once or blends over the seconds you give it, from a script (<code>VoxelSeasons.Set(Season.Winter, 5f)</code>), from the Editor window (<code>Tools &gt; VoxelCity &gt; Seasons</code>), which shows it in the Scene view without entering Play mode, or on a year cycle while the game runs. Hold the town part of the way between two seasons for a calendar, a cutscene or a timeline. Light, sky and fog follow the season with Voxel City's day and night.",
+  "<strong>92 seasonal props</strong> (spring 23, summer 20, autumn 24, winter 25) are placed in one click on the buildings' free attach points and on free ground near what fits them, and each one shows only in its seasons. <strong>18 bare trees</strong> with LOD Groups stand in for the deciduous trees while their leaves are down. The weather is drawn on the GPU, with no particle systems: showers with wet streets and puddles, a rainbow after the rain, petals, butterflies, fireflies, falling leaves and mist, and falling snow. Nothing in your scenes, prefabs or materials is changed: turn the component off and the town is as it was."
+ ],
+ "checks_html": [
+  "<strong>Requires Voxel City: Animated Town 1.1 or newer:</strong> an add-on, sold separately, with no Voxel City files inside",
+  "<strong>One component, one click:</strong> the whole town turns with the season, and nothing in your scenes is changed",
+  "<strong>Blend over seconds:</strong> snow piles up, leaves turn tree by tree and ponds freeze, or change at once",
+  "<strong>In the Editor:</strong> pick a season and see it in the Scene view without Play mode, or hold the town between two seasons",
+  "<strong>A small API:</strong> <code>Set</code>, <code>SeasonChanged</code>, <code>SetRain</code>, <code>ShowRainbow</code> and UnityEvents in the Inspector",
+  "<strong>92 seasonal props:</strong> snowmen, sleds, snow forts, icicles, tulips, beehives, beach umbrellas, hammocks, pumpkins, scarecrows and more",
+  "<strong>18 bare trees</strong> for the deciduous trees in winter, with the same LOD levels",
+  "<strong>Weather on the GPU:</strong> rain, rainbow, petals, butterflies, fireflies, falling leaves, mist and snow, in three quality levels"
+ ],
+ "gallery": {
+  "title_html": "One town, four seasons",
+  "lead_html": "All images are renders of Voxel City: Animated Town's demo town with this pack in Unity 6 and URP.",
+  "note_html": "The page layouts, backgrounds and lettering are a presentation setup for the gallery.",
+  "images": [
+   ["01-cover", "Voxel City: Seasons, one component turns the whole town through the year"],
+   ["02-four-seasons", "The same town in four seasons"],
+   ["03-spring", "Spring: blossom, flowers in the grass and petals on the wind"],
+   ["04-summer", "Summer: beach umbrellas, deck chairs and a beach hut"],
+   ["05-autumn", "Autumn: orange trees, hay bales and pumpkins"],
+   ["06-winter", "Winter: snow on every surface open to the sky"],
+   ["07-seasons-blend", "Seasons blend over seconds, or change at once"],
+   ["08-weather", "Weather drawn on the GPU"],
+   ["09-frozen-lakes", "Frozen lakes, rivers and fountains"],
+   ["10-day-and-night", "The seasons run with Voxel City's day and night"],
+   ["11-spring-props", "23 spring props"],
+   ["12-summer-props", "20 summer props"],
+   ["13-autumn-props", "24 autumn props"],
+   ["14-winter-props", "25 winter props"],
+   ["15-bare-trees", "18 bare trees with LOD Groups"],
+   ["16-one-corner-four-seasons", "One corner of the town, four seasons"],
+   ["17-one-component", "One component, one click"],
+   ["18-requires-animated-town", "Requires Voxel City: Animated Town, sold separately"],
+   ["19-whats-inside", "What is inside the pack"]
+  ]
+ },
+ "contents_title_html": "92 props, 18 trees and 4 seasons",
+ "categories": [
+  {"name": "Spring props", "count": 23, "blurb": "Gardens getting ready: bulbs in boxes, seedlings, beehives and washing on the line.",
+   "items": ["Tulips, daffodils and pansies", "Pots of tulips and hyacinths", "Beehives", "Seedling beds and rows", "Potting bench", "Cold frame", "Bean canes", "Clothesline", "Wheelbarrow of flowers", "Nest with eggs"]},
+  {"name": "Summer props", "count": 20, "blurb": "Days on the beach and in the garden.",
+   "items": ["Beach umbrellas", "Deck chairs", "Beach towels", "Beach hut", "Ice cream stand", "Sandcastle", "Windbreak", "Hammock", "Paddling pool", "Sunflowers", "Watering cans"]},
+  {"name": "Autumn props", "count": 24, "blurb": "Harvest and fallen leaves.",
+   "items": ["Leaf piles", "Pumpkin cart and patch", "Scarecrows", "Hay bales", "Corn shock", "Cider press", "Apple baskets", "Firewood", "Mums in boxes", "Mushroom ring"]},
+  {"name": "Winter props", "count": 25, "blurb": "Snow, ice and lights on the eaves.",
+   "items": ["Snowmen", "Snow fort", "Snowballs", "Sleds", "Snow piles", "Icicles", "Icicle lights", "Skating rink barriers and bench", "Wreaths and evergreen swags", "Paper lanterns"]},
+  {"name": "Bare trees", "count": 18, "blurb": "Stand in for Voxel City's deciduous trees while their leaves are down.",
+   "items": ["14 trees", "4 far-hill trees", "LOD Groups"]}
+ ],
+ "specs": [
+  ["Requires", "<strong>Voxel City: Animated Town 1.1 or newer</strong>, sold separately. With an older version the project still compiles and the Seasons window says what to update"],
+  ["Prefabs", "92 seasonal props (spring 23, summer 20, autumn 24, winter 25), 26 of them with shader-animated parts or a night glow, and 18 bare trees (14 trees and 4 far-hill trees) with LOD Groups"],
+  ["Meshes", "155 FBX, 1 unit = 1 m, Y up"],
+  ["Materials and textures", "14 materials on Voxel City's shader, 3 atlas textures (props 4096 &times; 4096 with an emissive twin, trees 4096 &times; 512) and four 16 &times; 16 season palettes"],
+  ["Seasons", "4 season profiles you can copy and tune: palettes, leaf colors, snow, ice, water, sun, fog, wind and weather"],
+  ["Weather", "Drawn on the GPU with no particle systems, in three quality levels; no compute shaders"],
+  ["Scripts", "19 C# files in their own assemblies, in the <code>VoxelSeasonsKit</code> namespace, with no compile reference to Voxel City"],
+  ["Audio", "None"],
+  ["Made with", "Unity 6000.4.5f1 and URP 17.4.0"]
+ ],
+ "compat": {
+  "eyebrow_html": "Compatibility",
+  "title_html": "What you need",
+  "paragraphs_html": [
+   "<strong>Voxel City: Animated Town 1.1 or newer:</strong> required, and sold separately. Seasons changes the look of its town and contains none of its files.",
+   "<strong>Universal Render Pipeline:</strong> required, as for Voxel City.",
+   "<strong>Built-in and HDRP:</strong> not supported."
+  ]
+ },
+ "faq": [
+  ["Do I need Voxel City: Animated Town?", "<p>Yes. Seasons is an add-on: it turns the Voxel City town through the year and contains no Voxel City files. Get Voxel City: Animated Town 1.1 or newer before buying this pack.</p>"],
+  ["How do I change the season?", "<p>Add the <code>VoxelSeasons</code> component, or open <code>Tools &gt; VoxelCity &gt; Seasons</code> and pick a season. From a script, <code>VoxelSeasons.Set(Season.Winter, 5f)</code> blends to winter over five seconds, and <code>VoxelSeasons.SeasonChanged</code> tells you when it changes.</p>"],
+  ["Does it change my scenes or prefabs?", "<p>No. Turn the component off and the town is exactly as it was.</p>"],
+  ["How are the seasonal props placed?", "<p>One click places them on the buildings' free attach points and on free ground near what fits them. The same town gives the same layout every time, and each prop shows only in its seasons. You can make your own objects seasonal with one component.</p>"],
+  ["Does it have sounds?", "<p>No. The pack has no audio; the music in the trailer was made for the video only.</p>"],
+  ["Can I use the pack in a commercial game?", "<p>Yes. The pack is sold under the standard Unity Asset Store EULA, which allows use in commercial games. It does not allow reselling or redistributing the assets themselves.</p>"],
+  ["Was AI used to make this pack?", "<p>Yes, and the store listing will say so too. The voxel props and bare trees were built by an AI model (Anthropic Claude) that wrote the modelling scripts; no text-to-3D or image-to-3D generator was used. The season profiles, the shaders, the C# components and the documentation were made by the same process. The publisher defined the seasons and the catalog, made the production decisions and decides what is published. The images and video on this page are renders of the pack in Unity; none was made with an AI image or video generator.</p>"]
+ ],
+ "card": {
+  "eyebrow_html": "3D &middot; Add-on &middot; Seasons",
+  "blurb_html": "Spring, summer, autumn and winter for Voxel City: Animated Town (required, sold separately): snow on every roof, frozen ponds, 18 bare trees, 92 seasonal props and GPU weather.",
+  "facts": [["4", "Seasons"], ["92", "Props"], ["18", "Bare trees"], ["GPU", "Weather"]],
+  "image_alt": "Voxel City: Seasons site card: the same voxel town in four diagonal bands, spring blossom, summer green, autumn orange and winter snow."
+ },
+ "pairs_with": {
+  "slugs": ["voxel-city-animated-town"],
+  "title_html": "Required: Voxel City: Animated Town",
+  "lead_html": "Seasons turns the Voxel City town through the year and needs it in the project. Voxel City: Animated Town is sold separately."
+ }
+}
