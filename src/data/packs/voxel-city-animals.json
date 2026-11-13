@@ -1,0 +1,287 @@
+{
+ "_about": "Content of the pack page. Fields ending in _html, and every list of paragraphs, answers and spec values, are HTML written by hand; plain fields are escaped by build.py. Counts from the pack's README (generated from the files) and from Assets/VoxelAnimals on 2026-11-13.",
+ "order": 7,
+ "slug": "voxel-city-animals",
+ "name": "Voxel City: Animals",
+ "short_name": "Animals",
+ "nav_label": "Animals",
+ "faq_label": "Animals FAQ",
+ "title": "Voxel City: Animals | Sug's LowPoly",
+ "description": "Rigged and animated voxel farm animals and pets for Unity URP: chicken, duck, rabbit, cow, goat, sheep, pig, cat and dog, each as an adult and as a baby, with five textures per model and 280 animations.",
+ "store_url": "",
+ "uses_pack_store_url": false,
+ "images": {
+  "gallery_dir": "assets/img/animals/gallery",
+  "card": "assets/img/animals/pack-card-1200.webp",
+  "og": "assets/img/animals/og-image.jpg",
+  "banner_class": "art-animals"
+ },
+ "videos": [
+  {
+   "src": "assets/video/animals/voxel-animals-trailer-1080p.mp4",
+   "poster": "assets/img/animals/trailer-poster.webp",
+   "width": 1920,
+   "height": 1080,
+   "caption_html": "Trailer, 1:23, with sound. Rendered in Unity 6 with URP. Only the animals and their eight props are in this pack: the town, the terrain and the people in the trailer are other Voxel City packs. The music is an original piece made for this trailer and is not part of the pack, which has no audio."
+  }
+ ],
+ "hero": {
+  "name_html": "Voxel City: <span class=\"accent\">Animals</span>",
+  "lead_html": "Nine voxel farm animals and pets, rigged and animated, ready to drop in a scene: chicken, duck, rabbit, cow, goat, sheep, pig, cat and dog. Every species comes as an adult and as a baby, and every model has five textures.",
+  "note_html": "A standalone pack: it needs only URP, not Voxel City. The town, the terrain and the people shown with the animals are other Voxel City packs."
+ },
+ "facts": [
+  [
+   "9",
+   "Species"
+  ],
+  [
+   "18",
+   "Models"
+  ],
+  [
+   "90",
+   "Textures"
+  ],
+  [
+   "280",
+   "Animations"
+  ]
+ ],
+ "overview_html": [
+  "<strong>Voxel City: Animals</strong> is a set of 18 rigged voxel animals: Chicken, Duck, Rabbit, Cow, Goat, Sheep, Pig, Cat and Dog, each as an adult and as a baby (chick, duckling, bunny, calf, kid, lamb, piglet, kitten and puppy). Every model has five textures, with one prefab for each of the 90, and a LOD Group.",
+  "The adults have <strong>140 animations and the babies have their own version of each, 280 in all</strong>. Every species has its own set (the hen pecks, flaps and lays an egg, the dog sits, barks and fetches, the pig rolls in the mud and finds a truffle) and every animal also turns on the spot, eats, drinks, sleeps, looks around and reacts to a pat, under the same names, so your code can treat them alike. Walking and other travelling clips stay in place by default; 46 of them also come as a copy with root motion.",
+  "Drag a prefab into the scene and it stands, breathes and blinks. The <code>VoxelAnimal</code> component plays an action by name, changes the texture and tells you the marked moments of the clips (the egg laid, the ball picked up). <code>Voxel Animal Wander</code> makes an animal live on its own and a baby follow its mother. The skeletons have named bones, one per body part, and sockets for the mouth and the egg, so you can make your own animations in Unity or in Blender with the FBX files."
+ ],
+ "checks_html": [
+  "<strong>9 species, adult and baby of each:</strong> 18 models with their own skeletons and LOD Groups",
+  "<strong>90 textures:</strong> five per model, each with its prefab, such as Holstein, Hereford, Jersey, Angus and Brown Swiss for the cow",
+  "<strong>280 animations:</strong> 140 for the adults and the babies' own version of each",
+  "<strong>The same names on every animal:</strong> turn, eat, drink, sleep, look around and react to a pat",
+  "<strong>In place by default:</strong> your code moves the object, and 46 clips also come with root motion",
+  "<strong>One component:</strong> <code>Play</code>, <code>StopAction</code>, <code>SetVariant</code>, <code>Speed</code> and the events of the clips",
+  "<strong>Wander and follow:</strong> animals that live on their own and babies that follow their mother",
+  "<strong>8 props for the animations:</strong> egg, ball, stick, yarn, truffle, pail, perch and mud",
+  "<strong>Standalone:</strong> it needs only URP, not Voxel City"
+ ],
+ "gallery": {
+  "title_html": "Nine species, adults and babies",
+  "lead_html": "Renders of the pack in Unity 6 and URP. The scenes with a town, a terrain and people use other Voxel City packs: only the animals and their props are in this one.",
+  "note_html": "The page layouts, backgrounds and lettering are a presentation setup for the gallery.",
+  "images": [
+   [
+    "01-cover",
+    "Voxel City: Animals, rigged and animated voxel farm animals and pets"
+   ],
+   [
+    "02-nine-species",
+    "Nine species, each as an adult and as a baby"
+   ],
+   [
+    "03-textures",
+    "Five textures for every model, 90 in all"
+   ],
+   [
+    "04-animations",
+    "280 animations, 140 per age"
+   ],
+   [
+    "05-skeleton",
+    "A skeleton with named bones for your own animations"
+   ],
+   [
+    "06-props",
+    "Eight props used by the animations"
+   ],
+   [
+    "07-feeding-time",
+    "Feeding time: hens peck and cluck around the grain"
+   ],
+   [
+    "08-petting",
+    "Every animal has a petting reaction"
+   ],
+   [
+    "09-milking",
+    "A milk interaction for the cow and the goat"
+   ],
+   [
+    "10-mud-bath",
+    "Pigs root, dig and roll in the mud"
+   ],
+   [
+    "11-cats-at-play",
+    "Cats pounce, play with the yarn and groom"
+   ],
+   [
+    "12-whats-inside",
+    "What is inside the pack"
+   ]
+  ]
+ },
+ "contents_title_html": "18 models, 90 textures and 280 animations",
+ "categories": [
+  {
+   "name": "Birds",
+   "count": 4,
+   "blurb": "Chicken and duck, with the chick and the duckling.",
+   "items": [
+    "Chicken: peck, flap, wing stretch, lay egg, roost, cluck",
+    "Duck: waddle, dabble, swim, flap, preen, lay egg",
+    "5 textures each: White Leghorn, Rhode Island Red, Pekin, Mallard and more"
+   ]
+  },
+  {
+   "name": "Farm animals",
+   "count": 8,
+   "blurb": "Cow, goat, sheep and pig, with the calf, the kid, the lamb and the piglet.",
+   "items": [
+    "Cow: chew, tail swish, moo, head shake, lie down, get up, milk",
+    "Goat: headbutt, jump, climb, bleat, scratch, milk",
+    "Sheep: baa, wool shake, graze, shear react",
+    "Pig: sniff, root, dig, roll in the mud, oink, truffle found"
+   ]
+  },
+  {
+   "name": "Pets",
+   "count": 6,
+   "blurb": "Rabbit, cat and dog, with the bunny, the kitten and the puppy.",
+   "items": [
+    "Rabbit: hop, ear twitch, nose twitch, groom, sit, curl sleep, stand alert",
+    "Cat: sit, lick, groom, stretch, pounce, play, sleep curled up",
+    "Dog: sit, tail wag, bark, pant, fetch, roll, dig"
+   ]
+  },
+  {
+   "name": "Props",
+   "count": 8,
+   "blurb": "Used by the animations.",
+   "items": [
+    "Egg",
+    "Ball",
+    "Stick",
+    "Yarn",
+    "Truffle",
+    "Pail",
+    "Perch",
+    "Mud"
+   ]
+  }
+ ],
+ "specs": [
+  [
+   "Models",
+   "18 rigged animals (9 species, adult and baby), from the 14 cm chick to the 1.9 m cow, and 8 props"
+  ],
+  [
+   "Prefabs",
+   "116: one for each of the 90 textures, 18 base prefabs and 8 props, every animal with a LOD Group"
+  ],
+  [
+   "Meshes",
+   "26 FBX, 1 unit = 1 m, Y up. LOD0 from 859 to 7,959 quads, LOD1 from 377 to 2,825"
+  ],
+  [
+   "Rigs",
+   "Generic, one skeleton per model with 28 to 40 named bones, rigid skinning (one bone per vertex), sockets for the mouth and the egg"
+  ],
+  [
+   "Animations",
+   "140 for the adults and 140 for the babies (564 clips in the FBX files, because a pose is split into start, loop and end), in place by default, 46 also with root motion"
+  ],
+  [
+   "Materials and textures",
+   "One material per texture on the pack's own URP shader; 90 animal textures up to 1024 &times; 512 and 8 prop textures"
+  ],
+  [
+   "Scripts",
+   "7 C# files in their own assemblies, in the <code>VoxelAnimalsKit</code> namespace: <code>VoxelAnimal</code>, <code>VoxelAnimalWander</code>, <code>VoxelAnimalProps</code>"
+  ],
+  [
+   "Demo",
+   "One scene, Demo_Viewer, to try every animal, texture and action with buttons"
+  ],
+  [
+   "Audio",
+   "None"
+  ],
+  [
+   "Made with",
+   "Unity 6000.4.5f1 and URP 17.4"
+  ]
+ ],
+ "compat": {
+  "eyebrow_html": "Compatibility",
+  "title_html": "What you need",
+  "paragraphs_html": [
+   "<strong>Universal Render Pipeline:</strong> required. Made and tested with Unity 6000.4 and URP 17.4.",
+   "<strong>Built-in and HDRP:</strong> not supported, because the materials use a URP shader.",
+   "<strong>No other package:</strong> the pack stands alone. The demo scene works with the old or the new Input System."
+  ]
+ },
+ "faq": [
+  [
+   "Do I need Voxel City: Animated Town?",
+   "<p>No. The pack stands alone and needs only URP. The town, the terrain and the people in the trailer and in some gallery images are other Voxel City packs.</p>"
+  ],
+  [
+   "Does every animal come as a baby too?",
+   "<p>Yes. Each of the 9 species is an adult model and a baby model with its own skeleton and its own version of every animation, and both have the same five textures.</p>"
+  ],
+  [
+   "How do I play an animation?",
+   "<p>Call <code>animal.Play(\"Moo\")</code> on the <code>VoxelAnimal</code> component, or press the button of the action in its inspector in Play mode. A pose such as lying down stays until <code>StopAction()</code>. <code>Speed</code> blends idle, walk and run.</p>"
+  ],
+  [
+   "Do the walking clips move the animal?",
+   "<p>Not by default: they stay in place and your code moves the object. 46 travelling clips also come as an <code>_RM</code> copy with root motion.</p>"
+  ],
+  [
+   "Can I retarget the animations or use Humanoid?",
+   "<p>No. The rigs are Generic and each clip is made for its model. You can make your own clips in Unity or in Blender with the FBX files: the documentation walks through both.</p>"
+  ],
+  [
+   "Does it have sounds?",
+   "<p>No. The pack has no audio; the music in the trailer was made for the video only.</p>"
+  ],
+  [
+   "Can I use the pack in a commercial game?",
+   "<p>Yes. The pack is sold under the standard Unity Asset Store EULA, which allows use in commercial games. It does not allow reselling or redistributing the assets themselves.</p>"
+  ],
+  [
+   "Was AI used to make this pack?",
+   "<p>Yes, and the store listing will say so too. The voxel models, the skeletons, the animations and the textures were built by an AI model (Anthropic Claude) that wrote the modelling and animation scripts; no text-to-3D or image-to-3D generator was used. The shader, the C# components and the documentation were made by the same process. The publisher defined the species and the list of animations, reviewed them, made the production decisions and decides what is published. The images and video on this page are renders of the pack in Unity; none was made with an AI image or video generator.</p>"
+  ]
+ ],
+ "card": {
+  "eyebrow_html": "3D &middot; Animals &middot; Rigged",
+  "blurb_html": "Nine rigged voxel farm animals and pets, each as an adult and as a baby: 18 models, five textures each and 280 animations. Standalone, for URP.",
+  "facts": [
+   [
+    "9",
+    "Species"
+   ],
+   [
+    "18",
+    "Models"
+   ],
+   [
+    "90",
+    "Textures"
+   ],
+   [
+    "280",
+    "Animations"
+   ]
+  ],
+  "image_alt": "Voxel City: Animals site card: voxel farm animals and their babies in a row."
+ },
+ "pairs_with": {
+  "slugs": [
+   "voxel-city-animated-town",
+   "voxel-city-characters"
+  ],
+  "title_html": "Made to live in Voxel City",
+  "lead_html": "The animals share the voxel scale of the Voxel City packs. Each pack is sold separately and none needs the others."
+ }
+}
